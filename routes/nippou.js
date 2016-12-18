@@ -10,13 +10,9 @@ var fs1       = require("fs");
 var cheerio   = require("cheerio");
 var $ = require('jquery');
 //独自モジュール読み込み
-var common = require('./../public/module/common');
 var db_repository = require('./model/db_repository');
 
 //ログイン情報
-var url = common.login_Info.url;
-//var id = common.login_Info.id;
-//var pass = common.login_Info.pass;
 var _logpath = './logs/nippou/';
 var pg = require('pg');
 var con = 'tcp://postgres:admin@localhost:5432/postgres';
