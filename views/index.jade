@@ -1,0 +1,72 @@
+extends layout
+block content
+  .container
+      .row
+        .col.col-sm-3
+          ul#nav-tab.nav.nav-pills.nav-stacked
+            // (1)
+            li.active
+              a(href='#entries')
+                span.glyphicon.glyphicon-pencil
+                |  アカウント一覧
+            |         
+            li
+              a(href='#dashboard')
+                span.glyphicon.glyphicon-home
+                |  アカウント登録
+            |         
+        |     
+        p.caution=error
+        .col.col-sm-9
+          .tab-content
+            #entries.tab-pane.active
+              .panel.panel-default
+                .panel-heading
+                  h3.panel-title アカウント一覧
+                |      
+                .panel-body
+                  p#msg(style=style)
+                    font(color="red") 登録されているアカウントがありません。
+                  .table-responsive                    
+                    table#tbl.table.table-striped.table-condensed.table-hover
+                      tr
+                          th.col.col-md-4 アカウント名
+                          |           
+                          th.col.col-md-4 システム名
+                          |           
+                          th.col.col-md-4(colspan='2')
+                      //-console.log(JSON.stringify(list))
+                      for item in list
+                          tr(id='account_'+item.ipi_info)
+                            td.col.col-md-4 #{item.resist_name}
+                            |           
+                            td.col.col-md-4 日報登録システム
+                            |           
+                            td.col.col-md-2
+                              form(action='/input', method='post')
+                                input(type='hidden', name='ipi_info', value=item.ipi_info)
+                                input.btn.btn-primary(type='submit', value='日報入力')    
+                            |           
+                            td.col.col-md-2
+                              button#del.btn.btn-danger(onclick='del('+item.ipi_info+');')アカウント削除
+                              |         
+            #dashboard.tab-pane
+              .panel.panel-default
+                .panel-heading
+                  h3.panel-title アカウント登録
+                |             
+                .panel-body
+                  .container
+                    .row
+                      .col.col-md-8
+                            legend システム登録
+                            .table-responsive                    
+                              table.table.table-striped.table-condensed.table-hover
+                                for item in systemList
+                                  tr.col.col-md-12 
+                                    td.col.col-md-12 
+                                      .radio
+                                        label
+                                          input(type='radio', name='radio', value=item.site_id)
+                                          | #{item.site_name}
+                            button.btn.btn-primary 選択

@@ -1,0 +1,40 @@
+doctype html
+html(lang='ja')
+head 
+    script(src='../js/jquery-3.1.1.min.js')
+    script(src='../js/jqueryBlokingUi.js')
+    script(src='../js/bootstrap.js')
+    script(src='../js/sweetalert2.js')
+    script(src='../js/swal.js')
+    script(src='../js/acount.js')
+    link(href='../css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='../css/bootstrap-theme.min.css', rel='stylesheet', media='screen')
+    link(href='../js/sweetalert2.css', rel='stylesheet')
+    meta(charset='utf-8')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |   
+    title 日報
+    |  
+    style.
+      body {
+      padding-top: 70px;
+      }
+  body
+    // ナビゲーションバー
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='#') 日報
+    // メインコンテンツ
+    block content
+    script.
+      $('#nav-tab a').on('click', function (e) { // (3)
+      var $this = $(this);
+      e.preventDefault();
+      $this.tab('show');
+      location.hash = $this.attr('href');
+      });
+      if (location.hash) {
+      $('#nav-tab a[href=' + location.hash + ']').tab('show');
+      }

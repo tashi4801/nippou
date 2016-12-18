@@ -1,0 +1,400 @@
+<!--<![endif]--><head>
+  <meta charset="UTF-8">
+  <meta content="noindex,nofollow,noarchive,noimageindex" name="robots">
+  <!-- for ie ///////////////////////////////////////////////////////// -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0');
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0') format('embedded-opentype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2?6.3.2.0') format('woff2'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff?6.3.2.0') format('woff'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf?6.3.2.0') format('truetype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.svg?6.3.2.0') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<!--[if lt IE 9]> <script src="/js/vendor/html5shiv.min.js?6.3.2.0"></script> <![endif]-->
+<!--[if gt IE 7]><!--> <link href="/js/vendor/font-awesome/css/font-awesome.min.css?6.3.2.0" type="text/css" rel="stylesheet"><!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/common.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/pages.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/table.css?6.3.2.0">
+<!--[if IE 8]><link href="/css/colorCss/old-ie.css?6.3.2.0" rel="stylesheet"><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MXBFN7"></script><script type="text/javascript" src="/js/lib/jquery.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/automatic.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/htdbCommon.js?6.3.2.0"></script>
+<script type="text/javascript">
+<!--
+
+if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+} else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+} else {
+    window.onload = setToken;
+}
+function setToken() {
+
+    var elements = document.getElementsByTagName("form");
+    for (var i = 0; i < elements.length; i++) {
+        var input = document.createElement('input');
+        input.type = "hidden";
+        input.name = "REQUESTABLE_TOKEN_KEY";
+        input.value = "3e6af8de15f458ec50abc681c9067bbd";
+        elements[i].appendChild(input);
+    }
+}
+jQuery(document).ready(function($){
+    $('.jq-nav-collapse').on('click', function(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        if (!navCollapseFlg) {
+            obj.cols="0,*";
+            navCollapseFlg = true;
+        } else {
+            obj.cols="205,*";
+            navCollapseFlg = false;
+        }
+                var thisSwitch = $(this);
+                var point = $(this).children();
+        var option = point.attr('class');
+                if ( option === 'fa fa-caret-left' ) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+            $('.main-contents').animate({'margin-left': '50px'}, 300); //right column
+        } else if ( option === 'fa fa-caret-right' ){
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+            $('.main-contents').animate({'margin-left': '250px'}, 300); //right column
+        } else {
+            return false;
+        }
+    });
+        function updateFullScreenViewIcon(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        var point = $('.jq-nav-collapse').children();
+        if (navCollapseFlg) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+        } else {
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+        }
+        return false;
+    }
+    updateFullScreenViewIcon();
+});
+//-->
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXBFN7');</script>
+<!-- End Google Tag Manager -->
+<title>働くＤＢ -ログイン画面-</title>
+<style type="text/css">
+<!--
+
+*{
+    margin:0;
+    padding:0;
+}
+
+input,select,textarea{
+    font:14px "ＭＳ ゴシック","MS Gothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka−等幅","Osaka-mono",monospace;
+}
+
+input{
+    margin:1px;
+}
+
+img {
+    border:0 none;
+    margin:0;
+    padding:0;
+}
+
+ul li {
+    margin:0;
+    padding:0;
+}
+
+ul, ol, dl {
+    list-style:none outside none;
+}
+
+body, iframe{
+    background:#f7d9dc;
+}
+
+#d_header{
+    height:28px;
+    padding-top: 2px;
+}
+
+#d_header h1 img{
+    padding:2px 0 2px 2px;
+}
+
+.bg_logo {
+    width:144px;
+    height:22px;
+    margin-left:1px;
+}
+
+#d_footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    line-height: 31px;
+    height: 31px;
+}
+
+#d_footer table {
+    height: 31px;
+}
+
+#d_footer table p {
+    padding-left:10px;
+    color:#fff;
+    font: 0.8em "ＭＳ Ｐゴシック";
+}
+
+#d_messages{
+    height:60px;
+    padding-top:15px;
+}
+
+.d_error_area{
+    color:#CC3300;
+    font-weight:bold;
+    font-size:12px;
+    padding:5px;
+    background-color:#FFDBCF;
+    border:2px solid #CC3300;
+    width:500px;
+    position: relative;
+    margin: auto auto auto auto;
+}
+.d_error_area_apple_mobile{
+    color:#CC3300;
+    font-weight:bold;
+    font-size:12px;
+    padding:3px;
+    background-color:#FFDBCF;
+    border:2px solid #CC3300;
+    width:400px;
+    position: relative;
+    margin: auto auto auto auto;
+    line-height:1.2em;
+}
+
+.d_error_area ul{
+    list-style-type:none;
+}
+
+.d_url_login_area{
+    color:#466522;
+    font-weight:normal;
+    padding:6px 5px 5px 5px;
+    background-color:#FFFFFF;
+    border:dotted 1px #466522;
+    font-size:12px;
+    width:444px;
+    position: relative;
+    margin: auto auto 5px auto;
+}
+
+#d_contents{
+    min-width:885px;
+    margin:auto;
+    padding:6px 5px 5px 5px;
+    border:none !important;
+}
+
+#d_wrap{
+    padding-top: 18px;
+    margin: auto auto auto auto;
+    text-align:center;
+    width:539px;
+    height: 350px;
+    position:relative;
+    min-height:100%;
+    background: url(/img/base_login_htdb.png) no-repeat;
+}
+
+#d_wrap h2{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#d_wrap ul{
+    list-style:none;
+    line-height:1.8;
+}
+
+#d_wrap li {
+    margin-bottom: 15px;
+}
+
+#d_wrap li label {
+    font: small "メイリオ";
+
+}
+#d_wrap li input.login_apple_mobile {
+    padding: 1px 3px;
+    width: 155px;
+}
+#d_wrap li input.login {
+    border: solid 1px #aaa;
+    border-radius: 2px;
+    padding: 1px 3px;
+    width: 155px;
+    font-family: 'メイリオ';
+}
+
+
+#d_wrap2{
+    text-align:center;
+}
+
+#d_login_input {
+    margin: 0 24px 0 17px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.imgButton {
+    border:0;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    vertical-align:bottom;
+    margin:0;
+}
+
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+
+function setScreenSize() {
+  var elements = document.getElementById("screenWidth");
+  elements.value = screen.width;
+
+  elements = document.getElementById("screenHeight");
+  elements.value = screen.height;
+
+  elements = document.getElementById("navigatorUserAgent");
+  elements.value = navigator.userAgent;
+}
+
+function formSubmit() {
+  var form = document.getElementById('loginForm');
+  form.submit();
+}
+
+// Execute when press enter key
+$(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+      formSubmit();
+    }
+});
+
+//-->
+</script>
+
+</head>
+
+<body class="login fw-bg-theme" onload="setScreenSize()">
+    <!--container-->
+    <div id="container">
+        <!--main-->
+        <div id="d_main">
+            <!--header-->
+            <div class="fw-bg-theme2" id="d_header">
+                <h1><img src="/img/login_logo_mini.png"></h1>
+            </div>
+            <!--//header-->
+            <!--contents-->
+            <!-- Login message of system maintainent -->
+                        <div id="d_contents">
+                <div id="d_wrap" style="margin-top:80px">
+                    <form id="loginForm" name="loginForm" action="/ggutk9a/top/login" method="POST">
+                                            <input type="hidden" id="screenWidth" name="screenWidth" value="2736">
+                      <input type="hidden" id="screenHeight" name="screenHeight" value="1824">
+                      <input type="hidden" id="navigatorUserAgent" name="navigatorUserAgent" value="Mozilla/5.0 (Windows NT 6.1; rv:42.0) Gecko/20100101 Firefox/42.0">                      
+
+                      <h2><img src="/img/color/red-0/logo-login.png"></h2>
+                      <div id="d_login_input">
+                          <ul>
+                            <li>
+                               <label for="loginId">ログインID</label>
+                                <input type="text" id="loginId" name="loginId" tabindex="1" value="" class="login d_ime_off">
+                            </li>
+                            <li>
+                                <label for="loginPassword">パスワード</label>
+                                <input type="password" id="loginPassword" name="loginPassword" tabindex="2" value="" class="login d_ime_off">
+                            </li>
+                            <li>
+                              <a class="fw-btn-theme fw-mw200 fw-mgt20" href="javascript:void(0);" id="jq-loginSubmit" onclick="javascript:formSubmit();">
+                                ログイン
+                              </a>
+                            </li>
+                          </ul>
+                          <input type="hidden" name="urlparams" id="urlparams" value="">
+                                                </div>
+
+                    <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="3e6af8de15f458ec50abc681c9067bbd"></form>
+                    
+                                        <script type="text/javascript">
+                    <!--
+                                                document.getElementById('loginId').focus();
+                                            // -->
+                    </script>
+                </div>
+            </div>
+            <!--//contents-->
+        </div>
+        <!--//main-->
+
+        <!--foot-->
+        <div id="d_footer" class="fw-bg-theme2">
+            <!-- 中央揃え用table -->
+            <table>
+                <tbody><tr>
+                    <td>
+                        <p>ver 6.3.2</p>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <!--//foot-->
+    </div>
+    <!--//container-->
+    
+    
+
+    <script type="text/javascript">
+    <!--
+        document.getElementById('loginId').focus();
+        // -->
+  </script>
+    
+  
+<!-- ver.6.3.2.0 -->
+
+
+</body>

@@ -1,0 +1,2942 @@
+<!--<![endif]--><head>
+                <meta charset="UTF-8">
+  <meta content="noindex,nofollow,noarchive,noimageindex" name="robots">
+  <!-- for ie ///////////////////////////////////////////////////////// -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.1.0');
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.1.0') format('embedded-opentype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2?6.3.1.0') format('woff2'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff?6.3.1.0') format('woff'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf?6.3.1.0') format('truetype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.svg?6.3.1.0') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<!--[if lt IE 9]> <script src="/js/vendor/html5shiv.min.js?6.3.1.0"></script> <![endif]-->
+<!--[if gt IE 7]><!--> <link href="/js/vendor/font-awesome/css/font-awesome.min.css?6.3.1.0" type="text/css" rel="stylesheet"><!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/common.css?6.3.1.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/pages.css?6.3.1.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/table.css?6.3.1.0">
+<!--[if IE 8]><link href="/css/colorCss/old-ie.css?6.3.1.0" rel="stylesheet"><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MXBFN7"></script><script type="text/javascript" src="/js/lib/jquery.js?6.3.1.0"></script>
+<script type="text/javascript" src="/js/automatic.js?6.3.1.0"></script>
+<script type="text/javascript" src="/js/htdbCommon.js?6.3.1.0"></script>
+<script type="text/javascript">
+<!--
+
+if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+} else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+} else {
+    window.onload = setToken;
+}
+function setToken() {
+
+    var elements = document.getElementsByTagName("form");
+    for (var i = 0; i < elements.length; i++) {
+        var input = document.createElement('input');
+        input.type = "hidden";
+        input.name = "REQUESTABLE_TOKEN_KEY";
+        input.value = "ae3ac6aeeb43a255c10a1f186d43bf24";
+        elements[i].appendChild(input);
+    }
+}
+jQuery(document).ready(function($){
+    $('.jq-nav-collapse').on('click', function(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        if (!navCollapseFlg) {
+            obj.cols="0,*";
+            navCollapseFlg = true;
+        } else {
+            obj.cols="205,*";
+            navCollapseFlg = false;
+        }
+                var thisSwitch = $(this);
+                var point = $(this).children();
+        var option = point.attr('class');
+                if ( option === 'fa fa-caret-left' ) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+            $('.main-contents').animate({'margin-left': '50px'}, 300); //right column
+        } else if ( option === 'fa fa-caret-right' ){
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+            $('.main-contents').animate({'margin-left': '250px'}, 300); //right column
+        } else {
+            return false;
+        }
+    });
+        function updateFullScreenViewIcon(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        var point = $('.jq-nav-collapse').children();
+        if (navCollapseFlg) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+        } else {
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+        }
+        return false;
+    }
+    updateFullScreenViewIcon();
+});
+//-->
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXBFN7');</script>
+<!-- End Google Tag Manager -->
+  <title>レコード一覧</title>
+  <style>
+tr.recordStyle_0 td {
+	}
+td.tdStyle_99-104831_0 {
+	white-space : nowrap;}
+td.tdStyle_99-101421_0 {
+	white-space : nowrap;}
+td.tdStyle_99-101423_0 {
+	white-space : nowrap;}
+td.tdStyle_99-104829_0 {
+	white-space : nowrap;}
+</style>
+  <script type="text/javascript" src="/js/lib/jquery.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/base64.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/calendarList.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/htdbCommon.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/htdbapplication.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/lib/date.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/lib/jquery.datePicker.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/lib/jquery.tablefix.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/date.js?6.3.1.0"></script>
+  <script type="text/javascript" src="/js/dateHandle.js?6.3.1.0"></script>
+  <link rel="stylesheet" type="text/css" href="/css/calendar.css?6.3.1.0">
+  <link rel="stylesheet" type="text/css" href="/css/datePicker.css?6.3.1.0">
+  <link href="/js/lib/jquery-ui.custom/jquery-ui.css?6.3.1.0" rel="stylesheet">
+  <script type="text/javascript">
+    <!--
+    
+        function hideObjects() {
+      $('#system_displayAct').hide(100);
+      $('.jq-popup-cartain').hide();
+    }
+
+        function apiCallModalAjax(aSettingId, event) {
+      $.ajax(
+        {
+          type: "POST",
+          url: "/ggutk9a/apicallajax/modal/dbgId/100026/dbSchemaId/100093/menuId/100508/settingId/" + aSettingId
+        }
+      ).done(function(data) {
+          $('.jq-popup-cartain').show();
+          $("#modal").html(data);
+          $("#system_displayAct").show();
+          fieldDispWidth = document.getElementById('system_displayAct').offsetWidth;
+          offsetLeft = document.getElementById('popupCategory').offsetLeft;
+          document.getElementById('system_displayAct').style.left = getEventX(event, offsetLeft - fieldDispWidth - 10, true) + 'px';
+          document.getElementById('system_displayAct').style.top = getEventY(event, 0, false) + 'px';
+        });
+    }
+
+        function apiCallAjax(aSettingId) {
+            var formData ={};
+
+            var searchFormatOperand = $("#searchFormatOperand").val();
+      if (searchFormatOperand != undefined) {
+        formData["searchFormatOperand"] = searchFormatOperand;
+      }
+
+            var searchFormatIds = [];
+      $("select[name='searchFormatId[]']").each(function () {
+        var searchFormatId = $(this).val();
+        if (searchFormatId != 0) {
+          searchFormatIds.push(searchFormatId);
+        }
+      });
+      if (searchFormatIds.length > 0) {
+        formData["searchFormatId"] = searchFormatIds;
+      }
+            formData["listFormatId"] = $("#listFormatId").val();
+
+            var settingParamIds = [];
+      var paramValues = [];
+      $("[id^=modal-param-value_]").each(function () {
+        var paramId = $(this).attr("id");
+        var settingParamIdPart = paramId.split("_");
+        settingParamIds.push(settingParamIdPart[1]);
+        paramValues.push($(this).val());
+      });
+      if (settingParamIds.length > 0) {
+        formData["settingParamId"] = settingParamIds;
+        formData["pramValue"] = paramValues;
+      }
+            $.ajax(
+        {
+          type: "POST",
+          url: "/ggutk9a/apicallajax/execute/dbgId/100026/dbSchemaId/100093/menuId/100508/settingId/" + aSettingId,
+          data: formData
+        }
+      ).done(function(data) {
+          $('.jq-popup-cartain').show();
+          $("#modal").html(data);
+          $("#system_displayAct").css({'display':'block', 'position':'absolute', 'left':'40%', 'top':'300px'});
+        });
+    }
+    function changeListFormat(){
+      formSubmit('/ggutk9a/recordList/listDisplay/dbgId/100026/dbSchemaId/100093/menuId/100508');
+    }
+    function changeSearchFormat(){
+      changeListFormat();
+    }
+    function changeLineFormat(){
+      changeListFormat();
+    }
+    function setDisplayCount(displayCount){
+      document.getElementById('displayCount').value = displayCount.value;
+      changeListFormat();
+    }
+    function checkAllBox(obj) {
+      var chk = document.selectListFormatForm.recordIdList;
+      if (chk.length > 0) {
+        var isCheck = $(obj).prop("checked");
+        for(var i = 0; i < chk.length; i++) {
+          chk[i].checked = isCheck;
+        }
+      }
+    }
+    function listActionSubmit(){
+          formSubmit('/ggutk9a/recordConduct/conductConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/start/');
+    }
+    function searchSubmit(){
+      serverWait();
+      formSubmit('/ggutk9a/recordList/search/dbgId/100026/dbSchemaId/100093/menuId/100508');
+    }
+    function formDisabled(){}
+    var searchFlag = false;
+    function handleEnter (input, event) {
+      var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+      if (keyCode == 13 && searchFlag) {
+        return false;
+      } else if (keyCode == 13 && !searchFlag) {
+        searchFlag = true;
+        return true;
+      }else{
+        return true;
+      }
+    }
+    function printView(){
+      document.selectListFormatForm.action = '/ggutk9a/printlist/listdisplay/dbgId/100026/dbSchemaId/100093/menuId/100508';
+      document.selectListFormatForm.target = "_blank";
+      document.selectListFormatForm.submit();
+      resetFormElement();
+    }
+    var isIconSubmit = false;
+    function approvalExe(url){
+      iconSubmit(url);
+    }
+    function iconSubmit(url) {
+      if (!isIconSubmit) {
+        isIconSubmit = true;
+        formSubmit(url);
+      }
+    }
+    function actionExecuteSubmit(url){
+      serverWait();
+      formSubmit(url);
+    }
+    function formSubmit(url){
+      document.selectListFormatForm.action = url;
+      document.selectListFormatForm.target = "_self";
+      document.selectListFormatForm.submit();
+    }
+    function filterFormSubmit(url){
+      document.getElementById('filterForm').action = url;
+      document.getElementById('filterForm').target = "_self";
+      document.getElementById('filterForm').submit();
+    }
+    function submitFotSumWindow (url) {
+      w = window.open('', "sumView", "width=1000,height=500,top=300,left=250,scrollbars=yes,resizable=yes");
+      document.selectListFormatForm.action = url;
+      document.selectListFormatForm.target = "sumView";
+      document.selectListFormatForm.submit();
+      resetFormElement();
+    }
+    function popupForSum(){
+      submitFotSumWindow ("/ggutk9a/recordSum/sumView/dbgId/100026/dbSchemaId/100093/menuId/100508");
+    }
+    function submitForSum(url){
+      submitFotSumWindow (url);
+      hideFieldActPanel();
+    }
+
+    function resetFormElement(){
+      document.selectListFormatForm.action = '/ggutk9a/recordList/search/dbgId/100026/dbSchemaId/100093/menuId/100508';
+      document.selectListFormatForm.target = "_self";
+    }
+    var DEFAULT_TR_CLASS_NAME_MAP = new Array();
+var LIST_ITEM_CHECKED_MAP = new Array();
+
+var LIST_ITEM_SUB_SCHEMA_MAP = new Array();
+LIST_ITEM_SUB_SCHEMA_MAP['99-104831'] = false;
+LIST_ITEM_SUB_SCHEMA_MAP['99-101421'] = false;
+LIST_ITEM_SUB_SCHEMA_MAP['99-101423'] = false;
+LIST_ITEM_SUB_SCHEMA_MAP['99-104829'] = false;
+
+
+var disp_field_click_flg  = false;
+var filter_menu_click_flg = false;
+
+
+function urlSubmit(url){
+	window.location.href = url;
+}
+
+function selectRecord(row, rowspan){
+	trClassChange(row, rowspan, 'is-select');
+}
+
+function trClassChange(row, rowspan, className){
+	if(document.getElementById('recordTr_' + row + '_0')){
+		var isDefaultClass = false;
+		var currentClass = document.getElementById('recordTr_' + row + '_0').className;
+		var mapKey = row + '-' +  0;
+		if(currentClass.search(className) >= 0){
+			isDefaultClass = true;
+			document.getElementById('recordTr_' + row + '_0').className = DEFAULT_TR_CLASS_NAME_MAP[mapKey];
+		}else{
+			var replaceClass = currentClass + ' ' + className;
+			if(!DEFAULT_TR_CLASS_NAME_MAP[mapKey]){
+				DEFAULT_TR_CLASS_NAME_MAP[mapKey] = currentClass;
+			}
+			document.getElementById('recordTr_' + row + '_0').className = replaceClass;
+		}
+		for(var i = 1; i < rowspan; i++){
+			var obj = document.getElementById('recordTr_' + row + '_' + i);
+			mapKey  = row + '-' +  i;
+			if(!DEFAULT_TR_CLASS_NAME_MAP[mapKey]){
+				DEFAULT_TR_CLASS_NAME_MAP[mapKey] = obj.className;
+			}
+			var replaceClass = obj.className + ' ' + className;
+			obj.className = isDefaultClass ? DEFAULT_TR_CLASS_NAME_MAP[mapKey] : replaceClass;
+		}
+	}
+}
+
+function dispRecordActPanel(row, event){
+
+	if(!document.getElementById('recordAct_' + row)){
+		return;
+	}
+
+	var src = document.getElementById('recordAct_' + row).innerHTML;
+	document.getElementById('recordAct_Panel').innerHTML     = src;
+
+	document.getElementById('recordAct').style.left = getEventX(event, 0, false) + 'px';
+	document.getElementById('recordAct').style.top = getEventY(event, 0, false) + 'px';
+	document.getElementById('recordAct').style.display = '';
+}
+
+function hideRecordActPanel(){
+	document.getElementById('recordAct').style.display = 'none';
+}
+
+function viewChangeFieldDispPanel(event){
+	flg = document.getElementById('fieldDisp').style.display == '';
+	document.getElementById('fieldDisp').style.display = flg ? 'none' : '';
+
+	if(!flg){
+		offsetLeft = document.getElementById('popupCategory').offsetLeft;
+		fieldDispWidth = document.getElementById('fieldDisp').offsetWidth;
+		document.getElementById('fieldDisp').style.left = getEventX(event, offsetLeft - fieldDispWidth - 10, true) + 'px';
+		document.getElementById('fieldDisp').style.top = getEventY(event, 0, false) + 'px';
+	}
+}
+
+function hideChangeFieldDispPanel(){
+	document.getElementById('fieldDisp').style.display = 'none';
+}
+
+function viewChangeField(itemId){
+
+	var obj    = document.getElementById('dispFieldId_' + itemId);
+	if(!obj){
+		return;
+	}
+	var check  = obj.checked;
+	var itemId = obj.value;
+	var isSubSchema = LIST_ITEM_SUB_SCHEMA_MAP[itemId];
+
+	var thidx  = 0;
+	var thObj  = document.getElementById('record_th_' + thidx + '_' + itemId);
+	while(thObj){
+		thObj.style.display = !check? 'none' : '';
+		thidx++;
+		thObj  = document.getElementById('record_th_' + thidx + '_' + itemId);
+	}
+
+	var tdidx1 = 0;
+	while(document.getElementById('record_td_' + tdidx1 + '_0_' + itemId)){
+		var tdidx2 = 0;
+		var tdObj  = document.getElementById('record_td_' + tdidx1 + '_' + tdidx2 + '_' + itemId);
+		while(tdObj){
+			tdObj.style.display = !check? 'none' : '';
+			tdidx2++;
+			tdObj  = document.getElementById('record_td_' + tdidx1 + '_' + tdidx2 + '_' + itemId);
+		}
+		tdidx1++;
+	}
+	if(isSubSchema){
+		var cols = document.getElementById('record_th_sub_schema').colSpan;
+		if(!check && cols - 1 > 0){
+			document.getElementById('record_th_sub_schema').colSpan = cols - 1;
+		}
+		if(check && document.getElementById('record_th_sub_schema').style.display == ''){
+			document.getElementById('record_th_sub_schema').colSpan = cols + 1;
+		}
+		if(!check && cols - 1 == 0){
+			document.getElementById('record_th_sub_schema').style.display = 'none';
+		}
+		if(check && cols + 1 == 2){
+			document.getElementById('record_th_sub_schema').style.display = '';
+		}
+	}
+}
+
+function _checkDispField(itemId){
+
+	var isCheck = document.getElementById('dispFieldId_' + itemId).checked;
+	document.getElementById('dispFieldId_' + itemId).checked = !isCheck;
+	checkDispField(itemId);
+}
+
+function checkDispField(itemId){
+
+	var obj    = document.getElementById('dispFieldId_' + itemId);
+	if(!obj){
+		return;
+	}
+	var check  = obj.checked;
+	if(!check){
+		document.getElementById('dispFieldId_0').checked = check;
+	}
+	if(check){
+		var isAll   = true;
+		var objects = document.getElementsByName('dispFieldId[]');
+		for(var i = 0; i < objects.length; i++){
+			if(objects[i].value == 0){
+				continue;
+			}
+			if(!objects[i].checked){
+				isAll = false;
+				break;
+			}
+		}
+		document.getElementById('dispFieldId_0').checked = isAll;
+	}
+}
+
+function _viewChangeAllField(){
+
+	var checkedFlg = document.getElementById('dispFieldId_0').checked;
+	document.getElementById('dispFieldId_0').checked = !checkedFlg;
+	viewChangeAllField();
+}
+
+function viewChangeAllField(){
+
+	var checked    = document.getElementById('dispFieldId_0').checked;
+	var objects    = document.getElementsByName('dispFieldId[]');
+	for(var i = 0; i < objects.length; i++){
+		if(objects[i].value == 0){
+			continue;
+		}
+		if(objects[i].checked != checked){
+			objects[i].checked = checked;
+		}
+	}
+}
+
+function hideFieldByFieldActPanel(){
+
+	if(CURRENT_SORT_ID_FOR_DISP != 0){
+		document.getElementById('dispFieldId_' + CURRENT_SORT_ID_FOR_DISP).checked = false;
+		checkDispField(CURRENT_SORT_ID_FOR_DISP);
+		executeSaveDisp();
+	}
+	hideFieldActPanel();
+}
+
+function initViewChangeAllField(force){
+
+	var isAll   = true;
+	var objects = document.getElementsByName('dispFieldId[]');
+	if(!objects){
+		return;
+	}
+	for(var i = 0; i < objects.length; i++){
+		var val = objects[i].value;
+		var chk = objects[i].checked;
+
+		if(val == 0){
+			continue;
+		}
+
+		var exist = val in LIST_ITEM_CHECKED_MAP;
+		var isExe = exist ? LIST_ITEM_CHECKED_MAP[val] != chk : false;
+		if(!exist){
+			LIST_ITEM_CHECKED_MAP[val] = chk;
+		}
+		if(!force && !chk){
+			viewChangeField(val);
+			isAll = false;
+		}else if(force && isExe){
+			viewChangeField(val);
+			LIST_ITEM_CHECKED_MAP[val] = chk;
+		}
+	}
+	if(!force){
+		document.getElementById('dispFieldId_0').checked = isAll;
+	}
+
+  if (document.getElementById('dispFieldId_0').checked) {
+    $('#relation-active').show();
+    $('#relation-inactive').hide();
+  } else {
+    $('#relation-active').hide();
+    $('#relation-inactive').show();
+  }
+}
+
+function executeSaveDisp() {
+
+	serverWait();
+    $.ajax({
+       type:    "POST",
+       url:     "/ggutk9a/recordlistajax/savedispfield/dbgId/100026/dbSchemaId/100093/menuId/100508",
+       data:    $('#selectListFormatForm').serialize(),
+       async:   true,
+       success: function(res){ decidDispField(res); },
+       error:   function(res){ disp_complete(res); },
+       complete:function(res){ disp_complete(res); }
+    });
+}
+
+function executeRenderPanel(isListItem, fieldId, sortId, event) {
+
+	if(BEFORE_DISPLAY_FILTER_ITEM_FLAG != isListItem || BEFORE_DISPLAY_FILTER_FIELD_ID != fieldId){
+		document.getElementById('filterInclude').innerHTML = '';
+
+        $.ajax({
+           type:    "POST",
+           url:     "/ggutk9a/recordlistajax/filterdisp/dbgId/100026/dbSchemaId/100093/menuId/100508/filterFieldId/" + fieldId + "/filterLinkFieldId/" + (isListItem ? 99 : 80),
+           async:   true,
+           success: function(res){ changeDispFieldActPanel(res); },
+           error:   function(res){ complete(res); },
+           complete:function(res){ complete(res); }
+        });
+	}
+
+
+
+
+	dispFieldActPanel(event, isListItem, fieldId, sortId);
+}
+
+function decidDispField(request){
+
+	initViewChangeAllField(true);
+}
+
+function complete(request) {
+	var waitServerMessage = document.getElementById('waitServerMessage');
+	waitServerMessage.style.display = 'none';
+	var cartain = $('.jq-cartain');
+	if (cartain) {
+		cartain.hide();
+	}
+}
+
+function disp_complete(request) {
+	var waitServerMessage = document.getElementById('waitServerMessage');
+	waitServerMessage.style.display = 'none';
+	var cartain = $('.jq-cartain');
+	if (cartain) {
+		cartain.hide();
+	}
+	hideChangeFieldDispPanel();
+}
+
+function changeDispFieldActButton(fieldId, disable){
+	if (disable) {
+		return;
+	}
+
+	var obj = document.getElementById('filterButtn_' + fieldId);
+	if(obj){
+		var disp = obj.style.display == '';
+		obj.style.display = disp ? 'none' : '';
+	}
+}
+
+function changeDispFieldActPanel(res){
+
+	document.getElementById('filterInclude').innerHTML = res;
+	checkSelection();
+	checkFilterType();
+	document.getElementById('fieldActPanel').style.display = '';
+	if(document.getElementById('startValue') && document.getElementById('startValue').disabled == false){
+		document.getElementById('startValue').focus();
+	}else if(document.getElementById('textCurrentValue') && document.getElementById('textCurrentValue').disabled == false){
+		document.getElementById('textCurrentValue').focus();
+	}
+	// Init for calendar
+	DatePickerWrapper.init($('[id*=ValueDate],select[id*=day_],[id=calPlaceHolder]').not('.noCalendar'));
+	// Remove "曜日" if this filter is Time type.
+	if ($("#dataType").val() == 7) {
+		$("#currentTargetLinkField option[value='25']").remove();
+	}
+	// Resize width of FieldActPanel for don't wrap when this has left position so hight
+	ResizeFieldActPanel();
+}
+
+var BEFORE_DISPLAY_FILTER_ITEM_FLAG = 0;
+var BEFORE_DISPLAY_FILTER_FIELD_ID  = 0;
+var CURRENT_SORT_ID_FOR_DISP        = 0;
+
+function dispFieldActPanel(event, isListItem, fieldId, sortId){
+	var obj = document.getElementById('fieldActPanel');
+	if(obj){
+		viewObjectByEventWithLimit(event, 'fieldActPanel', 100, 30, false);
+
+		if(BEFORE_DISPLAY_FILTER_ITEM_FLAG == isListItem && BEFORE_DISPLAY_FILTER_FIELD_ID == fieldId){
+			var disp = obj.style.display == '';
+			obj.style.display = disp ? 'none' : '';
+		}else{
+			BEFORE_DISPLAY_FILTER_FIELD_ID  = fieldId;
+			BEFORE_DISPLAY_FILTER_ITEM_FLAG = isListItem;
+			CURRENT_SORT_ID_FOR_DISP        = sortId;
+		}
+	}
+}
+
+function hideFieldActPanel(){
+	document.getElementById('fieldActPanel').style.display = 'none';
+}
+
+function bodyClick(){
+
+	hideRecordActPanel();
+}
+
+function dispSearchFormatId(event){
+  var obj = document.getElementById('searchFormatIdDiv');
+  if(obj){
+    var disp  = obj.style.display == '';
+    obj.style.display = disp ? 'none' : '';
+    if (!disp) {
+      viewObjectByEventWithLimit(event, 'searchFormatIdDiv', 150, 10);
+    }
+  }
+}
+
+function _checkAllSelection(){
+
+	var isChecked = document.getElementById('allSelectFlag').checked;
+	document.getElementById('allSelectFlag').checked = !isChecked;
+	checkAllSelection();
+}
+
+function checkAllSelection(){
+
+	var allObj = document.getElementById('allSelectFlag');
+	if(!allObj){
+		return;
+	}
+
+	var checkList = document.getElementsByName('selectionIdList[]');
+	for(var i = 0; i < checkList.length; i++){
+		checkList[i].checked = allObj.checked;
+	}
+}
+
+function _checkSelection(id){
+
+	var isChecked = document.getElementById(id).checked;
+	document.getElementById(id).checked = !isChecked;
+	checkSelection();
+}
+
+function checkSelection(){
+
+	var allObj = document.getElementById('allSelectFlag');
+	if(!allObj){
+		return;
+	}
+
+	var allFlg    = true;
+	var checkList = document.getElementsByName('selectionIdList[]');
+	for(var i = 0; i < checkList.length; i++){
+		if(!checkList[i].checked){
+			allFlg = false;
+			break;
+		}
+	}
+	allObj.checked = allFlg;
+}
+
+function checkFilterType(){
+
+	var radioList = document.getElementsByName('filterType');
+	if(radioList.length > 1){
+		for(var i = 0; i < radioList.length; i++){
+			if(radioList[i].checked && radioList[i].value == 0){
+				disabledForm('betweenSearchDiv', true);
+				disabledForm('startValue', true);
+				disabledForm('endValue', true);
+				disabledForm('normalSearchDiv', false);
+				disabledForm('currentTargetLinkField', false);
+				disabledForm('textCurrentValue', false);
+				disabledForm('currentOpeland', false);
+			}
+			if(radioList[i].checked && radioList[i].value == 1){
+				disabledForm('betweenSearchDiv', false);
+				disabledForm('startValue', false);
+				disabledForm('endValue', false);
+				disabledForm('normalSearchDiv', true);
+				disabledForm('currentTargetLinkField', true);
+				disabledForm('textCurrentValue', true);
+				disabledForm('currentOpeland', true);
+				changeTargetLinkField();
+			}
+			if(radioList[i].checked && radioList[i].value == 2){
+				disabledForm('betweenSearchDiv', true);
+				disabledForm('startValue', true);
+				disabledForm('endValue', true);
+				disabledForm('normalSearchDiv', false);
+				disabledForm('currentTargetLinkField', false);
+				disabledForm('textCurrentValue', false);
+				disabledForm('currentOpeland', false);
+			}
+		}
+	}else{
+		disabledForm('betweenSearchDiv', false);
+		disabledForm('startValue', false);
+		disabledForm('endValue', false);
+		disabledForm('normalSearchDiv', true);
+		disabledForm('currentTargetLinkField', true);
+		disabledForm('textCurrentValue', true);
+		disabledForm('currentOpeland', true);
+		changeTargetLinkField();
+	}
+	// Resize width of FieldActPanel for don't wrap when this has left position so hight
+	ResizeFieldActPanel();
+}
+
+function changeTargetLinkField(){
+
+	var input = document.getElementById('currentTargetLinkField');
+	if(input){
+		var textFlg = input.value == '0';
+		var weekFlg = input.value == '25';
+		disabledForm('textCurrentValue', textFlg);
+		disabledForm('weekDaySelection', weekFlg);
+	}
+	ResizeFieldActPanel();
+}
+
+function disabledForm(id, isDisp){
+
+	if(document.getElementById(id)){
+		document.getElementById(id).style.display = isDisp ? '' : 'none';
+		document.getElementById(id).disabled      = !isDisp;
+	}
+}
+
+function url_dispConfirmPanel(event){
+	offsetLeft = document.getElementById('popupCategory').offsetLeft;
+	displayActWidth = 320;
+	y_offset = getEventY(event, 0, false);
+	viewObjectByEvent(event, 'url_displayAct', offsetLeft - displayActWidth - 10, y_offset, true);
+}
+
+function url_dispConfirmPanelSide(event){
+	viewObjectByEvent(event, 'url_displayAct', -160, 10, false);
+}
+
+// 日時項目のフィルタ改修 Filter refurbishment of date or time item
+function getDateOrTimeValue() {
+	getDateValue();
+	getTimeValue();
+}
+
+// 日時項目のフィルタ改修 Filter refurbishment of date item
+function getDateValue() {
+  // 範囲指定 Range specification
+  if ($("#filterType0").prop("checked")) {
+  	var strStartValue = "";
+    var strEndValue = "";
+    // Date type and calc_time type
+    if ($("#dataType").val() == 6 || $("#dataType").val() == 13) {
+      // Unavailable value of from and to
+      var unavailableFromMonth  = 1;
+      var unavailableFromDate   = 1;
+      var unavailableFromHour   = 0;
+      var unavailableFromMinute = 0;
+      var unavailableFromSecond = 0;
+      var unavailableToMonth    = 12;
+      var unavailableToDate     = 31;
+      var unavailableToHour     = 23;
+      var unavailableToMinute   = 59;
+      var unavailableToSecond   = 59;
+      // Array store all enable fields of fromDateTime
+	  	var arrEnableFromDateTime = getArrEnableOrDisableFromDateTime(1, "date");
+	  	// Array store all enable fields of toDateTime
+	  	var arrEnableToDateTime = getArrEnableOrDisableToDateTime(1, "date");
+      // ----From date----
+      // Return all fromDateTime fields to empty value if all of enable fields fromDateTime is empty
+      var isAllEmptyEnableFromDateTime = true;
+      for (var i = 0; i < arrEnableFromDateTime.length; i++) {
+        if ($("#" + arrEnableFromDateTime[i]).val() != "-1") {
+          isAllEmptyEnableFromDateTime = false;
+          break;
+        }
+      }
+      if (!isAllEmptyEnableFromDateTime) {
+	      if ($("#fromDateValueYear").length > 0) {
+	        var fromDateValueYear = $("#fromDateValueYear").val();
+	        if (fromDateValueYear == "-1") {
+	          fromDateValueYear = "";
+	        }
+	      }
+				var fromDateValueMonth  = getVal("fromDateValueMonth", unavailableFromMonth);
+				var fromDateValueDate   = getVal("fromDateValueDate", unavailableFromDate);
+				var fromDateValueHour   = getVal("fromDateValueHour", unavailableFromHour);
+				var fromDateValueMinute = getVal("fromDateValueMinute", unavailableFromMinute);
+				var fromDateValueSecond = getVal("fromDateValueSecond", unavailableFromSecond);
+				var delimiterMonth      = "-";
+				var delimiterDate       = "-";
+				var delimiterMinute     = ":";
+				var delimiterSecond     = ":";
+	      strStartValue = fromDateValueYear + delimiterMonth + fromDateValueMonth + delimiterDate + fromDateValueDate + " " + 
+	                          fromDateValueHour + delimiterMinute + fromDateValueMinute + delimiterSecond + fromDateValueSecond;
+      }
+      $("#startValue").val($.trim(strStartValue));
+      // ----To date----
+      // Return all toDateTime fields to empty value if all of enable fields toDateTime is empty
+      var isAllEmptyEnableToDateTime = true;
+      for (var i = 0; i < arrEnableToDateTime.length; i++) {
+        if ($("#" + arrEnableToDateTime[i]).val() != "-1") {
+          isAllEmptyEnableToDateTime = false;
+          break;
+        }
+      }
+      if (!isAllEmptyEnableToDateTime) {
+      	if ($("#toDateValueYear").length > 0) {
+        	var toDateValueYear = $("#toDateValueYear").val();
+        	if (toDateValueYear == "-1") {
+	          toDateValueYear = "";
+	        }
+	      }
+	      var toDateValueMonth  = getVal("toDateValueMonth", unavailableToMonth);
+	      var toDateValueDate   = getVal("toDateValueDate", unavailableToDate);
+				if (toDateValueMonth != "--" && $("#toDateValueDate").length <= 0) {
+					toDateValueDate = totalDayOfMonth(toDateValueYear, toDateValueMonth);
+				}
+				var toDateValueHour   = getVal("toDateValueHour", unavailableToHour);
+				var toDateValueMinute = getVal("toDateValueMinute", unavailableToMinute);
+				var toDateValueSecond = getVal("toDateValueSecond", unavailableToSecond);
+				var delimiterMonth    = "-";
+				var delimiterDate     = "-";
+				var delimiterMinute   = ":";
+				var delimiterSecond   = ":";
+	      strEndValue = toDateValueYear + delimiterMonth + toDateValueMonth + delimiterDate + toDateValueDate + " " + 
+	                          toDateValueHour + delimiterMinute + toDateValueMinute + delimiterSecond + toDateValueSecond;
+      }
+      $("#endValue").val($.trim(strEndValue));
+    }
+  }
+  // 通常検索 Normal search
+  else if ($("#filterType1").prop("checked")) {
+    if ($("#textCurrentValue").css("display") != "none") {
+      // Date type and calc_time type
+      if ($("#dataType").val() == 6 || $("#dataType").val() == 13) {
+        // Unavailable value of current value date
+        var unavailableFromMonth  = 1;
+        var unavailableFromDate   = 1;
+        var unavailableFromHour   = 0;
+        var unavailableFromMinute = 0;
+        var unavailableFromSecond = 0;
+        // From date
+        if ($("#normalFromDateValueYear").length > 0) {
+          var normalFromDateValueYear = $("#normalFromDateValueYear").val();
+          if (normalFromDateValueYear == "-1") {
+            normalFromDateValueYear = "";
+          }
+        }
+				var normalFromDateValueMonth  = getVal("normalFromDateValueMonth", unavailableFromMonth);
+				var normalFromDateValueDate   = getVal("normalFromDateValueDate", unavailableFromDate);
+				var normalFromDateValueHour   = getVal("normalFromDateValueHour", unavailableFromHour);
+				var normalFromDateValueMinute = getVal("normalFromDateValueMinute", unavailableFromMinute);
+				var normalFromDateValueSecond = getVal("normalFromDateValueSecond", unavailableFromSecond);
+				var delimiterMonth            = "-";
+				var delimiterDate             = "-";
+				var delimiterMinute           = ":";
+				var delimiterSecond           = ":";
+        var strCurrentValue = normalFromDateValueYear + delimiterMonth + normalFromDateValueMonth + delimiterDate + normalFromDateValueDate + " " + 
+                            normalFromDateValueHour + delimiterMinute + normalFromDateValueMinute + delimiterSecond + normalFromDateValueSecond;
+        $("#currentValue").val($.trim(strCurrentValue));
+      }
+    } else if ($("#weekDaySelection").css("display") != "none") {
+      $("#currentValue").val($("#weekDaySelection").val());
+    }
+  }
+}
+
+// 日時項目のフィルタ改修 Filter refurbishment of time item
+function getTimeValue() {
+	// 範囲指定 Range specification
+  if ($("#filterType0").prop("checked")) {
+  	var strStartValue = "";
+    var strEndValue = "";
+    // Time type
+    if ($("#dataType").val() == 7) {
+      // Unavailable value of from and to
+      var unavailableFromHour   = 0;
+      var unavailableFromMinute = 0;
+      var unavailableFromSecond = 0;
+      var unavailableToHour     = 23;
+      var unavailableToMinute   = 59;
+      var unavailableToSecond   = 59;
+      // Array store all enable fields of fromTime
+	  	var arrEnableFromDateTime = getArrEnableOrDisableFromDateTime(1, "time");
+	  	// Array store all enable fields of toTime
+	  	var arrEnableToDateTime = getArrEnableOrDisableToDateTime(1, "time");
+	  	// From time
+	  	// Return all fromTime fields to empty value if all of enable fields fromTime is empty
+      var isAllEmptyEnableFromDateTime = true;
+      for (var i = 0; i < arrEnableFromDateTime.length; i++) {
+        if ($("#" + arrEnableFromDateTime[i]).val() != "-1") {
+          isAllEmptyEnableFromDateTime = false;
+          break;
+        }
+      }
+      if (!isAllEmptyEnableFromDateTime) {
+				var fromDateValueHour   = getVal("fromDateValueHour", unavailableFromHour);
+				var fromDateValueMinute = getVal("fromDateValueMinute", unavailableFromMinute);
+				var fromDateValueSecond = getVal("fromDateValueSecond", unavailableFromSecond);
+				var delimiterMinute     = ":";
+				var delimiterSecond     = ":";
+	      strStartValue = fromDateValueHour + delimiterMinute + fromDateValueMinute + delimiterSecond + fromDateValueSecond;
+      }
+      $("#startValue").val($.trim(strStartValue));
+      // To time
+      // Return all toTime fields to empty value if all of enable fields toTime is empty
+      var isAllEmptyEnableToDateTime = true;
+      for (var i = 0; i < arrEnableToDateTime.length; i++) {
+        if ($("#" + arrEnableToDateTime[i]).val() != "-1") {
+          isAllEmptyEnableToDateTime = false;
+          break;
+        }
+      }
+      if (!isAllEmptyEnableToDateTime) {
+				var toDateValueHour   = getVal("toDateValueHour", unavailableToHour);
+				var toDateValueMinute = getVal("toDateValueMinute", unavailableToMinute);
+				var toDateValueSecond = getVal("toDateValueSecond", unavailableToSecond);
+				var delimiterMinute   = ":";
+				var delimiterSecond   = ":";
+	      strEndValue = toDateValueHour + delimiterMinute + toDateValueMinute + delimiterSecond + toDateValueSecond;
+      }
+      $("#endValue").val($.trim(strEndValue));
+    }
+  }
+  // 通常検索 Normal search
+  else if ($("#filterType1").prop("checked")) {
+  	if ($("#textCurrentValue").css("display") != "none") {
+  		// Time type
+	    if ($("#dataType").val() == 7) {
+	      // Unavailable value of current value time
+	      var unavailableFromHour   = 0;
+	      var unavailableFromMinute = 0;
+	      var unavailableFromSecond = 0;
+	      // From time
+				var normalFromDateValueHour   = getVal("normalFromDateValueHour", unavailableFromHour);
+				var normalFromDateValueMinute = getVal("normalFromDateValueMinute", unavailableFromMinute);
+				var normalFromDateValueSecond = getVal("normalFromDateValueSecond", unavailableFromSecond);
+				var delimiterMinute           = ":";
+				var delimiterSecond           = ":";
+	      var strCurrentValue = normalFromDateValueHour + delimiterMinute + normalFromDateValueMinute + delimiterSecond + normalFromDateValueSecond;
+	      $("#currentValue").val($.trim(strCurrentValue));
+	    }
+  	} else if ($("#weekDaySelection").css("display") != "none") {
+      $("#currentValue").val($("#weekDaySelection").val());
+    }
+  }
+}
+
+function getVal(elementId, unAvailableValue) {
+  var value = "--";
+  if ($("#" + elementId).length > 0) {
+    if ($("#" + elementId).val() != "-1") {
+      value = $("#" + elementId).val();
+    }
+  } else {
+    value = unAvailableValue;
+  }
+  if (value !== "" && value < 10) {
+    value = "0" + value;
+  }
+  return value;
+}
+
+// Get total days depend on month and year
+function totalDayOfMonth(year, month) {
+	return (new Date(year, month, 0)).getDate();
+}
+
+// Resize width of FieldActPanel for don't wrap when this has left position so hight
+function ResizeFieldActPanel() {
+	if ($("#filterType0").prop("checked")) {
+		if ($("#betweenSearchDiv").length > 0) {
+			var maxWidth = 112;
+			$("#betweenSearchDiv ul li").each(function() {
+				maxWidth = maxWidth + $(this).outerWidth() + 7;
+			});
+			$("#fieldActPanel").outerWidth(maxWidth);
+			maxWidth = $("#panelFilter").outerWidth();
+			if ($("#chart").outerWidth() + 20 > maxWidth) { // この項目を内訳にして簡易集計を行う
+				maxWidth = $("#chart").outerWidth() + 20;
+			}
+			if ($("#chart").outerWidth() > 0 || maxWidth > 20) {
+				$("#fieldActPanel").outerWidth(maxWidth + 22);
+			}
+		}
+	} else if ($("#filterType1").prop("checked")) {
+		if ($("#normalSearchDiv").length > 0) {
+			var maxWidth = 0;
+			$("#normalSearchDiv").children().each(function() {
+				maxWidth = maxWidth + $(this).outerWidth() + 7;
+			});
+			$("#fieldActPanel").outerWidth(maxWidth);
+			maxWidth = $("#panelFilter").outerWidth();
+			if ($("#chart").outerWidth() + 20 > maxWidth) { // この項目を内訳にして簡易集計を行う
+				maxWidth = $("#chart").outerWidth() + 20;
+			}
+			if ($("#chart").outerWidth() > 0 || maxWidth > 20) {
+				$("#fieldActPanel").outerWidth(maxWidth + 22);
+			}
+		}
+	} else {
+		if ($("#panelFilter").length > 0) {
+			var maxWidth = 20;
+			maxWidth = $("#panelFilter").outerWidth() + maxWidth;
+			if ($("#chart").outerWidth() + 40 > maxWidth) { // この項目を内訳にして簡易集計を行う
+				maxWidth = $("#chart").outerWidth() + 40;
+			}
+			if ($("#chart").outerWidth() > 0 || maxWidth > 40) {
+				$("#fieldActPanel").outerWidth(maxWidth);
+			}
+		}
+	}
+	$("#fieldActPanel").outerWidth($("#fieldActPanel").outerWidth() + 2);
+}
+
+/**
+ * Get array contain fields is enabled and disabled of fromDateTime
+ * @param  {[int]} enable [parameter enable is 1 or 0]
+ * @param  {[string]} dateTimeType [parameter enable is "date" or "time"]
+ * @return {[array]}      [array contain fields is enabled and disabled of fromDateTime]
+ */
+function getArrEnableOrDisableFromDateTime(enable, dateTimeType) {
+	var arrFrom = [];
+	var arrFromDateTime = [];
+	if (dateTimeType == "date") {
+		var arrFromDateTime = ["fromDateValueYear", "fromDateValueMonth", "fromDateValueDate", "fromDateValueHour", "fromDateValueMinute", "fromDateValueSecond"];
+	} else if (dateTimeType == "time") {
+		var arrFromDateTime = ["fromDateValueHour", "fromDateValueMinute", "fromDateValueSecond"];
+	}
+	if (arrFromDateTime.length > 0) {
+		var index = 0;
+		for (var i = 0; i < arrFromDateTime.length; i++) {
+			if (enable == 1) {
+				if ($("#" + arrFromDateTime[i]).length > 0) {
+					arrFrom[index] = arrFromDateTime[i];
+					index++;
+				}
+			} else if (enable == 0) {
+				if ($("#" + arrFromDateTime[i]).length <= 0) {
+					arrFrom[index] = arrFromDateTime[i];
+					index++;
+				}
+			}
+		}
+	}
+	return arrFrom;
+}
+
+/**
+ * Get array contain fields is enabled and disabled of toDateTime
+ * @param  {[int]} enable [parameter enable is 1 or 0]
+ * @param  {[string]} dateTimeType [parameter enable is "date" or "time"]
+ * @return {[array]}      [array contain fields is enabled and disabled of toDateTime]
+ */
+function getArrEnableOrDisableToDateTime(enable, dateTimeType) {
+	var arrTo = [];
+	var arrToDateTime = [];
+	if (dateTimeType == "date") {
+		var arrToDateTime = ["toDateValueYear", "toDateValueMonth", "toDateValueDate", "toDateValueHour", "toDateValueMinute", "toDateValueSecond"];
+	} else if (dateTimeType == "time") {
+		var arrToDateTime = ["toDateValueHour", "toDateValueMinute", "toDateValueSecond"];
+	}
+	if (arrToDateTime.length > 0) {
+		var index = 0;
+		for (var i = 0; i < arrToDateTime.length; i++) {
+			if (enable == 1) {
+				if ($("#" + arrToDateTime[i]).length > 0) {
+					arrTo[index] = arrToDateTime[i];
+					index++;
+				}
+			} else if (enable == 0) {
+				if ($("#" + arrToDateTime[i]).length <= 0) {
+					arrTo[index] = arrToDateTime[i];
+					index++;
+				}
+			}
+		}
+	}
+	return arrTo;
+}    
+
+var CSV_FILE_NAME         = '日報管理DB：自分の日報20161203115532';
+var CSV_FLAG_PROCESS_STOP = false;
+;
+var CSV_FILE_DOWNLOAD_URL = '/ggutk9a/file/viewexport/exportType/recordlist';
+
+function csv_dispConfirmPanel(event){
+    offsetLeft = document.getElementById('popupCategory').offsetLeft;
+    downloadActWidth = 350;
+    y_offset = getEventY(event, 0, false);
+    viewObjectByEvent(event, 'csv_downloadAct', offsetLeft - downloadActWidth - 10, y_offset, true);
+}
+function csv_dispProgressPanel(event, isView){
+
+    Htdb_hideObject('csv_downloadAct');
+    var obj = document.getElementById('csv_progress_back');
+    var obj2 = document.getElementById('csv_progress_body');
+    if(!obj || !obj2){
+        return;
+    }
+    if(isView) {
+        var h_padding = top.document.getElementById('verticalFrame').rows == "53,*" ? 53 : 0;
+        var w_padding = 0;
+        if(top.document.getElementById('sideFrame')){
+            w_padding = top.document.getElementById('sideFrame').cols == "0,*" ? 0 : 200;
+        }
+        var h = document.body.clientHeight > (screen.height - h_padding) ? document.body.clientHeight : (screen.height - h_padding);
+        var w = document.body.clientWidth > (screen.width - w_padding) ? document.body.clientWidth : (screen.width - w_padding);
+
+        obj.style.height  = h + 'px';
+        obj.style.width   = w + 'px';
+        obj.style.display = '';
+        obj2.style.display = '';
+
+        CSV_FLAG_PROCESS_STOP = false;
+
+    } else {
+        obj.style.height  = '0px';
+        obj.style.width   = '0px';
+        obj.style.display = 'none';
+        obj2.style.display = 'none';
+        CSV_FLAG_PROCESS_STOP = true;
+    }
+
+    var obj3 = document.getElementById('csv_progress_text');
+    if(obj3) {
+        obj3.style.display = '';
+    }
+    var obj4 = document.getElementById('csv_complete_text');
+    if(obj4) {
+        obj4.style.display = 'none';
+    }
+    var objlnk = document.getElementById('csv_complete_link');
+    if(objlnk) {
+        objlnk.innerHTML = '';
+    }
+    var objc = document.getElementById('csv_progress_count');
+    if(objc) {
+        objc.innerHTML = 0;
+    }
+
+    if(CSV_FLAG_PROCESS_STOP == false) {
+        csv_download_offset = 0;
+        csv_create();
+    }
+}
+
+var csv_download_offset = 0;
+function csv_create() {
+
+
+    var hide = 0;
+    var objlnk = document.getElementById('csv_downloadHideField');
+    if(objlnk && objlnk.checked) {
+        hide= 1;
+    }
+
+    var objbtn1 = document.getElementById('csv_progress_btn');
+    if(objbtn1) {
+        objbtn1.style.display = '';
+    }
+    var objbtn2 = document.getElementById('csv_complete_btn');
+    if(objbtn2) {
+        objbtn2.style.display = 'none';
+    }
+    var list_f  = document.getElementById('listFormatId');
+    var list_param = '';
+    if(list_f) {
+        list_param = '/listFormatId/' + list_f.value;
+    }
+
+	$.ajax({
+	   type:    "POST",
+	   url:     "/ggutk9a/recordlistajax/csvprogress/dbgId/100026/dbSchemaId/100093/menuId/100508/printOffset/" + csv_download_offset + "/hideField/" + hide + list_param,
+	   async:   true,
+	   success: function(res){ insertTex(res); },
+	   error:   insertNul,
+       complete:insertNul
+	});
+}
+
+function insertTex(res) {
+
+    if(CSV_FLAG_PROCESS_STOP) {
+        return;
+    }
+
+    if(res == 'null') {
+        CSV_FLAG_PROCESS_STOP = true;
+
+        var obj1 = document.getElementById('csv_progress_text');
+        if(obj1) {
+            obj1.style.display = 'none';
+        }
+        var obj2 = document.getElementById('csv_complete_text');
+        if(obj2) {
+            obj2.style.display = 'none';
+        }
+        var obj3 = document.getElementById('csv_nodata_text');
+        if(obj3) {
+            obj3.style.display = '';
+        }
+
+        return;
+    }
+
+    var obj = document.getElementById('csv_progress_count');
+    var progress = res - 0;
+
+    if(isNaN(progress)) {
+        var obj1 = document.getElementById('csv_progress_text');
+        if(obj1) {
+            obj1.style.display = 'none';
+        }
+        var obj2 = document.getElementById('csv_complete_text');
+        if(obj2) {
+            obj2.style.display = '';
+        }
+        var obj3 = document.getElementById('csv_nodata_text');
+        if(obj3) {
+            obj3.style.display = 'none';
+        }
+        CSV_FLAG_PROCESS_STOP = true;
+        csv_disp_downloadLink(res);
+    } else if(progress > 100) {
+        var obj1 = document.getElementById('csv_progress_text');
+        if(obj1) {
+            obj1.style.display = 'none';
+        }
+        var obj2 = document.getElementById('csv_complete_text');
+        if(obj2) {
+            obj2.style.display = '';
+        }
+        var obj3 = document.getElementById('csv_nodata_text');
+        if(obj3) {
+            obj3.style.display = 'none';
+        }
+        CSV_FLAG_PROCESS_STOP = true;
+        csv_disp_downloadLink(res);
+    } else {
+        if(obj) {
+            obj.innerHTML = progress;
+        }
+        csv_download_offset++;
+        csv_create();
+    }
+}
+function insertNul(request) {}
+
+function csv_disp_downloadLink(text) {
+
+    var fileIdList = text.split("-");
+    var blank = '';
+    var a_tags = '';
+    for(var i = 0; i < fileIdList.length; i++) {
+                                var url = CSV_FILE_DOWNLOAD_URL + '/rname/' + fileIdList[i] + '/fname/' + base64.encode( encodeURI(CSV_FILE_NAME + '_' + i + '.csv',1 ));
+        a_tags = a_tags +  '<div style="margin: 3px;"><a ' + blank + ' href="' + url + '">' + CSV_FILE_NAME + '_' + i + '.csv' + '</a></div>'
+    }
+    var objlnk = document.getElementById('csv_complete_link');
+    if(objlnk) {
+        objlnk.innerHTML = a_tags;
+    }
+    var objbtn1 = document.getElementById('csv_progress_btn');
+    if(objbtn1) {
+        objbtn1.style.display = 'none';
+    }
+    var objbtn2 = document.getElementById('csv_complete_btn');
+    if(objbtn2) {
+        objbtn2.style.display = '';
+    }
+}
+
+    function init() {
+              var fullSearch = document.getElementById('fullText_searchString');
+        if(fullSearch != null && typeof fullSearch != 'undefined') {
+          fullSearch.focus();
+        }
+                  initViewChangeAllField(false);
+            document.body.onclick = bodyClick;
+      lazyLoadRecordImage();
+      fixTableHeader();
+    }
+    // ----Fix table header----
+    function fixTableHeader() {
+                                                              }
+
+    $(function () {
+      var clickPreventStatus = [];
+      $('.jq-record-transition').on('click', function () {
+        var recordId = $(this).data('recordid');
+        if (clickPreventStatus[recordId]) {
+          return false;
+        }
+        clickPreventStatus[recordId] = true;
+        setTimeout(function(recordId) {
+          clickPreventStatus[recordId] = false;
+        }, 1000, recordId);
+      });
+
+    });
+  // -->
+  </script>
+        </head>
+<body class="body-list-record" onload="init()" marginwidth="0" marginheight="0">
+    <main class="contents" role="main">
+    <div class="lo-body">
+      <div class="lo-inner">
+                <form name="selectListFormatForm" id="selectListFormatForm" action="/ggutk9a/recordList/search/dbgId/100026/dbSchemaId/100093/menuId/100508" method="POST">
+          <input type="hidden" name="listId" id="listId" value="100089">
+                                    <input type="hidden" name="searchId" id="searchId" value="100795">
+                                <input type="hidden" name="listCount" id="listCount" value="20">
+          <input type="hidden" name="searchText" id="searchText" value="">
+          <input type="hidden" name="searchToken" id="searchToken" value="">
+                              <section class="fw-pankuzu fw-mgb7">
+  <div class="lo-body">
+    <div class="lo-inner fw-float">
+      <div class="lo-outer fw-pankuzu-box fw-left">
+        <ul class="fw-float">
+          <li>日報・月報</li>
+          <li>&gt;</li>
+                    <li class="current">日報管理DB</li>
+          <li>&gt;</li>
+          <li class="fw-pankuzu-title">自分の日報</li>
+                                <li class="fw-bookmark jq-bookmark-on ">
+              <a onclick="javascript:showPopup(event);" style="cursor: pointer;">
+                <i class="fa fa-star"></i>
+              </a>
+            </li>
+                  </ul>
+      </div>
+      <div class="lo-outer">
+        <ul class="fw-float">
+          <li class="page-function fw-right">
+            <a id="link_menu_box" class="fw-btn jq-popup-open" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="fw-hr-theme">          <section class="fw-toolbar-clear fw-mgb20">
+  <div class="lo-inner">
+    <div class="fw-float">
+      <div class="lo-outer fw-main-box fw-left">
+        <ul class="fw-float15">
+                              </ul>
+      </div>
+        
+    </div>
+  </div>
+</section>
+<section class="fw-toolbar fw-mgb7">
+  <div class="lo-body">
+              </div>
+</section>                                        <section class="fw-tab-scroll jq-tab-scroll">
+            
+            <div id="list-tab" class="lo-body fw-tab-btn fw-tab-change-wrap" data-mode="1">
+              <div class="lo-inner jq-tab-view0" id="menuTabTr" style="display:none;">
+                  <!-- tab toggle button//////////////////////////////////////// -->
+      <section class="fw-tab-change jq-tab-change">
+      <ul>
+        <li class="fw-no-tab">
+          <a class="jq-tooltip-hover jq-tab-view-change" href="javascript:void(0);">
+            <div class="fw-tooltip-key jq-tooltip-key">
+              タブ切替
+            </div>
+            <div class="fw-tab-keyword"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i></div>
+          </a>
+          <span class="fw-underbar"></span>
+        </li>
+      </ul>
+    </section>
+  <!-- 矢印（左）//////////////////////////////////////// -->
+<section class="fw-tab-scrollbar-left jq-tab-scrollbar-left">
+  <ul class="jq-tab-arrow-left">
+    <li class="fw-no-tab">
+      <a class="fw-disabled" href="javascript:void(0);">
+        <div class="fw-tab-keyword">
+          <i class="fa fa-caret-left"></i>
+        </div>
+      </a>
+      <span class="fw-underbar"></span>
+    </li>
+  </ul>
+</section>
+<!-- タブの枠//////////////////////////////////////// -->
+<section class="fw-tab-scrollbar">
+  <div class="fw-tab-btn-wrap jq-tab-wrap">
+    <ul class="fw-float jq-tab-select" id="jq-TabSelect" style="width: 0px; left: 0px;">
+              <li id="jq-Tab-00" class="jq-tab-list current" title="自分の日報" onclick="serverWait();urlSubmit('/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100508/menuClassId/');">
+          <a class="one-block fw-float" href="/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100508/menuClassId/" onclick="serverWait();">
+            <div class="fw-tab-icon">
+              <i class="fa fa-list-alt"></i>
+            </div>
+            <div class="fw-tab-keyword fw-mgl20 fw-ovf-max140 fw-fs12">
+              自分の日報            </div>
+          </a>
+          <span class="fw-underbar"></span>
+        </li>
+                <li id="jq-Tab-00" class="jq-tab-list " title="三澤グループ日報" onclick="serverWait();urlSubmit('/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100537/menuClassId/');">
+          <a class="one-block fw-float" href="/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100537/menuClassId/" onclick="serverWait();">
+            <div class="fw-tab-icon">
+              <i class="fa fa-list-alt"></i>
+            </div>
+            <div class="fw-tab-keyword fw-mgl20 fw-ovf-max140 fw-fs12">
+              三澤グループ日報            </div>
+          </a>
+          <span class="fw-underbar"></span>
+        </li>
+                <li id="jq-Tab-00" class="jq-tab-list " title="大矢グループ日報" onclick="serverWait();urlSubmit('/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100536/menuClassId/');">
+          <a class="one-block fw-float" href="/ggutk9a/recordlist/list/dbgId/100026/dbSchemaId/100093/menuId/100536/menuClassId/" onclick="serverWait();">
+            <div class="fw-tab-icon">
+              <i class="fa fa-list-alt"></i>
+            </div>
+            <div class="fw-tab-keyword fw-mgl20 fw-ovf-max140 fw-fs12">
+              大矢グループ日報            </div>
+          </a>
+          <span class="fw-underbar"></span>
+        </li>
+            </ul>
+  </div>
+</section>
+<!-- 矢印（右）//////////////////////////////////////// -->
+<section class="fw-tab-scrollbar-right jq-tab-scrollbar-right">
+  <ul class="jq-tab-arrow-right">
+    <li class="fw-no-tab">
+      <a href="javascript:void(0);" class="fw-disabled">
+        <div class="fw-tab-keyword">
+          <i class="fa fa-caret-right"></i>
+        </div>
+      </a>
+      <span class="fw-underbar"></span>
+    </li>
+  </ul>
+</section>
+              </div>
+              <div class="lo-inner jq-tab-view1" id="approvalTabTr" style="">
+                <!-- tab toggle button//////////////////////////////////////// -->
+  <section class="fw-tab-change jq-tab-change">
+    <ul>
+      <li class="fw-no-tab">
+        <a class="jq-tooltip-hover jq-tab-view-change" href="javascript:void(0);">
+          <div class="fw-tooltip-key jq-tooltip-key">
+            タブ切替
+          </div>
+          <div class="fw-tab-keyword"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i></div>
+        </a>
+        <span class="fw-underbar"></span>
+      </li>
+    </ul>
+  </section>
+<ul class="fw-float jq-tab-select">
+        <li class="jq-tab-list current">
+        <a href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/displayTabId/0">レコード一覧</a>
+        <span class="fw-underbar"></span>
+      </li>
+            <li class="jq-tab-list ">
+      <a class="jq-tab-option0 fw-tab-option0 one-block fw-float" href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/displayTabId/100">
+        <div class="fw-left"><i class="fa fa-floppy-o"></i></div>
+        <div class="fw-left fw-mgl3">一時保存中</div>
+      </a>
+      <span class="fw-underbar"></span>
+    </li>
+  </ul>              </div>
+            </div>
+            <div class="lo-body fw-tab-content " id="list-content">
+              <div class="lo-inner">
+                                    <section class="fw-toolbar-inset fw-mgb10">
+                      <div class="lo-inner">
+                        <div class="fw-folat">
+                          <ul class="fw-float">
+                                                        <li class="fw-mgl10">
+                              <div class="lo-outerfw-main-box fw-paging-two fw-left ">
+                                <ul class="fw-float">
+                                  <li class="fw-step-prev fw-disabled">
+  <a class="one-block">
+    <div class="fw-iconbox">
+      <div class="fw-keyword">最初</div>
+      <div class="fw-icon"><i class="fa fa-angle-double-left"></i></div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-prev fw-disabled">
+  <a class="one-block">
+    <div class="fw-iconbox">
+      <div class="fw-keyword">前の20件</div>
+      <div class="fw-icon"><i class="fa fa-angle-left"></i></div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-next fw-reverse">
+  <a class="one-block" href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/start/1">
+    <div class="fw-iconbox fw-reverse">
+      <div class="fw-icon"><i class="fa fa-angle-right"></i></div>
+      <div class="fw-keyword">次の20件</div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-next fw-reverse">
+  <a class="one-block" href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/start/max">
+    <div class="fw-iconbox fw-reverse">
+      <div class="fw-icon"><i class="fa fa-angle-double-right"></i></div>
+      <div class="fw-keyword">最後</div>
+    </div>
+  </a>
+</li>                                  <li class="fw-views">
+                                  <div class="fw-formset">
+                                    <label>
+                                      <div class="fw-select">
+                                        <select class="normal_pulldown" name="displayCount" id="displayCount" onchange="changeLineFormat()"><option value="5">5件</option>
+<option value="10">10件</option>
+<option value="15">15件</option>
+<option value="20" selected="">20件</option>
+<option value="50">50件</option>
+<option value="100">100件</option>
+</select>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  <section class="table-box fw-mgb10" id="tableBoxRecord">
+  <div class="lo-body">
+    <div class="lo-inner jq-tab-switcher current">
+      <table class="fw-table jq-tr-selected jq-tab-table" id="tableRecordFix">
+        <tbody><tr>
+                  <th class="fw-w30" rowspan="2">
+          &nbsp;          </th>
+                      <th rowspan="2">[ 操作 ]</th>
+                                                        <th id="record_th_0_99-104831" style="white-space : nowrap;" onmouseout="changeDispFieldActButton('99-104831',false)" onmouseover="changeDispFieldActButton('99-104831',false)" rowspan="2">
+                            <a href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/sortFieldId/99-104831">                              [登録ユーザ]
+                            </a>                                          <span title="項目操作パネルの表示／非表示" id="filterButtn_99-104831" style="position:absolute;display : none; ">
+                <a href="#" onclick="executeRenderPanel(false, '3', '99-104831', event); return false;"><i class="fa fa-list fw-fs14"></i></a>
+              </span>
+            </th>
+                                                            <th id="record_th_0_99-101421" class="fw-sort jq-th-menu" style="white-space : nowrap;" onmouseout="changeDispFieldActButton('99-101421',false)" onmouseover="changeDispFieldActButton('99-101421',false)" rowspan="2">
+                                <a href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/sortFieldId/99-101421" title="降順"><span><i class="fa fa-caret-down"></i></span></a>
+                                <a href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/sortFieldId/99-101421">              対象日付              </a>                                          <span title="項目操作パネルの表示／非表示" id="filterButtn_99-101421" style="position:absolute;display : none; ">
+                <a href="#" onclick="executeRenderPanel(false, '100661', '99-101421', event); return false;"><i class="fa fa-list fw-fs14"></i></a>
+              </span>
+            </th>
+                                                            <th id="record_th_0_99-101423" style="white-space : nowrap;" onmouseout="changeDispFieldActButton('99-101423',false)" onmouseover="changeDispFieldActButton('99-101423',false)" rowspan="2">
+                            <span>              業務報告              </span>                                          <span title="項目操作パネルの表示／非表示" id="filterButtn_99-101423" style="position:absolute;display : none; ">
+                <a href="#" onclick="executeRenderPanel(false, '100663', '99-101423', event); return false;"><i class="fa fa-list fw-fs14"></i></a>
+              </span>
+            </th>
+                                                            <th id="record_th_0_99-104829" style="white-space : nowrap;" onmouseout="changeDispFieldActButton('99-104829',false)" onmouseover="changeDispFieldActButton('99-104829',false)" rowspan="2">
+                            <span>              所感              </span>                                          <span title="項目操作パネルの表示／非表示" id="filterButtn_99-104829" style="position:absolute;display : none; ">
+                <a href="#" onclick="executeRenderPanel(false, '102279', '99-104829', event); return false;"><i class="fa fa-list fw-fs14"></i></a>
+              </span>
+            </th>
+                                  </tr><tr>                  </tr>                      
+                  <tr>
+            <td style="border-bottom: 0; padding: 0;"></td>
+            <td style="border-bottom: 0; padding: 0;"></td>
+                                            <td style="border-bottom: 0; padding: 0;" colspan="4"></td>
+          </tr>
+                    <tr id="recordTr_107848_0" class="recordStyle_0" onclick="selectRecord(107848, 1)" ondblclick="dispRecordActPanel(107848, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107848" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107848/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107848/displayTabId/" data-recordid="107848"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107848/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_0_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_0_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/12/03                  </td>
+                                      <td id="record_td_0_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                      <td id="record_td_0_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107763_0" class="recordStyle_0" onclick="selectRecord(107763, 1)" ondblclick="dispRecordActPanel(107763, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107763" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107763/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107763/displayTabId/" data-recordid="107763"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107763/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_1_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_1_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/29                  </td>
+                                      <td id="record_td_1_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">信用金庫の共通化
+楽天証券の現預金のデータが取得できていない調査</pre>                  </td>
+                                      <td id="record_td_1_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">共通化ファイルについて、html取得の処理は完了した。
+楽天証券については、取得できていなかったのは現預金ではなく、
+MRFであった。
+仕様上、MRFは取得しないので、仕様通りの動きであったが、
+MRFも現預金として扱うか検討することになった。
+余談だが、最近の投資信託は投資の専門家に投資をしてもらうので
+はなく、
+人口知能で解析し、
+投資の判断するプランもあってすごいなと思った。</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107701_0" class="recordStyle_0" onclick="selectRecord(107701, 1)" ondblclick="dispRecordActPanel(107701, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107701" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107701/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107701/displayTabId/" data-recordid="107701"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107701/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_2_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_2_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/24                  </td>
+                                      <td id="record_td_2_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">ソニー銀行cookie認証があって、cookie認証が成功したら、合言葉
+などがきかれなく。
+一度認証がすんだら再度合言葉などが聞かれないように、cookie取
+得と認証の追加実装をした。
+どちらかというとサーバー側の実装でした。
+サーバー側はほとんどjavascriｐｔで記述されている。</pre>                  </td>
+                                      <td id="record_td_2_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">頭の中では、こういう風に実装すればいいというのは分かっている
+がうまく動かないということがあった。もとからdomainで定義され
+ていたcookie_infoがstringではなく、Listであったことが悪さを
+していたようだ。
+
+面白かったのが、idやpassの情報をＤＢの一つのカラムに全部stri
+ngで格納してたこと。とりだしたら、JSON形式で処理するというこ
+と。</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107682_0" class="recordStyle_0" onclick="selectRecord(107682, 1)" ondblclick="dispRecordActPanel(107682, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107682" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107682/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107682/displayTabId/" data-recordid="107682"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107682/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_3_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_3_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/23                  </td>
+                                      <td id="record_td_3_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">ｆｄｓｆ</pre>                  </td>
+                                      <td id="record_td_3_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">ｆｄｓｆ</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107629_0" class="recordStyle_0" onclick="selectRecord(107629, 1)" ondblclick="dispRecordActPanel(107629, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107629" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107629/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107629/displayTabId/" data-recordid="107629"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107629/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_4_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_4_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/20                  </td>
+                                      <td id="record_td_4_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">fdsa</pre>                  </td>
+                                      <td id="record_td_4_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">fdsa</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107628_0" class="recordStyle_0" onclick="selectRecord(107628, 1)" ondblclick="dispRecordActPanel(107628, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107628" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107628/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107628/displayTabId/" data-recordid="107628"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107628/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_5_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_5_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/20                  </td>
+                                      <td id="record_td_5_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">res</pre>                  </td>
+                                      <td id="record_td_5_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">rwa</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107627_0" class="recordStyle_0" onclick="selectRecord(107627, 1)" ondblclick="dispRecordActPanel(107627, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107627" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107627/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107627/displayTabId/" data-recordid="107627"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107627/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_6_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_6_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/20                  </td>
+                                      <td id="record_td_6_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                      <td id="record_td_6_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107626_0" class="recordStyle_0" onclick="selectRecord(107626, 1)" ondblclick="dispRecordActPanel(107626, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107626" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107626/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107626/displayTabId/" data-recordid="107626"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107626/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_7_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_7_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/20                  </td>
+                                      <td id="record_td_7_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                      <td id="record_td_7_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107625_0" class="recordStyle_0" onclick="selectRecord(107625, 1)" ondblclick="dispRecordActPanel(107625, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107625" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107625/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107625/displayTabId/" data-recordid="107625"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107625/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_8_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_8_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/19                  </td>
+                                      <td id="record_td_8_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                      <td id="record_td_8_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107624_0" class="recordStyle_0" onclick="selectRecord(107624, 1)" ondblclick="dispRecordActPanel(107624, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107624" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107624/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107624/displayTabId/" data-recordid="107624"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107624/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_9_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_9_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/19                  </td>
+                                      <td id="record_td_9_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    &nbsp;                  </td>
+                                      <td id="record_td_9_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    &nbsp;                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107623_0" class="recordStyle_0" onclick="selectRecord(107623, 1)" ondblclick="dispRecordActPanel(107623, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107623" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107623/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107623/displayTabId/" data-recordid="107623"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107623/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_10_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_10_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/19                  </td>
+                                      <td id="record_td_10_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    &nbsp;                  </td>
+                                      <td id="record_td_10_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    &nbsp;                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107570_0" class="recordStyle_0" onclick="selectRecord(107570, 1)" ondblclick="dispRecordActPanel(107570, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107570" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107570/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107570/displayTabId/" data-recordid="107570"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107570/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_11_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_11_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/17                  </td>
+                                      <td id="record_td_11_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_11_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107498_0" class="recordStyle_0" onclick="selectRecord(107498, 1)" ondblclick="dispRecordActPanel(107498, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107498" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107498/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107498/displayTabId/" data-recordid="107498"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107498/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_12_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_12_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/14                  </td>
+                                      <td id="record_td_12_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・新生銀行の乱数入力の画面およびサーバー側実装</pre>                  </td>
+                                      <td id="record_td_12_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">スクリプト開発が落ち着いたので、
+サーバー側の実装をしました。
+先週、新生銀行のスクリプト開発が完了したのですが、
+乱数入力が画面上で未実装だったので、
+金融機間の登録ができませんでした。
+（スクリプト側で調整して、テストは行った。）
+画面はftlというhtmlのテンプレートエンジンを使ってるそうです
+。
+javascriptで色々DOMの生成をして、
+それをrendeeしてくれるそうです。
+javaもいじりました。（現場にでてはじめてかもしれない）
+今日は、ソースとにらっめこする予定でしたが、
+意外と実装までできて、
+金融機関も登録がでできた。
+この調子でやっていきたい。
+（スクリプト開発はだいぶ飽きた）</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107476_0" class="recordStyle_0" onclick="selectRecord(107476, 1)" ondblclick="dispRecordActPanel(107476, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107476" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107476/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107476/displayTabId/" data-recordid="107476"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107476/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_13_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_13_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/13                  </td>
+                                      <td id="record_td_13_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_13_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107475_0" class="recordStyle_0" onclick="selectRecord(107475, 1)" ondblclick="dispRecordActPanel(107475, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107475" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107475/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107475/displayTabId/" data-recordid="107475"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107475/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_14_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_14_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/13                  </td>
+                                      <td id="record_td_14_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_14_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107474_0" class="recordStyle_0" onclick="selectRecord(107474, 1)" ondblclick="dispRecordActPanel(107474, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107474" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107474/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107474/displayTabId/" data-recordid="107474"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107474/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_15_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_15_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/13                  </td>
+                                      <td id="record_td_15_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_15_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107473_0" class="recordStyle_0" onclick="selectRecord(107473, 1)" ondblclick="dispRecordActPanel(107473, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107473" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107473/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107473/displayTabId/" data-recordid="107473"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107473/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_16_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_16_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/12                  </td>
+                                      <td id="record_td_16_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_16_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107472_0" class="recordStyle_0" onclick="selectRecord(107472, 1)" ondblclick="dispRecordActPanel(107472, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107472" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107472/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107472/displayTabId/" data-recordid="107472"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107472/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_17_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_17_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/12                  </td>
+                                      <td id="record_td_17_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                      <td id="record_td_17_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・test</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107471_0" class="recordStyle_0" onclick="selectRecord(107471, 1)" ondblclick="dispRecordActPanel(107471, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107471" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107471/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107471/displayTabId/" data-recordid="107471"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107471/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_18_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_18_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/12                  </td>
+                                      <td id="record_td_18_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・サーバー版のサーバーサイドの環境構築
+-java7,mySQL,Tomcat8をダウンロードとインストール</pre>                  </td>
+                                      <td id="record_td_18_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・Tomcatのデプロイを久々にやった。懐かしい。
+API開発は岩瀬さんと山川さんがやるそうではあるが、
+サーバー版のサーバー側も未開発な部分が多くあって、
+それも実装していく。
+スクリプト開発をしていくうちに、
+未開発な部分を実装しないと、
+進めない部分がでてきてため。
+ちょっと楽しみである。</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                          <tr id="recordTr_107447_0" class="recordStyle_0" onclick="selectRecord(107447, 1)" ondblclick="dispRecordActPanel(107447, event)">
+              <td rowspan="1" style="text-align : center; padding : 0px;">
+                            &nbsp;</td>
+                                          <td id="recordAct_107447" class="" rowspan="1">
+                                <div class="btn-function">
+                  <div class="fw-box-center" style="white-space: nowrap;">
+                                              <a title="閲覧" href="/ggutk9a/recordView/display/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107447/displayTabId/"><i class="fa fa-book"></i></a>
+                                                                    <a class="jq-record-transition" title="編集" href="/ggutk9a/recordEdit/inputUpdate/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107447/displayTabId/" data-recordid="107447"><i class="fa fa-pencil"></i></a>
+                                                                    <a title="削除" href="/ggutk9a/recordDelete/deleteConfirm/dbgId/100026/dbSchemaId/100093/menuId/100508/recordId/107447/displayTabId/"><i class="fa fa-close"></i></a>
+                                                              </div>
+                </div>
+              </td>
+                                                <td id="record_td_19_0_99-104831" class="tdStyle_99-104831_0" title="" rowspan="1">
+                    園田威                  </td>
+                                      <td id="record_td_19_0_99-101421" class="tdStyle_99-101421_0" title="" rowspan="1">
+                    2016/11/11                  </td>
+                                      <td id="record_td_19_0_99-101423" class="tdStyle_99-101423_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">・東京スター銀行スクリプトファイル作成
+・サーバー側の環境構築
+-java7
+-Tomcat8
+-mySQL</pre>                  </td>
+                                      <td id="record_td_19_0_99-104829" class="tdStyle_99-104829_0" title="" rowspan="1">
+                    <pre class="fw-ff-mono">環境構築はAPI開発ではなく、サーバー側の。
+サーバー側の金融機関口座の追加などができていない部分がある。
+それもみていくことになりそうです
+この日報はNode.jsのnode-horsemanモジュールを使って、
+スクレイピングして日報を送信してみました。</pre>                  </td>
+                                </tr>
+                            
+              <!-- 小計用開始↓ -->
+                            <!-- 小計用完了↑ -->
+
+                      <tr class="fw-border3-top-gray">
+                    <td class="total fw-txt-right" style="white-space : nowrap;" colspan="2">
+          合計（20件）
+          </td>
+                        <td id="record_td_20_0_99-104831" title="" class="total fw-txt-right" style="white-space: nowrap;">
+                              &nbsp;</td>
+                              <td id="record_td_20_0_99-101421" title="" class="total fw-txt-right" style="white-space: nowrap;">
+                              &nbsp;</td>
+                              <td id="record_td_20_0_99-101423" title="" class="total fw-txt-right" style="white-space: nowrap;">
+                              &nbsp;</td>
+                              <td id="record_td_20_0_99-104829" title="" class="total fw-txt-right" style="white-space: nowrap;">
+                              &nbsp;</td>
+                        </tr>
+      </tbody></table>
+    </div>
+  </div>
+</section>                    <section class="fw-toolbar-inset fw-mgb10">
+                      <div class="lo-inner">
+                        <div class="fw-folat">
+                          <ul class="fw-float">
+                                                        <li class="fw-mgl10">
+                              <div class="lo-outerfw-main-box fw-paging-two fw-left ">
+                                <ul class="fw-float">
+                                  <li class="fw-step-prev fw-disabled">
+  <a class="one-block">
+    <div class="fw-iconbox">
+      <div class="fw-keyword">最初</div>
+      <div class="fw-icon"><i class="fa fa-angle-double-left"></i></div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-prev fw-disabled">
+  <a class="one-block">
+    <div class="fw-iconbox">
+      <div class="fw-keyword">前の20件</div>
+      <div class="fw-icon"><i class="fa fa-angle-left"></i></div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-next fw-reverse">
+  <a class="one-block" href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/start/1">
+    <div class="fw-iconbox fw-reverse">
+      <div class="fw-icon"><i class="fa fa-angle-right"></i></div>
+      <div class="fw-keyword">次の20件</div>
+    </div>
+  </a>
+</li>
+<li class="fw-step-next fw-reverse">
+  <a class="one-block" href="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508/start/max">
+    <div class="fw-iconbox fw-reverse">
+      <div class="fw-icon"><i class="fa fa-angle-double-right"></i></div>
+      <div class="fw-keyword">最後</div>
+    </div>
+  </a>
+</li>                                  <li class="fw-views">
+                                  <div class="fw-formset">
+                                    <label>
+                                      <div class="fw-select">
+                                        <select class="normal_pulldown" id="displayCount2" onchange="setDisplayCount(this)"><option value="5">5件</option>
+<option value="10">10件</option>
+<option value="15">15件</option>
+<option value="20" selected="">20件</option>
+<option value="50">50件</option>
+<option value="100">100件</option>
+</select>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                                </div>
+            </div>
+          </section>
+          <div id="fieldDisp" class="recordAct" style="z-index : 1000; display: none; position:fixed; width:250px;">
+  <section class="fw-popup">
+    <div class="lo-body">
+      <div class="lo-inner fw-pd10">
+        <div id="fieldDisp_scroll" class="fw-popup-body fw-mgb10" style="height : 300px; overflow-y : scroll;">
+                      <div class="fw-formset">
+              <label class="fw-check-radio fw-cursor-pointer">
+                <div class="fw-check" onclick="if(!disp_field_click_flg){_viewChangeAllField();}disp_field_click_flg = false;">
+                  <input type="checkbox" id="dispFieldId_0" name="dispFieldId[]" value="0" onclick="viewChangeAllField();disp_field_click_flg = true;">
+                </div>
+                <div class="fw-keyword">（すべてチェックする）</div>
+              </label>
+            </div>
+                                                                    <div class="fw-formset">
+                <label class="fw-check-radio fw-cursor-pointer">
+                  <div class="fw-check" onclick="if(!disp_field_click_flg){_checkDispField('99-104831');}disp_field_click_flg = false;">
+                    <input type="checkbox" id="dispFieldId_99-104831" name="dispFieldId[]" value="99-104831" onclick="checkDispField(this.value);disp_field_click_flg = true;" checked="">
+                  </div>
+                  <div class="fw-keyword">登録ユーザ</div>
+                </label>
+              </div>
+                                                                    <div class="fw-formset">
+                <label class="fw-check-radio fw-cursor-pointer">
+                  <div class="fw-check" onclick="if(!disp_field_click_flg){_checkDispField('99-101421');}disp_field_click_flg = false;">
+                    <input type="checkbox" id="dispFieldId_99-101421" name="dispFieldId[]" value="99-101421" onclick="checkDispField(this.value);disp_field_click_flg = true;" checked="">
+                  </div>
+                  <div class="fw-keyword">対象日付</div>
+                </label>
+              </div>
+                                                                    <div class="fw-formset">
+                <label class="fw-check-radio fw-cursor-pointer">
+                  <div class="fw-check" onclick="if(!disp_field_click_flg){_checkDispField('99-101423');}disp_field_click_flg = false;">
+                    <input type="checkbox" id="dispFieldId_99-101423" name="dispFieldId[]" value="99-101423" onclick="checkDispField(this.value);disp_field_click_flg = true;" checked="">
+                  </div>
+                  <div class="fw-keyword">業務報告</div>
+                </label>
+              </div>
+                                                                    <div class="fw-formset">
+                <label class="fw-check-radio fw-cursor-pointer">
+                  <div class="fw-check" onclick="if(!disp_field_click_flg){_checkDispField('99-104829');}disp_field_click_flg = false;">
+                    <input type="checkbox" id="dispFieldId_99-104829" name="dispFieldId[]" value="99-104829" onclick="checkDispField(this.value);disp_field_click_flg = true;" checked="">
+                  </div>
+                  <div class="fw-keyword">所感</div>
+                </label>
+              </div>
+                              </div>
+        <div class="decision-box">
+          <div class="lo-inner">
+            <div class="fw-txt-left">
+              <a class="fw-btn-ok fw-btn-icon fw-mw100" href="javascript:executeSaveDisp();">
+                <div class="fw-float fw-box-center">
+                  <div class="fw-left"><i class="fa fa-check-circle"></i></div>
+                  <div class="fw-left fw-mgl3">確定</div>
+                </div>
+              </a>
+              <a href="javascript:void(0);" class="fw-btn fw-mw100" onclick="viewChangeFieldDispPanel(event);">閉じる</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    
+        <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+                        <section id="url_display_section" class="fw-popup">
+  <div class="lo-body" id="url_displayAct" style="position: absolute; display: none;">
+    <div class="lo-inner fw-pd10">
+      <div class="fw-mgb10">
+        <textarea name="loginUrlPath" id="loginUrlPath" readonly="readOnly" onclick="this.select()" class="fw-w300 fw-mh100 url_displayInput">https://ta.htdb.jp/ggutk9a/top/index/urlparams/JTJGZ2d1dGs5YSUyRjMlMkZkYmdJZCUyRjEwMDAyNiUyRmRiU2NoZW1hSWQlMkYxMDAwOTMlMkZtZW51SWQlMkYxMDA1MDglMkZyZWNvcmRJZCUyRg==</textarea>
+      </div>
+      <div class="fw-mgb10">
+        <a href="javascript:void(0)" id="url_confirm_close" onclick="Htdb_hideObject('url_displayAct')" class="fw-btn fw-mw100">閉じる</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="csv_download_section" class="fw-popup">
+  <div class="lo-body" id="csv_downloadAct" style="position: absolute; display: none;">
+    <div class="lo-inner fw-pd10">
+      <div class="fw-formset">
+        <label class="fw-check-radio fw-cursor-pointer">
+          <div class="fw-check"><input type="checkbox" id="csv_downloadHideField" value="1"></div>
+          <div class="fw-keyword">項目名を隠す</div>
+        </label>
+      </div>
+      <div class="fw-formset fw-mgb10">
+        <ul class="fw-float">
+          <li>
+            <a href="javascript:void(0);" id="csv_confirm_start" onclick="javascript:csv_dispProgressPanel(event, true);;" class="fw-btn fw-mw100">ダウンロード </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" id="csv_confirm_close" onclick="Htdb_hideObject('csv_downloadAct')" class="fw-btn fw-mw100" title="キャンセル">キャンセル </a>
+          </li>
+        </ul>
+      </div>
+      <div class="fw-w330">※複数タブ・複数ウィンドウで操作しないでください。</div>
+    </div>
+  </div>
+</section>        <section id="csv_download_section" class="fw-popup">
+  <div id="csv_progress_back" class="csv_progress_back" style="position:fixed;display:none;"></div>
+  <div id="csv_progress_body" class="lo-body csv_downloadAct" style="position: fixed;left:40%; top:40%;display:none;z-index:99;">
+    <div class="lo-inner fw-pd10">
+      <span id="csv_progress_text">
+        ファイル生成中です。<br>
+        現在<span id="csv_progress_count">0</span>％進行中
+      </span>
+      <span id="csv_complete_text" style="display : none;">
+        ＣＳＶファイル生成が完了しました<br>
+        ファイル名をクリックしてダウンロードして下さい
+      </span>
+      <span id="csv_nodata_text" style="display:none;">
+        エクスポートするデータがありません
+      </span>
+      <br><br>
+      <span id="csv_complete_link"></span>
+      <br>
+      <span id="csv_progress_btn">
+        <a href="javascript:void(0);" id="csv_confirm_close" onclick="javascript:csv_dispProgressPanel(event, false);" class="fw-btn fw-mw100" title="キャンセル">キャンセル </a>
+      </span>
+      <span id="csv_complete_btn" style="display : none;">
+        <a href="javascript:void(0);" id="csv_complete_close" onclick="javascript:csv_dispProgressPanel(event, false);" class="fw-btn fw-mw100" title="閉じる">閉じる </a>
+      </span>
+    </div>
+  </div>
+</section>        <section id="waitServerMessage" style="display:none;" class="fw-loader jq-loader">
+          <div class="lo-body">
+            <div class="lo-inner">
+              <img src="/img/common/loader.gif">
+            </div>
+          </div>
+        </section>
+                <section id="recordAct" class="fw-popup fw-posi-abs" style="display: none">
+          <div class="lo-body">
+            <div class="lo-inner">
+              <section class="fw-popup-box jq-popup-changer jq-popup-content6 current" style="display: block">
+                <div class="lo-inner">
+                  <div id="recordAct_Panel" class="lo-outer fw-fs18"></div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+                <section id="fieldActPanel" class="recordAct fw-popup fw-posi-abs" style="display: none">
+          <div class="lo-body" id="filter_includeAct">
+            <div class="lo-inner fw-pd10">
+              <form id="filterForm" name="filterForm" action="/ggutk9a/recordList/filteradd/dbgId/100026/dbSchemaId/100093/menuId/100508" method="POST">
+                <div id="filterInclude"></div>
+              <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+            </div>
+          </div>
+        </section>
+                        <form id="clendarPagerForm" name="clendarPagerForm" action="/ggutk9a/recordList/pager/dbgId/100026/dbSchemaId/100093/menuId/100508" method="post" style="display:none;">
+          <input type="hidden" id="calendarFormat_" name="calendarFormat" value="">
+          <input type="hidden" id="calendarDate_" name="calendarDate" value="">
+        <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+        <script type="text/javascript">
+<!--
+
+    $(document).ready(function() {
+        $("#favoriteName").keypress(function(ev) {
+            if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+    });
+
+    isFavorite = false;
+    function showPopup(event) {
+
+        var target = $("#addFavorite");
+        if (isFavorite) {
+            target = $("#unregisterFavorite");
+            if ($(".fw-bookmark").hasClass("active") === true) {
+              $(".fw-bookmark").removeClass("active");
+            }
+        }else{
+            if ($(".fw-bookmark").hasClass("active") === false) {
+              $(".fw-bookmark").addClass("active");
+            }
+        }
+
+        if (!event) var event = window.event;
+        if (!event.pageX) px = event.clientX + document.body.scrollLeft; else px = event.pageX;
+        if (!event.pageY) py = event.clientY + document.body.scrollTop; else py = event.pageY;
+
+        $("#errorMessage").text("");
+        $("#favoriteName").val("日報管理DB 自分の日報");
+        $("#favoriteFolder").val("0");
+        target.css("left", (px - 30) + "px");
+        target.css("top", (py - 10) + "px");
+        target.show();
+
+        $("#favoriteName").select();
+    }
+
+    function hidePopup(isRegister, id) {
+
+        if (isRegister) {
+            if (id === "addFavorite") {
+                if (!validate()) return;
+                registerFavorite();
+            } else {
+                unregisterFavorite();
+            }
+        }else{
+          if (id === "addFavorite") {
+              $("#star").attr("src", "/img/btn_star_disable.png");
+              if ($(".fw-bookmark").hasClass("active") === true) {
+              $(".fw-bookmark").removeClass("active");
+            }
+          } else {
+              $("#star").attr("src", "/img/btn_star_enable.png");
+              if ($(".fw-bookmark").hasClass("active") === false) {
+                $(".fw-bookmark").addClass("active");
+              }
+          }
+        }
+        $("#" + id).hide();
+
+        $(".fw-cartain").css("display", "none");
+    }
+
+    function validate() {
+
+        var favoriteName = $("#favoriteName");
+        var errorMessage = $("#addFavoriteForm [id=errorMessage]");
+        if(favoriteName.val() === "") {
+            errorMessage.text("名前を入力してください。");
+            return false;
+        }
+        errorMessage.text("");
+        return true;
+    }
+
+    function registerFavorite() {
+
+        $.ajax({
+            type: "POST",
+            url: "/ggutk9a/favorite/registerfavorite/",
+            data: $('#addFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                if (json[0].count > 0) {
+                    isFavorite = true;
+                    javascript:leftReloadForAjax();
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function unregisterFavorite() {
+
+        $.ajax({
+            type: "POST",
+            url: "/ggutk9a/favorite/unregisterfavoritemain/",
+            data: $('#unregisterFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                if (json[0].count > 0) {
+                    isFavorite = false;
+                    javascript:leftReloadForAjax();
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function reloadFavorite(favoriteId) {
+
+        favoriteIdForMain = getFavoriteId();
+        if (favoriteIdForMain == -1) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/ggutk9a/favorite/getfavoriteid/",
+            data: {"favoriteId" : favoriteId},
+            dataType: "json",
+            success: function(json) {
+                for (var i = 0; i < json.length; i++) {
+                    if (json[i].favorite_id == favoriteIdForMain) {
+                        $("#star").attr("src", "/img/btn_star_disable.png");
+                        isFavorite = false;
+                        break;
+                    }
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function getFavoriteId() {
+
+        result = -1;
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/ggutk9a/favorite/getfavoriteid/",
+            data: $('#addFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                for (var i = 0; i < json.length; i++) {
+                    result = json[i].favorite_id;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+        return result;
+    }
+//-->
+</script>
+
+
+<div id="addFavorite" style="display: none; position: absolute; z-index: 2; background-color:#fff; margin:20px; 
+                              padding:20px; border-radius:7px/5px; -webkit-border-radius:7px/5px; -moz-border-radius:7px/5px; 
+                              box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -moz-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -webkit-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; 
+                              border: #ccc solid 1px;">
+  <form name="addFavoriteForm" id="addFavoriteForm">
+    <section class="fw-popup-box jq-popup-changer fw-mw220 jq-popup-content1">
+      <div class="lo-outer fw-mgb20"><h6>お気に入り</h6></div>
+      <div class="lo-outer fw-mgb10">
+        <div class="fw-formset">
+          <label class="fw-horizontal">
+            <span class="fw-txt-right fw-summary fw-w60">名前</span>
+                        <div class="fw-input"><input class="fw-w180" name="favoriteName" id="favoriteName" placeholder="" type="text" value="日報管理DB 自分の日報"></div>
+          </label>
+        </div>
+      </div>
+      <div class="lo-outer fw-mgb30">
+        <div class="fw-formset">
+          <label class="fw-horizontal">
+            <span class="fw-txt-right fw-summary fw-w60">グループ</span>
+            <div class="fw-select">
+              <select class="fw-w180" name="favoriteFolder" id="favoriteFolder">
+                <option value="0">お気に入り</option>
+                              </select>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="decision-box">
+        <div class="lo-inner">
+          <div class="fw-txt-left">
+            <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+            <section class="decision-box">
+              <div class="lo-inner">
+                <ul class="fw-float">
+                  <li>
+                    <a class="fw-btn-ok fw-btn-icon fw-mw100" href="javascript:hidePopup(true, 'addFavorite');">
+                      <div class="fw-float fw-box-center">
+                        <div class="fw-left">
+                          <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="fw-left fw-mgl3">登録
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="fw-btn fw-mw100" href="javascript:hidePopup(false, 'addFavorite');">キャンセル
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" name="favoriteDbGroupId" id="favoriteDbGroupId" value="100026">
+      <input type="hidden" name="favoriteDbSchemaId" id="favoriteDbSchemaId" value="100093">
+      <input type="hidden" name="favoritePageType" id="favoritePageType" value="2">
+      <input type="hidden" name="favoriteMenuId" id="favoriteMenuId" value="100508">
+      <input type="hidden" name="favoriteFolderId" id="favoriteFolderId" value="">
+      <input type="hidden" name="favoriteMailBoxId" id="favoriteMailBoxId" value="">
+    </section>
+  <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+</div>
+
+<div id="unregisterFavorite" style="display: none; position: absolute; z-index: 3; background-color:#fff; margin:20px; 
+      padding:20px; border-radius:7px/5px; -webkit-border-radius:7px/5px; -moz-border-radius:7px/5px; 
+      box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -moz-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -webkit-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; 
+      border: #ccc solid 1px;">
+  <form name="unregisterFavoriteForm" id="unregisterFavoriteForm">
+    <div class="lo-outer fw-mgb20">
+      <h6>お気に入り</h6>
+    </div>
+    <div class="lo-outer fw-lh20 fw-mgb30">お気に入りを削除します。
+      <br>よろしいですか？
+    </div>
+    <div class="decision-box">
+      <div class="lo-inner">
+        <div class="fw-txt-left">
+          <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+          <section class="decision-box">
+            <div class="lo-inner">
+              <ul class="fw-float">
+                <li>
+                  <a class="fw-btn-delete fw-btn-icon fw-mw100" href="javascript:hidePopup(true, 'unregisterFavorite');">
+                    <div class="fw-float fw-box-center">
+                      <div class="fw-left">
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                      <div class="fw-left fw-mgl3">削除
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="fw-btn fw-mw100" href="javascript:hidePopup(false, 'unregisterFavorite');">キャンセル
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="favoriteDbGroupId" id="favoriteDbGroupId" value="100026">
+    <input type="hidden" name="favoriteDbSchemaId" id="favoriteDbSchemaId" value="100093">
+    <input type="hidden" name="favoritePageType" id="favoritePageType" value="2">
+    <input type="hidden" name="favoriteMenuId" id="favoriteMenuId" value="100508">
+    <input type="hidden" name="favoriteFolderId" id="favoriteFolderId" value="">
+    <input type="hidden" name="favoriteMailBoxId" id="favoriteMailBoxId" value="">
+  <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+</div>      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" type="text/css" href="/css/modal.css?6.3.1.0">
+<script type="text/javascript">
+//<!--
+function openInformationModalWindow() {
+
+  if ($("#displayInformation").hasClass("fw-disabled")) {
+    return;
+  }
+
+  var modalId = "informationPanel";
+
+  $('.jq-user-popup').hide();
+
+    $("body").append('<div id="modal-overlay"></div>');
+  $("#modal-overlay").fadeIn("fast");
+  $("#modal-overlay").unbind().click(function() {
+    closeInformationModalWindow(modalId);
+  });
+
+  // 前回情報をクリア
+  $('#informationModalList').empty();
+
+  $.ajax({
+    type: "POST",
+    url: "/ggutk9a/information/getinformation",
+    async: false,
+    success: function(response){
+      insertInformationText(response);
+      parent.bar.location.reload();
+    }
+  });
+
+  var w = $(window).width();
+  var h = $(window).height();
+    var cw = $("#" + modalId).outerWidth();
+  var ch = $("#" + modalId).outerHeight();
+    $("#" + modalId).css({"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"});
+    $("#" + modalId).fadeIn("fast");
+}
+
+function insertInformationText(response) {
+
+  var informationTable = $('<table></table>');
+
+  for (var i = 0; i < response.length; i++){
+    var information = response[i];
+
+    var informationUrl = "#";
+    if (information.type == '0') {
+      informationUrl = information.url;
+    } else if (information.type == '1') {
+      informationUrl = "/ggutk9a/information/fileview/oid/" + information.file_id + "/fname/" + information.file_name;
+    }
+
+    informationTable.append(
+      '<tr>' +
+        '<td class="fw-w40 fw-cl-theme" style="vertical-align: top;">' + information.new + '</td>' +
+        '<td class="fw-w90" style="vertical-align: top;">' + information.date + '</td>' +
+        '<td class="fw-w320" style="word-break: break-all;"><a href="' + informationUrl + '" target="_blank">' + information.title + '</a></td>' +
+        '</tr>'
+    );
+  }
+
+  $("#informationModalList").append(informationTable);
+
+}
+
+function closeInformationModalWindow(){
+
+  var modalId = "informationPanel";
+  $("#" + modalId).fadeOut("fast",function(){
+    $('#modal-overlay').remove();
+  });
+}
+
+$("#modal-overlay,#information-close-button").unbind().click(function(){
+
+  closeInformationModalWindow();
+
+});
+
+// -->
+</script>
+<section style="display:none;" class="fw-popup jq-user-popup">
+  <input type="hidden" id="modal_user_id" value="100017" class="fw-disabled">
+  <div class="lo-body jq-user-popup-posi fw-posi-fixed">
+    <div class="lo-inner">
+            <section class="fw-popup-box jq-user-popup-content">
+        <div class="lo-inner">
+          <ul class="fw-menu-vertical">
+            <li id="displayInformation">
+              <a id="displayInformationUrl" href="javascript:openInformationModalWindow();">
+                お知らせ<span class="jq-user-popup-information-new fw-pdl10 fw-cl-theme" style="display: none; float: right;">NEW</span>
+              </a>
+            </li>
+            <li id="changePasswordMenu">
+              <a id="changePasswordMenuUrl" href="#');">
+                パスワードの変更
+              </a>
+            </li>
+            <li id="userUpdateMenu">
+              <a id="userUpdateMenuUrl" href="#">
+                ユーザ情報の変更
+              </a>
+            </li>
+            <li>
+              <a href="javascript:document.getElementById('logoutForm').submit();">
+                ログアウト
+              </a>
+            </li>
+          </ul>
+          <form id="logoutForm" method="post" action="/ggutk9a/top/logout" target="_parent"><input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="ae3ac6aeeb43a255c10a1f186d43bf24"></form>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<!-- tooltip///////////////////////////////////////////////////////// -->
+<section style="display:none;" class="fw-tooltip jq-tooltip">
+  <div class="lo-body">
+    <div class="lo-inner">
+      <section class="fw-tooltip-box jq-tooltip-posi">
+        <div class="lo-inner jq-tooltip-box"></div>
+      </section>
+      <section class="fw-balloon jq-balloon">
+        <div class="fw-triangle-bottom"></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section id="informationPanel" class="fw-modal" style="display:none;position:absolute;z-index:102;">
+  <div class="lo-body fw-w500">
+    <div class="lo-inner fw-modal-common">
+      <h6 class="fw-txt-center fw-mg10">お知らせ</h6>
+      <hr class="fw-hr-theme">
+      <section class="fw-modal-body">
+        <div class="lo-inner" style="padding:10px;" id="informationModalList">
+        </div>
+      </section>
+      <hr class="fw-hr-theme">
+      <div class="fw-box-center fw-txt-center" id="information-close-button">
+        <a class="fw-btn " href="javascript:closeInformationModalWindow();">
+          閉じる
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="display:none;" class="fw-cartain jq-cartain"></section>
+<section style="display:none;" class="fw-cartain jq-popup-cartain"></section>
+<section class="fw-collapse">
+  <div class="lo-inner fw-txt-center">
+    <a class="fw-collapse-switch-box jq-nav-collapse" href="javascript:void(0);">
+      <i class="fa fa-caret-left"></i>
+    </a>
+  </div>
+</section>
+<section class="fw-toast jq-toast" style="display:none;">
+  <div class="lo-body">
+    <div class="lo-inner fw-toast-alert jq-toast-alert jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-success jq-toast-success jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-info jq-toast-info jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-warning jq-toast-warning jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-confirm jq-toast-confirm jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>    <section class="fw-popup jq-popup" style="display:none;">
+    <div id="popupCategory" class="lo-body jq-popup-posi fw-posi-abs">
+      <div class="lo-inner">
+                <section class="fw-popup-box jq-popup-changer jq-popup-content3">
+          <div class="lo-inner">
+            <ul class="fw-menu-vertical">
+              <li>
+                <a href="/ggutk9a/recordlist/reload/dbgId/100026/dbSchemaId/100093/menuId/100508">
+                  <span class="fw-iconbox"><i class="fw-icon fa fa-repeat"></i><span class="fw-keyword">ページの再読込み</span></span>
+                </a>
+              </li>
+                            <li>
+                <a href="javascript:void(0);" onclick="javascript:url_dispConfirmPanel(event)">
+                  <span class="fw-iconbox"><span class="fw-keyword">ページURLの表示</span></span>
+                </a>
+              </li>
+                                          <li>
+                                                                                                                                          <a href="javascript:void(0);" onclick="javascript:viewChangeFieldDispPanel(event);">
+                    <span class="fw-iconbox"><span class="fw-keyword">表示項目変更</span></span>
+                  </a>
+                              </li>
+                                          <li>
+                <a href="javascript:popupForSum();">
+                  <span class="fw-iconbox"><i class="fw-icon fa fa-bar-chart"></i><span class="fw-keyword">レコード総計</span></span>
+                </a>
+              </li>
+                                          <li>
+                <a href="javascript:printView();">
+                  <span class="fw-iconbox"><i class="fw-icon fa fa-print"></i><span class="fw-keyword">印刷用表示</span></span>
+                </a>
+              </li>
+                                        </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+    <section class="fw-modal jq-modal" style="display:none;">
+    <div class="lo-body">
+      <div class="lo-inner fw-modal-viewer jq-modal-viewer">
+        <section class="fw-modal-body">
+          <div class="lo-inner jq-thumbnail-view fw-txt-center"></div>
+        </section>
+        <section class="fw-modal-footer">
+          <div class="lo-inner">
+            <div class="fw-box-center fw-txt-center">
+              <a class="fw-btn jq-modal-close" href="javascript:void(0);">閉じる</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+    <section class="fw-popup">
+    <div class="lo-body" id="system_displayAct" style="position: absolute; display: none;">
+      <div id="modal" class="lo-inner fw-pd10"></div>
+    </div>
+  </section>
+
+</body>

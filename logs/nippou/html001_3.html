@@ -1,0 +1,117 @@
+<!--<![endif]--><head>
+  <meta charset="UTF-8">
+  <meta content="noindex,nofollow,noarchive,noimageindex" name="robots">
+  <!-- for ie ///////////////////////////////////////////////////////// -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0');
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0') format('embedded-opentype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2?6.3.2.0') format('woff2'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff?6.3.2.0') format('woff'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf?6.3.2.0') format('truetype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.svg?6.3.2.0') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<!--[if lt IE 9]> <script src="/js/vendor/html5shiv.min.js?6.3.2.0"></script> <![endif]-->
+<!--[if gt IE 7]><!--> <link href="/js/vendor/font-awesome/css/font-awesome.min.css?6.3.2.0" type="text/css" rel="stylesheet"><!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/common.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/pages.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/table.css?6.3.2.0">
+<!--[if IE 8]><link href="/css/colorCss/old-ie.css?6.3.2.0" rel="stylesheet"><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MXBFN7"></script><script type="text/javascript" src="/js/lib/jquery.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/automatic.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/htdbCommon.js?6.3.2.0"></script>
+<script type="text/javascript">
+<!--
+
+if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+} else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+} else {
+    window.onload = setToken;
+}
+function setToken() {
+
+    var elements = document.getElementsByTagName("form");
+    for (var i = 0; i < elements.length; i++) {
+        var input = document.createElement('input');
+        input.type = "hidden";
+        input.name = "REQUESTABLE_TOKEN_KEY";
+        input.value = "d66a114455a8044a4a32939c42d064ba";
+        elements[i].appendChild(input);
+    }
+}
+jQuery(document).ready(function($){
+    $('.jq-nav-collapse').on('click', function(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        if (!navCollapseFlg) {
+            obj.cols="0,*";
+            navCollapseFlg = true;
+        } else {
+            obj.cols="205,*";
+            navCollapseFlg = false;
+        }
+                var thisSwitch = $(this);
+                var point = $(this).children();
+        var option = point.attr('class');
+                if ( option === 'fa fa-caret-left' ) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+            $('.main-contents').animate({'margin-left': '50px'}, 300); //right column
+        } else if ( option === 'fa fa-caret-right' ){
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+            $('.main-contents').animate({'margin-left': '250px'}, 300); //right column
+        } else {
+            return false;
+        }
+    });
+        function updateFullScreenViewIcon(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        var point = $('.jq-nav-collapse').children();
+        if (navCollapseFlg) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+        } else {
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+        }
+        return false;
+    }
+    updateFullScreenViewIcon();
+});
+//-->
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXBFN7');</script>
+<!-- End Google Tag Manager -->
+<title>働くＤＢ</title>
+</head>
+            <frameset id="verticalFrame" rows="33,*,21" cols="*" framespacing="0" frameborder="no" border="0">
+            <frame src="/ggutk9a/main/header" frameborder="no" name="bar" marginwidth="0" marginheight="0" noresize="noresize" scrolling="no">
+            <frameset id="sideFrame" cols="205,*" border="1" framespacing="0" frameborder="no">
+                <frame src="/ggutk9a/main/menu/reload/1" frameborder="no" name="side" marginwidth="0" marginheight="0" style="border-right:1px solid #ccc">
+                <frame src="/ggutk9a/main/top" frameborder="no" name="main" marginwidth="0" marginheight="0">
+            </frameset>
+            <frame src="/ggutk9a/main/footer" frameborder="no" name="bottom" marginwidth="0" marginheight="0" border="0" noresize="noresize" scrolling="no">
+
+          <noframes> 申し訳ございません、このシステムはフレーム対応のブラウザのみでの使用を想定しております。</noframes>
+        </frameset>
+    

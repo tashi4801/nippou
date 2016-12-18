@@ -1,0 +1,564 @@
+<!--<![endif]--><head>
+    <meta charset="UTF-8">
+  <meta content="noindex,nofollow,noarchive,noimageindex" name="robots">
+  <!-- for ie ///////////////////////////////////////////////////////// -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0');
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0') format('embedded-opentype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2?6.3.2.0') format('woff2'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff?6.3.2.0') format('woff'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf?6.3.2.0') format('truetype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.svg?6.3.2.0') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<!--[if lt IE 9]> <script src="/js/vendor/html5shiv.min.js?6.3.2.0"></script> <![endif]-->
+<!--[if gt IE 7]><!--> <link href="/js/vendor/font-awesome/css/font-awesome.min.css?6.3.2.0" type="text/css" rel="stylesheet"><!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/common.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/pages.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/table.css?6.3.2.0">
+<!--[if IE 8]><link href="/css/colorCss/old-ie.css?6.3.2.0" rel="stylesheet"><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MXBFN7"></script><script type="text/javascript" src="/js/lib/jquery.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/automatic.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/htdbCommon.js?6.3.2.0"></script>
+<script type="text/javascript">
+<!--
+
+if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+} else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+} else {
+    window.onload = setToken;
+}
+function setToken() {
+
+    var elements = document.getElementsByTagName("form");
+    for (var i = 0; i < elements.length; i++) {
+        var input = document.createElement('input');
+        input.type = "hidden";
+        input.name = "REQUESTABLE_TOKEN_KEY";
+        input.value = "44212301c9a16814db4374a85587362f";
+        elements[i].appendChild(input);
+    }
+}
+jQuery(document).ready(function($){
+    $('.jq-nav-collapse').on('click', function(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        if (!navCollapseFlg) {
+            obj.cols="0,*";
+            navCollapseFlg = true;
+        } else {
+            obj.cols="205,*";
+            navCollapseFlg = false;
+        }
+                var thisSwitch = $(this);
+                var point = $(this).children();
+        var option = point.attr('class');
+                if ( option === 'fa fa-caret-left' ) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+            $('.main-contents').animate({'margin-left': '50px'}, 300); //right column
+        } else if ( option === 'fa fa-caret-right' ){
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+            $('.main-contents').animate({'margin-left': '250px'}, 300); //right column
+        } else {
+            return false;
+        }
+    });
+        function updateFullScreenViewIcon(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        var point = $('.jq-nav-collapse').children();
+        if (navCollapseFlg) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+        } else {
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+        }
+        return false;
+    }
+    updateFullScreenViewIcon();
+});
+//-->
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXBFN7');</script>
+<!-- End Google Tag Manager -->
+  <title>働くＤＢ-トップページ-</title>
+  <script type="text/javascript">
+  <!-- //
+  $(function (){
+        $('#tabSelect li a').on('click', function(){
+      //tab
+      $('#tabSelect li').removeClass('current');
+      $(this).parents('li').addClass('current');
+      var id = $(this).parents('li').attr('id');
+      contentsid = '#' + id.replace("tab", "contents");
+      tabId = '#' + id.replace("tab", "tabArrow");
+      //arrow
+      $('#arrowCanvas li').css('visibility', 'hidden');
+      $(tabId).css('visibility', 'visible');
+      //contents
+      $('#switchChannel div').removeClass('current');
+      $(contentsid).addClass('current');
+    });
+        function tabSetup(){
+      $('#arrowCanvas li').css('visibility', 'hidden');
+      $('#tabSelect li').each( function(){
+        var tabId = $(this).attr('id');
+        tabId = '#' + tabId.replace("tab", "tabArrow");
+        var width = $(this).outerWidth();
+        var tabClass = $(this).attr('class');
+        if (tabClass == 'current') {
+          $(tabId).css('visibility', 'visible');
+        }
+        $(tabId).width(width).addClass(tabClass);
+      });
+    }
+    tabSetup();
+        function tabWidthSetting(){
+      var hairetsu = [];
+      var target = $("#tabSelect li");
+            for(var i = 0; i < target.length; i++){
+        hairetsu.push(target.eq(i).outerWidth(true));
+      }
+            var tabWidthAll = 0;
+      for(var j = 0; j < hairetsu.length; j++){
+        tabWidthAll += hairetsu[j];
+      }
+            var allWidth = tabWidthAll + 22;
+            var windowWidth = $(window).outerWidth(true);
+            if( allWidth > windowWidth){
+        $('.tab-canvas').width(allWidth);
+      }else{
+        $('.tab-canvas').width('');
+      }
+    }
+    tabWidthSetting();
+        function resizeWindow(allWidth){
+            $('#tabSelect, #arrowCanvas').width(allWidth);
+            var windowWidth = $(window).outerWidth(true);
+            if( allWidth > windowWidth){
+        $('.tab-canvas').width(allWidth);
+      }else{
+        $('.tab-canvas').width('');
+      }
+    }
+        var resizeTimer = false;
+    var allWidth = $('.tab-canvas').outerWidth(true);
+    $(window).resize(function() {
+      if (!resizeTimer) {
+        clearTimeout(resizeTimer);
+      }
+      resizeTimer = setTimeout(function() {
+        resizeWindow(allWidth);
+      }, 40);
+    });
+    ////////////////////////////////////////////////////////////
+  });
+  function chColor (id ,fg, bg) {
+    var a = document.getElementById(id);
+    a.style.color = fg;
+    a.style.backgroundColor = bg;
+  }
+  function toggleSystemMessage (isToOpen) {
+    var paramDisplay   = isToOpen ? '1' : '0';
+    var url            = "/ggutk9a/mainajax/toggledisp" + "/displayFlag/" + paramDisplay;
+    var xmlHttpRequest = $.ajax({
+      type: 'POST',
+      data: null,
+      url: url,
+      cache: false,
+      success: function(html) {
+        $('#tm_displayFlag').val (html);
+        var $flag = $('#tm_displayFlag').val () == '1';
+        $('#toggleClose').css('display',$flag ? '' : 'none');
+        $('#tm_sysBody').css('display', $flag ? '' : 'none');
+        $('#toggleOpen').css('display', $flag ? 'none' : '');
+      }
+    });
+  }
+  function init() {
+    parent.bar.location.href = "/ggutk9a/main/header";
+  }
+// -->
+</script>
+</head>
+<body class="body-top" onload="init();" marginwidth="0" marginheight="0">
+    <main class="contents" role="main">
+    <div class="lo-body">
+      <div class="lo-inner">
+                                                <section class="fw-panel fw-mgb7 fw-w100p" style="color : #E00000">
+          <h6>働くＤＢ相談窓口</h6>
+        </section>
+                        <section class="fw-panel fw-mgb30 fw-w100p" style="background-color : #FFD0D0">
+          <div class="lo-body">
+            <div class="lo-inner">
+              <font size="3"><br>「働くDB」のご利用期間中での操作、機能面でのご相談はこちらへお願い致します。　<br>　　<br>　　HR　働くＤＢ窓口　03-6675-3638 （森　中島　まで）<br><br><br></font>            </div>
+          </div>
+        </section>
+                                                                            <section class="tab-canvas fw-tab-noborder fw-mgb30">
+                        <div class="lo-body fw-tab-btn">
+              <div class="lo-inner">
+                <ul id="tabSelect" class="fw-float">
+                                      <li id="tab-00" class="current">
+                      <a href="javascript:void(0);" style="background-color:#E00000;color:#FFFFFF;">★REPエンジニア利用メニュー★</a>
+                      <span class="fw-underbar"></span>
+                    </li>
+                                  </ul>
+              </div>
+            </div>
+                        <div class="lo-body fw-tab-content">
+                                <div class="inner arrow-canvas">
+                  <ul id="arrowCanvas" class="float">
+                                        <li id="tabArrow-00" class="current" style="margin-right: 5px; float: left; visibility: visible; width: 218px;">
+                      <div class="triangle-box fw-txt-center" style="margin-top: -2px;">
+                        <span class="triangle triangle-bottom" style="border-top: 10px solid #E00000;border-left: 15px solid transparent;border-right: 15px solid transparent;overflow: hidden;vertical-align: middle;display: inline-block;"></span>
+                      </div>
+                    </li>
+                                      </ul>
+                </div>
+                            <div class="lo-inner">
+                <div id="switchChannel" class="switch-channel">
+
+                                  <div id="contents-00" class="jq-tab-switcher current">
+                    <table border="0" cellspacing="0" cellpadding="0" class="topMenu_innerTab fw-w100p">
+                      <tbody><tr>
+                                                                    <td style="width : 45%; vertical-align : top; padding : 5px 15px 5px 15px;">
+                          
+                                                  <div class="topMenu_className">日報・月報入力メニュー(*￣▽￣)ﾉ~~</div>
+                          <section class="fw-panel fw-mgb20 fw-w100p" style="background-color : #FF6060;">
+                            <div class="lo-body">
+                              <div class="lo-inner">
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordedit/inputregistmenu/dbgId/100026/dbSchemaId/100093/menuId/100197/menuClassId/100042/tmmenuclassitemid/100440/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #000000; cursor : pointer;" id="cid_100440" onmouseover="chColor(this.id,'#FF6060','#000000')" onmouseout="chColor(this.id,'#000000','#FF6060')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-pencil"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    日報入力                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordedit/inputregistmenu/dbgId/100026/dbSchemaId/100344/menuId/100559/menuClassId/100042/tmmenuclassitemid/100441/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #000000; cursor : pointer;" id="cid_100441" onmouseover="chColor(this.id,'#FF6060','#000000')" onmouseout="chColor(this.id,'#000000','#FF6060')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-pencil"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    月報新規入力                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                        </div>
+                            </div>
+                          </section>
+                                                  <div class="topMenu_className">スキルアップ支援用ヾ(ﾟ▽ﾟ*)ﾉ</div>
+                          <section class="fw-panel fw-mgb20 fw-w100p" style="background-color : #FF98D0;">
+                            <div class="lo-body">
+                              <div class="lo-inner">
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordedit/inputregistmenu/dbgId/100053/dbSchemaId/100314/menuId/100474/menuClassId/100043/tmmenuclassitemid/100434/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #FFFFFF; cursor : pointer;" id="cid_100434" onmouseover="chColor(this.id,'#FF98D0','#FFFFFF')" onmouseout="chColor(this.id,'#FFFFFF','#FF98D0')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-pencil"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    申請入力                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                        </div>
+                            </div>
+                          </section>
+                                                </td>
+                                                                    <td style="width : 45%; vertical-align : top; padding : 5px 15px 5px 15px;">
+                          
+                                                  <div class="topMenu_className">書籍貸出用d(⌒ー⌒)</div>
+                          <section class="fw-panel fw-mgb20 fw-w100p" style="background-color : #A0FFA0;">
+                            <div class="lo-body">
+                              <div class="lo-inner">
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordedit/inputregistmenu/dbgId/100053/dbSchemaId/100357/menuId/100592/menuClassId/100044/tmmenuclassitemid/100438/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #000000; cursor : pointer;" id="cid_100438" onmouseover="chColor(this.id,'#A0FFA0','#000000')" onmouseout="chColor(this.id,'#000000','#A0FFA0')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-pencil"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    蔵書追加申請                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordlist/list/dbgId/100053/dbSchemaId/100357/menuId/100586/menuClassId/100044/tmmenuclassitemid/100439/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #000000; cursor : pointer;" id="cid_100439" onmouseover="chColor(this.id,'#A0FFA0','#000000')" onmouseout="chColor(this.id,'#000000','#A0FFA0')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-list-alt"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    貸出可能蔵書一覧                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                        </div>
+                            </div>
+                          </section>
+                                                  <div class="topMenu_className">エンジニア相談(-人-)</div>
+                          <section class="fw-panel fw-mgb20 fw-w100p" style="background-color : #FFFFC8;">
+                            <div class="lo-body">
+                              <div class="lo-inner">
+                                                                                  <div class="fw-mgb7">
+                              <a class="" href="/ggutk9a/recordedit/inputregistmenu/dbgId/100059/dbSchemaId/100347/menuId/100551/menuClassId/100046/tmmenuclassitemid/100437/tmtindex/0">
+                                <div class="fw-float fw-box-center fw-pd3" style="color : #000000; cursor : pointer;" id="cid_100437" onmouseover="chColor(this.id,'#FFFFC8','#000000')" onmouseout="chColor(this.id,'#000000','#FFFFC8')">
+                                  <div class="fw-left">
+                                    <i class="fa fa-pencil"></i>
+                                  </div>
+                                  <div class="fw-left fw-mgl3">
+                                    相談申請フォーム                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                                                        </div>
+                            </div>
+                          </section>
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                    </tbody></table>
+                  </div>
+                                </div>
+              </div>
+                          </div>
+          </section>
+                        </div>
+    </div>
+  </main>
+  <link rel="stylesheet" type="text/css" href="/css/modal.css?6.3.2.0">
+<script type="text/javascript">
+//<!--
+function openInformationModalWindow() {
+
+  if ($("#displayInformation").hasClass("fw-disabled")) {
+    return;
+  }
+
+  var modalId = "informationPanel";
+
+  $('.jq-user-popup').hide();
+
+    $("body").append('<div id="modal-overlay"></div>');
+  $("#modal-overlay").fadeIn("fast");
+  $("#modal-overlay").unbind().click(function() {
+    closeInformationModalWindow(modalId);
+  });
+
+  // 前回情報をクリア
+  $('#informationModalList').empty();
+
+  $.ajax({
+    type: "POST",
+    url: "/ggutk9a/information/getinformation",
+    async: false,
+    success: function(response){
+      insertInformationText(response);
+      parent.bar.location.reload();
+    }
+  });
+
+  var w = $(window).width();
+  var h = $(window).height();
+    var cw = $("#" + modalId).outerWidth();
+  var ch = $("#" + modalId).outerHeight();
+    $("#" + modalId).css({"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"});
+    $("#" + modalId).fadeIn("fast");
+}
+
+function insertInformationText(response) {
+
+  var informationTable = $('<table></table>');
+
+  for (var i = 0; i < response.length; i++){
+    var information = response[i];
+
+    var informationUrl = "#";
+    if (information.type == '0') {
+      informationUrl = information.url;
+    } else if (information.type == '1') {
+      informationUrl = "/ggutk9a/information/fileview/oid/" + information.file_id + "/fname/" + information.file_name;
+    }
+
+    informationTable.append(
+      '<tr>' +
+        '<td class="fw-w40 fw-cl-theme" style="vertical-align: top;">' + information.new + '</td>' +
+        '<td class="fw-w90" style="vertical-align: top;">' + information.date + '</td>' +
+        '<td class="fw-w320" style="word-break: break-all;"><a href="' + informationUrl + '" target="_blank">' + information.title + '</a></td>' +
+        '</tr>'
+    );
+  }
+
+  $("#informationModalList").append(informationTable);
+
+}
+
+function closeInformationModalWindow(){
+
+  var modalId = "informationPanel";
+  $("#" + modalId).fadeOut("fast",function(){
+    $('#modal-overlay').remove();
+  });
+}
+
+$("#modal-overlay,#information-close-button").unbind().click(function(){
+
+  closeInformationModalWindow();
+
+});
+
+// -->
+</script>
+<section style="display:none;" class="fw-popup jq-user-popup">
+  <input type="hidden" id="modal_user_id" value="100017" class="fw-disabled">
+  <div class="lo-body jq-user-popup-posi fw-posi-fixed">
+    <div class="lo-inner">
+            <section class="fw-popup-box jq-user-popup-content">
+        <div class="lo-inner">
+          <ul class="fw-menu-vertical">
+            <li id="displayInformation">
+              <a id="displayInformationUrl" href="javascript:openInformationModalWindow();">
+                お知らせ<span class="jq-user-popup-information-new fw-pdl10 fw-cl-theme" style="display: none; float: right;">NEW</span>
+              </a>
+            </li>
+            <li id="changePasswordMenu">
+              <a id="changePasswordMenuUrl" href="#');">
+                パスワードの変更
+              </a>
+            </li>
+            <li id="userUpdateMenu">
+              <a id="userUpdateMenuUrl" href="#">
+                ユーザ情報の変更
+              </a>
+            </li>
+            <li>
+              <a href="javascript:document.getElementById('logoutForm').submit();">
+                ログアウト
+              </a>
+            </li>
+          </ul>
+          <form id="logoutForm" method="post" action="/ggutk9a/top/logout" target="_parent"><input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="44212301c9a16814db4374a85587362f"></form>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<!-- tooltip///////////////////////////////////////////////////////// -->
+<section style="display:none;" class="fw-tooltip jq-tooltip">
+  <div class="lo-body">
+    <div class="lo-inner">
+      <section class="fw-tooltip-box jq-tooltip-posi">
+        <div class="lo-inner jq-tooltip-box"></div>
+      </section>
+      <section class="fw-balloon jq-balloon">
+        <div class="fw-triangle-bottom"></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section id="informationPanel" class="fw-modal" style="display:none;position:absolute;z-index:102;">
+  <div class="lo-body fw-w500">
+    <div class="lo-inner fw-modal-common">
+      <h6 class="fw-txt-center fw-mg10">お知らせ</h6>
+      <hr class="fw-hr-theme">
+      <section class="fw-modal-body">
+        <div class="lo-inner" style="padding:10px;" id="informationModalList">
+        </div>
+      </section>
+      <hr class="fw-hr-theme">
+      <div class="fw-box-center fw-txt-center" id="information-close-button">
+        <a class="fw-btn " href="javascript:closeInformationModalWindow();">
+          閉じる
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="display:none;" class="fw-cartain jq-cartain"></section>
+<section style="display:none;" class="fw-cartain jq-popup-cartain"></section>
+<section class="fw-collapse">
+  <div class="lo-inner fw-txt-center">
+    <a class="fw-collapse-switch-box jq-nav-collapse" href="javascript:void(0);">
+      <i class="fa fa-caret-left"></i>
+    </a>
+  </div>
+</section>
+<section class="fw-toast jq-toast" style="display:none;">
+  <div class="lo-body">
+    <div class="lo-inner fw-toast-alert jq-toast-alert jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-success jq-toast-success jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-info jq-toast-info jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-warning jq-toast-warning jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-confirm jq-toast-confirm jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>

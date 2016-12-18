@@ -1,0 +1,2985 @@
+<!--<![endif]--><head>
+                      <meta charset="UTF-8">
+  <meta content="noindex,nofollow,noarchive,noimageindex" name="robots">
+  <!-- for ie ///////////////////////////////////////////////////////// -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0');
+        src: url('/js/vendor/font-awesome/fonts/fontawesome-webfont.eot?6.3.2.0') format('embedded-opentype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff2?6.3.2.0') format('woff2'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.woff?6.3.2.0') format('woff'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.ttf?6.3.2.0') format('truetype'),
+             url('/js/vendor/font-awesome/fonts/fontawesome-webfont.svg?6.3.2.0') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<!--[if lt IE 9]> <script src="/js/vendor/html5shiv.min.js?6.3.2.0"></script> <![endif]-->
+<!--[if gt IE 7]><!--> <link href="/js/vendor/font-awesome/css/font-awesome.min.css?6.3.2.0" type="text/css" rel="stylesheet"><!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/common.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/pages.css?6.3.2.0">
+<link rel="stylesheet" type="text/css" href="/css/colorCss/red-0/table.css?6.3.2.0">
+<!--[if IE 8]><link href="/css/colorCss/old-ie.css?6.3.2.0" rel="stylesheet"><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MXBFN7"></script><script type="text/javascript" src="/js/lib/jquery.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/automatic.js?6.3.2.0"></script>
+<script type="text/javascript" src="/js/htdbCommon.js?6.3.2.0"></script>
+<script type="text/javascript">
+<!--
+
+if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+} else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+} else {
+    window.onload = setToken;
+}
+function setToken() {
+
+    var elements = document.getElementsByTagName("form");
+    for (var i = 0; i < elements.length; i++) {
+        var input = document.createElement('input');
+        input.type = "hidden";
+        input.name = "REQUESTABLE_TOKEN_KEY";
+        input.value = "506df9ffa472b06ee3407d75022e7313";
+        elements[i].appendChild(input);
+    }
+}
+jQuery(document).ready(function($){
+    $('.jq-nav-collapse').on('click', function(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        if (!navCollapseFlg) {
+            obj.cols="0,*";
+            navCollapseFlg = true;
+        } else {
+            obj.cols="205,*";
+            navCollapseFlg = false;
+        }
+                var thisSwitch = $(this);
+                var point = $(this).children();
+        var option = point.attr('class');
+                if ( option === 'fa fa-caret-left' ) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+            $('.main-contents').animate({'margin-left': '50px'}, 300); //right column
+        } else if ( option === 'fa fa-caret-right' ){
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+            $('.main-contents').animate({'margin-left': '250px'}, 300); //right column
+        } else {
+            return false;
+        }
+    });
+        function updateFullScreenViewIcon(){
+        var obj = parent.document.getElementById('sideFrame');
+        if(!obj) {
+            return;
+        }
+        navCollapseFlg = obj.cols=="0,*";
+        var point = $('.jq-nav-collapse').children();
+        if (navCollapseFlg) {
+            point.removeClass().addClass('fa fa-caret-right'); //icon
+        } else {
+            point.removeClass().addClass('fa fa-caret-left'); //icon
+        }
+        return false;
+    }
+    updateFullScreenViewIcon();
+});
+//-->
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXBFN7');</script>
+<!-- End Google Tag Manager -->
+    <title>働くＤＢ レコード登録</title>
+    <link rel="stylesheet" type="text/css" href="/css/datePicker.css?6.3.2.0">
+    <link rel="stylesheet" type="text/css" href="/js/lib/jquery-ui.custom/jquery-ui.css?6.3.2.0">
+    <style type="text/css">
+    <!--
+    .dp-choose-date {
+      margin-right: 4px;
+      margin-left: 2px;
+    }
+    .fw-disabled {
+      /*Disable event of tag <a>*/
+      pointer-events: none;
+    }
+    // -->
+    </style>
+
+    <script type="text/javascript" src="/js/lib/jquery.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/lib/date.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/lib/jquery.datePicker.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/date.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/htdbCommon.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/jquery.selectboxsearch.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/lib/jquery.multisortable.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/lib/jquery-ui.custom/jquery-ui.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/dateHandle.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/htdbapplication.js?6.3.2.0"></script>
+    <script type="text/javascript" src="/js/chosen.jquery.js?6.3.2.0"></script>
+    <link href="/css/chosen.css?6.3.2.0" rel="stylesheet">
+    <style>
+      .ui-state-default{background:#fff;}
+      .ui-state-highlight{background:#fffae0; border: 1px solid #ccc;}
+      tr.ui-state-helper{border-left:1px solid #ffe88f;}
+      .ui-sortable-helper{border-left: 1px solid #ccc;border-top: 1px solid #ccc;margin-left:-1px;}
+      #sortableHead { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+      .ui-state-highlight { height: 2.25em; line-height: 1.2em; }
+      #sortableHead .handle:hover { cursor: move; }
+    </style>
+
+    <script type="text/javascript">
+    $(function() {
+      $( "#sortableHead" ).sortable({
+        placeholder: "ui-state-highlight",
+        scroll:true,
+        axis: 'y',
+        opacity:0.7,
+        cursor:'move',
+        handle: '.handle',
+        items: "tr.mainTr",
+        tolerance: "pointer",
+        update: function(event, ui) {
+          $('#sortableHead tr.mainTr').each(function(indexNo){
+          $(this).find('div.rowNo').text(indexNo+1);
+          });
+          $.ajax({
+          type: "POST",
+          url: "/ggutk9a/recordEdit/sort/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/",
+          data: $('#recordRegistForm').serialize(),
+          async: true
+        });
+        $('.sortRowNumber').each(function(index){
+          $(this).val(index+1);
+        });
+
+        }
+      });
+      // update td's width
+      for (var i = 1; $('.itemDetail' + i)[0]; i++) {
+        var maxWidth = 0;
+        $('.itemDetail' + i).each(function(){
+          if ($(this).width() > maxWidth) {
+            maxWidth = $(this).width();
+          }
+        })
+        $('.itemDetail' + i + '> div').css('width', maxWidth);
+      };
+      // remove border of last tr td
+      $('tr.detailRow td:last-child').css('border-right-width', '0px');
+      $('table tr.detailRow:last-child td').css('border-bottom-width', '0px');
+      // handle for td th of width
+      // handle for one record when drag&drop
+      $('#sortableHead tr.mainTr:first-child > td').each(function (index) {
+        var currentColumnChild = $("tr.mainTr > td:nth-child(" +(index+1)+ ")");
+        currentColumnChild.css('width', $(this).width());
+        currentColumnChild.children("div").css('width', $(this).width());
+      });
+    });
+  if (window.addEventListener) {
+    // for W3C DOM
+    window.addEventListener("load", setToken, false);
+  } else if (window.attachEvent) {
+    // for IE
+    window.attachEvent('onload', setToken);
+  } else {
+    window.onload = setToken;
+  }
+var dbgId		= '100026';
+var dbSchemaId	= '100093';
+var recordId    = '';
+var menuId      = '100197';
+var isAutoRef	= false;
+var headerIdarr	= new Array ();
+var meisaiIdarr	= new Array ();
+var foolerIdarr	= new Array ();
+var stopLinkPulldownOnchange = false;
+headerIdarr[0] = 100658;headerIdarr[1] = 100661;headerIdarr[2] = 100663;headerIdarr[3] = 102279;
+function hide_error_messages () {
+
+	for(var i = 0; i < meisaiIdarr.length; i++) {
+		if(document.getElementById('tr_' + meisaiIdarr[i])) {
+			document.getElementById('tr_' + meisaiIdarr[i]).className = '';
+		}
+	}
+	for(var i = 0; i < headerIdarr.length; i++) {
+		if(document.getElementById('tr_' + headerIdarr[i])) {
+			if ($("#tr_" + headerIdarr[i]).hasClass("fw-txt-left")) {
+				document.getElementById('tr_' + headerIdarr[i]).className = 'fw-txt-left';
+			} else {
+				document.getElementById('tr_' + headerIdarr[i]).className = '';
+			}
+		}
+	}
+	for(var i = 0; i < foolerIdarr.length; i++) {
+		if(document.getElementById('tr_' + foolerIdarr[i])) {
+			if ($("#tr_" + foolerIdarr[i]).hasClass("fw-txt-left")) {
+				document.getElementById('tr_' + foolerIdarr[i]).className = 'fw-txt-left';
+			} else {
+				document.getElementById('tr_' + foolerIdarr[i]).className = '';
+			}
+		}
+	}
+	if(document.getElementById('record_error_area')) {
+		document.getElementById('record_error_area').style.display = 'none';
+	}
+}
+
+function record_submit_default (url) {
+
+	dispGrayer();
+	document.recordRegistForm.action = url;
+	document.recordRegistForm.target = "_self";
+	document.recordRegistForm.submit();
+	submitDisable();
+}
+
+function registSubmit(){
+	if (document.recordRegistForm.recordId.value) {
+		checkEditingAndUpdate();
+	}else {
+		record_submit_default( "/ggutk9a/recordEdit/regist/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+	}
+}
+
+function registAndRequestSubmit(){
+	dispGrayer();
+	document.getElementById('APPROVAL_REQUEST_FLAG_FOR_UPDATE').value = 1;
+	registSubmit();
+	document.getElementById('APPROVAL_REQUEST_FLAG_FOR_UPDATE').value = 0;
+	submitDisable();
+}
+
+function offhandRegistSubmit(){
+	record_submit_default( "/ggutk9a/recordEdit/offhandregist/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function addNewTable(subTableId){
+
+	var currentIdxName = "currentIdx_" + subTableId;
+	var current = document.getElementById(currentIdxName).value;
+	if(current != ''){
+		document.recordRegistForm.subTableKey.value = current;
+	}
+	document.getElementById('meisaiEditingFlag').value	= 0;
+	document.recordRegistForm.subTableId.value = subTableId;
+	record_submit_default( "/ggutk9a/recordEdit/add/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function deleteSubTable(subTableId, subTableKey){
+
+	var currentIdxName = "currentIdx_" + subTableId;
+	var current = document.getElementById(currentIdxName).value;
+	if(current == subTableKey){
+		document.getElementById(currentIdxName).value = '';
+	}
+	document.recordRegistForm.subTableId.value = subTableId;
+	document.recordRegistForm.subTableKey.value = subTableKey;
+	record_submit_default( "/ggutk9a/recordEdit/delete/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function editSubTable(subTableId, subTableKey){
+
+	var currentIdxName = "currentIdx_" + subTableId;
+	document.getElementById(currentIdxName).value = subTableKey;
+	document.recordRegistForm.subTableId.value = subTableId;
+	document.recordRegistForm.subTableKey.value = subTableKey;
+	record_submit_default( "/ggutk9a/recordEdit/edit/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function copySubTable(subTableId, subTableKey){
+
+	var currentIdxName = "currentIdx_" + subTableId;
+	document.getElementById(currentIdxName).value = subTableKey;
+	document.recordRegistForm.subTableId.value = subTableId;
+	document.recordRegistForm.subTableKey.value = subTableKey;
+	record_submit_default( "/ggutk9a/recordEdit/copy/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function resetEdit(subTableId){
+
+	var currentIdxName = "currentIdx_" + subTableId;
+	document.getElementById(currentIdxName).value = '';
+	document.recordRegistForm.subTableId.value = subTableId;
+	record_submit_default( "/ggutk9a/recordEdit/reset/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function cancelSubmit(){
+	record_submit_default( "/ggutk9a/recordEdit/cancel/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function selectInputFormat(){
+	record_submit_default( "/ggutk9a/recordEdit/selectInput/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function batchReflect_TYPE_LINK() {
+	record_submit_default( "/ggutk9a/recordEdit/batchReflect/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function moveItem(act){
+	document.getElementById('order').value = act;
+	record_submit_default( "/ggutk9a/recordedit/sort/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+}
+
+function submitDisable(){
+	moveItem                = disabledMethod;
+	resetEdit               = disabledMethod;
+	addNewTable             = disabledMethod;
+	editSubTable            = disabledMethod;
+	copySubTable            = disabledMethod;
+	cancelSubmit            = disabledMethod;
+	registSubmit            = disabledMethod;
+	deleteSubTable          = disabledMethod;
+	selectInputFormat       = disabledMethod;
+	offhandRegistSubmit     = disabledMethod;
+	registAndRequestSubmit  = disabledMethod;
+	batchReflect_TYPE_LINK  = disabledMethod;
+	reflectForOne_TYPE_LINK = disabledMethod;
+}
+
+
+
+function _setDefaultValue(input){
+
+	if(input != null){
+		var after  = input.value;
+		input.defaultValue = after;
+	}
+}
+
+function setDefaultValue(input){
+
+	if(input != null){
+		var after  = input.value;
+		var before = input.defaultValue;
+		if(after == before){
+			return false;
+		}
+		input.defaultValue = after;
+	}
+	return true;
+}
+
+function insetTexForCalc(request){
+	resetReflectStyle();
+	insertTex(request, 'span_', 'calclation');
+  // Field hidden of span calc
+  insertTex(request, 'field_', 'calclation');
+}
+
+function insetTexForReflect(request){
+
+	resetReflectStyle();
+	insertForm(request, '', 'reflection');
+	insertTex(request, 'refSpan_', 'reflection_view');
+	insertTex(request, 'span_', 'calclation');
+	insertTex(request, 'itemSpan_', 'viewonly');
+  insertClickCall(request, 'clickcall_', 'reflection');
+	lazyLoadRecordImage();
+}
+
+function changeReflectStyle (iid) {
+	var obj = document.getElementById(iid);
+	if(obj) {
+		obj.style.backgroundColor = '#AAFFFF';
+	}
+}
+
+var changedIdByReflectList = new Array();
+function addChangedIdByReflectList (iid) {
+	var obj = document.getElementById(iid);
+	if(obj) {
+		var length = changedIdByReflectList.length;
+		changedIdByReflectList[length] = iid;
+	}
+}
+
+function resetReflectStyle () {
+
+	for(var i = 0; i < changedIdByReflectList.length; i++) {
+		var obj = document.getElementById(changedIdByReflectList[i]);
+		if(obj) {
+			obj.style.backgroundColor = '#FFFFFF';
+		}
+	}
+	changedIdByReflectList = new Array();
+	changedIdByReflectList.length = 0;
+}
+
+function insertTex(request, prefix, nodeName) {
+
+	var XML  = request;
+	var node = XML.getElementsByTagName(nodeName)[0];
+	if(!node) {
+		return;
+	}
+	var i = 0;
+	while(node.getElementsByTagName('field_id')[i]){
+
+		var fieldId  = node.getElementsByTagName('field_id')[i];
+		var value    = node.getElementsByTagName('field_value')[i];
+
+		var currentVal = '';
+		if(value && value.firstChild && value.firstChild.nodeValue){
+			currentVal = value.firstChild.nodeValue
+		}
+
+		var element	= document.getElementById(prefix + fieldId.firstChild.nodeValue);
+		if(element){
+      // Field hidden of span calc
+      if (prefix == "field_") {
+        if ($("#" + prefix + fieldId.firstChild.nodeValue + ":hidden").length > 0) {
+          element.value = currentVal;
+          try {
+            if (element.onchange) {
+              element.onchange();
+            }
+          } catch (err) {}
+        }
+      } else {
+        element.innerHTML = currentVal;
+      }
+		}
+
+		if(prefix == 'refSpan_') {
+			addChangedIdByReflectList("td_" + fieldId.firstChild.nodeValue);
+			changeReflectStyle("td_" + fieldId.firstChild.nodeValue);
+			var element2	= document.getElementById('span_' + fieldId.firstChild.nodeValue);
+			if(element2){
+				element2.innerHTML = currentVal;
+			}
+		}
+
+		i++;
+	}
+	if(prefix == 'span_'){
+		var j = 1;
+		while(node.getElementsByTagName('field_id' + j)[0]){
+			var c = 0;
+			while(node.getElementsByTagName('field_id' + j)[c]){
+				var fieldId = node.getElementsByTagName('field_id' + j)[c].firstChild.nodeValue;
+				var value   = node.getElementsByTagName('field_value' + j)[c];
+				var currentVal = '';
+				if(value && value.firstChild && value.firstChild.nodeValue){
+					currentVal = value.firstChild.nodeValue
+				}
+				if(document.getElementById(prefix + j + '_' + fieldId)){
+					document.getElementById(prefix + j + '_' + fieldId).innerHTML = currentVal;
+										          if(document.getElementById("field_" + fieldId)){
+					  document.getElementById("field_" + fieldId).value = $('#' + prefix + j + '_' + fieldId).text();
+          }
+//					try {
+//						document.getElementById("field_" + fieldId).onchange();
+//					} catch (err) {}
+				}
+				c++;
+			}
+			j++;
+		}
+	}else if(prefix == 'itemSpan_'){
+		var i = 0;
+		while(node.getElementsByTagName('row_number')[i]){
+			var k = 0;
+			var rowNumber  = node.getElementsByTagName('row_number')[i].firstChild.nodeValue;
+			while(node.getElementsByTagName('field_id' + rowNumber)[k]){
+				var fieldId    = node.getElementsByTagName('field_id' + rowNumber)[k].firstChild.nodeValue;
+				var value      = node.getElementsByTagName('field_value' + rowNumber)[k];
+				var currentVal = '';
+				if(value && value.firstChild && value.firstChild.nodeValue){
+					currentVal = value.firstChild.nodeValue
+				}
+				if(document.getElementById(prefix + rowNumber + '_' + fieldId)){
+					document.getElementById(prefix + rowNumber + '_' + fieldId).innerHTML = currentVal;
+				}
+				k++;
+			}
+			i++;
+		}
+	} else if(prefix == 'refSpan_'){
+		var j = 1;
+		while(node.getElementsByTagName('field_id' + j)[0]){
+			var c = 0;
+			while(node.getElementsByTagName('field_id' + j)[c]){
+
+				var fieldId = node.getElementsByTagName('field_id' + j)[c].firstChild.nodeValue;
+				var value   = node.getElementsByTagName('field_value' + j)[c];
+				var currentVal = '';
+				if(value && value.firstChild && value.firstChild.nodeValue){
+					currentVal = value.firstChild.nodeValue
+				}
+				if(document.getElementById(prefix + j + '_' + fieldId)){
+					document.getElementById(prefix + j + '_' + fieldId).innerHTML = currentVal;
+					addChangedIdByReflectList("td_" + j + '_' + fieldId);
+					changeReflectStyle("td_" + j + '_' + fieldId);
+				}
+				c++;
+			}
+			j++;
+		}
+	}
+}
+
+
+function insertForm (request, prefix, nodeName) {
+
+	var XML  = request;
+	var node = XML.getElementsByTagName(nodeName)[0];
+	var linkIndex	= new Array ();
+	if(!node) {
+		return;
+	}
+	var node_field_id	= node.getElementsByTagName('field_id');
+	var node_form_name	= node.getElementsByTagName('form_name');
+	var node_form_value	= node.getElementsByTagName('form_value');
+
+	var i = 0;
+
+    try{
+        stopLinkPulldownOnchange = true;
+
+    	while(node_field_id[i]){
+
+    		var fieldId	= node_field_id[i];
+    		var name	= node_form_name[i];
+    		var value	= node_form_value[i];
+    		var currentVal = '';
+    		if(value && value.firstChild && value.firstChild.nodeValue){
+    			currentVal = value.firstChild.nodeValue;
+    		}
+    		var obj = document.getElementById(name.firstChild.nodeValue);
+    		if(obj){
+    			_setDefaultValue(obj);
+    			obj.value = currentVal;
+
+    			for(var ii = 0; ii < meisaiIdarr.length; ii++) {
+    				if(meisaiIdarr[ii] == fieldId.firstChild.nodeValue) {
+    					dispSeeThroughButton(obj);
+    				}
+    			}
+
+    			if(name.firstChild.nodeValue.indexOf('group',0) == 0) {
+    				var def_index	= 0;
+    				var link_key_name	= fieldId.firstChild.nodeValue;
+    				if(link_key_name in linkIndex) {
+    					def_index = linkIndex[link_key_name];
+    				}
+    				executePulldownByAjax(obj, link_key_name, def_index);
+
+    				def_index++;
+    				linkIndex[link_key_name] = def_index;
+    			}
+    			addChangedIdByReflectList("td_" + fieldId.firstChild.nodeValue);
+    			changeReflectStyle("td_" + fieldId.firstChild.nodeValue);
+    			_setDefaultValue(obj);
+    			disabledReflectButton (fieldId.firstChild.nodeValue);
+    			$('#' + name.firstChild.nodeValue).change();
+    		}
+    		i++;
+    	}
+    } catch (ee) {
+
+    } finally {
+        stopLinkPulldownOnchange = false;
+    }
+}
+
+function insertClickCall(request, prefix, nodeName) {
+
+  var XML  = request;
+  var node = XML.getElementsByTagName(nodeName)[0];
+  if(!node) {
+    return;
+  }
+  var i = 0;
+  while(node.getElementsByTagName('field_id')[i]){
+
+    var fieldId  = node.getElementsByTagName('field_id')[i];
+    var value    = node.getElementsByTagName('form_value')[i];
+    var currentVal = '';
+    if(value && value.firstChild && value.firstChild.nodeValue){
+      currentVal = value.firstChild.nodeValue
+    }
+
+    var element	= document.getElementById(prefix + fieldId.firstChild.nodeValue);
+    if(element){
+      $(element).attr("data-dialup-number", currentVal.replace(/-/g , ""));
+      if ($(element).attr("data-dialup-number").length > 0) {
+        $(element).show();
+      } else {
+        $(element).hide();
+      }
+    }
+    i++;
+  }
+
+}
+
+function insertNul(request) {
+	var div1 = document.getElementById('waitServerMessage');
+	div1.style.display = 'none';
+	var cartain = $('.jq-cartain');
+	if (cartain) {
+		cartain.hide();
+	}
+}
+
+function executePulldownByAjax(input, fieldId, idx) {
+
+	if (input.value == '' && input.selectedIndex == 0) {
+		disableNext(fieldId, idx);
+		return;
+	}
+	if($('#preview_title').css('display') != 'none'){
+		return;
+	}
+	dispGrayer();
+	$.ajax({
+	   type:    "POST",
+	   url:     "/ggutk9a/recordeditajax/viewDbLinkPulldown/dbgId/" + dbgId + "/dbSchemaId/" + dbSchemaId + "/recordId/" + recordId
+                        + "/menuId/" + menuId + "/group_index/" + idx + "/fieldId/" + fieldId,
+	   data:    $('#recordRegistForm').serialize(),
+	   async:   false,
+	   success: function(res){ renderPulldown(res, fieldId, idx); },
+	   error:   insertNul,
+       complete:insertNul
+	});
+}
+
+
+function executePulldown(input, fieldId, idx) {
+
+    if(stopLinkPulldownOnchange) {
+        return;
+    }
+
+	if (input.value == '' && input.selectedIndex == 0) {
+		disableNext(fieldId, idx);
+		return;
+	}
+	if($('#preview_title').css('display') != 'none'){ 
+		return;
+	}
+	dispGrayer();
+    $.ajax({
+       type:    "POST",
+       url:     "/ggutk9a/recordeditajax/viewDbLinkPulldown/dbgId/" + dbgId + "/dbSchemaId/" + dbSchemaId + "/recordId/" + recordId
+                        + "/menuId/" + menuId + "/group_index/" + idx + "/fieldId/" + fieldId,
+       data:    $('#recordRegistForm').serialize(),
+       success: function(res){ renderPulldown(res, fieldId, idx); },
+       error:   insertNul,
+       complete:insertNul
+    });
+}
+
+function disableNext(fieldId, idx) {
+
+	var i = 0;
+	while (document.getElementById('group_' + i + '_' + fieldId)) {
+		var obj = document.getElementById('group_' + i + '_' + fieldId);
+		obj.disabled = i > idx;
+		if (obj.disabled) {
+			obj.selectedIndex = 0;
+		}
+		document.getElementById('select_group_' + i + '_' + fieldId).value = !obj.disabled && obj.selectedIndex > 0 ? 1 : 0;
+		i++;
+	}
+	document.getElementById('field_' + fieldId).disabled  = true;
+	document.getElementById('select_field_' + fieldId).value  = 0;
+	disabledReflectButton(fieldId);
+}
+
+function renderPulldown(res, fieldId, idx) {
+
+	var bef = document.getElementById('group_' + idx + '_' + fieldId);
+	if (bef) {
+		document.getElementById('select_group_' + idx + '_' + fieldId).value  = bef.selectedIndex > 0 ? 1 : 0;
+	}
+
+	var obj = document.getElementById('group_' + String(idx + 1) + '_' + fieldId);
+	if (obj) {
+        if (obj.outerHTML) {
+            var start = obj.outerHTML.slice(0, obj.outerHTML.indexOf('>') + 1);
+            var end   = '</select>';
+            obj.outerHTML = start + res + end;
+        } else {
+            obj.innerHTML = res;
+        }
+		obj.disabled  = false;
+		document.getElementById('select_group_' + String(idx + 1) + '_' + fieldId).value  = obj.selectedIndex > 0 ? 1 : 0;
+		disableNext(fieldId, idx + 1);
+	} else {
+        obj = document.getElementById('field_' + fieldId);
+		obj.disabled  = false;
+        if (obj.outerHTML) {
+            var start = obj.outerHTML.slice(0, obj.outerHTML.indexOf('>') + 1);
+            var end   = '</select>';
+            obj.outerHTML = start + res + end;
+        } else {
+            obj.innerHTML = res;
+        }
+		document.getElementById('select_field_' + fieldId).value  = obj.selectedIndex > 0 ? 1 : 0;
+		disabledReflectButton(fieldId);
+	}
+}
+
+function disabledReflectButton(fieldId) {
+
+	var obj = document.getElementById('field_' + fieldId);
+	if(!obj) {
+		return;
+	}
+	var objselect	= document.getElementById('select_field_' + fieldId);
+	if(!objselect) {
+		return;
+	}
+	if(!document.getElementById('hide_div_' + fieldId)) {
+		return;
+	}
+
+	if (obj.disabled) {
+		obj.selectedIndex = 0;
+	}
+	objselect.value  = obj.selectedIndex > 0 ? 1 : 0;
+
+	var flg = objselect.value == '0';
+    if (document.getElementById('reflect_' + fieldId)) {
+    	document.getElementById('reflect_' + fieldId).style.display = flg ? 'none' : '';
+    	document.getElementById('seeThrough_reflect_' + fieldId).style.display = flg ? '' : 'none';
+    }
+
+	var text = flg ? '<input type="hidden" name="field_' + fieldId + '" value="" />' : '';
+	document.getElementById('hide_div_' + fieldId).innerHTML = text;
+}
+
+function dispGrayer() {
+	var cartain = $('.jq-cartain');
+	if (cartain) {
+		cartain.show();
+		cartain.addClass("fw-bg-white fw-op06");
+	}
+
+	var div1 = document.getElementById('waitServerMessage');
+	div1.style.display  = '';
+
+	var h_padding = top.document.getElementById('verticalFrame').rows == "53,*" ? 53 : 0;
+	var w_padding = 0;
+	if(top.document.getElementById('sideFrame')){
+		w_padding = top.document.getElementById('sideFrame').cols == "0,*" ? 0 : 200;
+	}
+	var h = document.body.clientHeight > (screen.height - h_padding) ? document.body.clientHeight : (screen.height - h_padding);
+	var w = document.body.clientWidth > (screen.width - w_padding) ? document.body.clientWidth : (screen.width - w_padding);
+}
+
+function dispSeeThroughButton(input){
+
+	if(input != null){
+		if(input.defaultValue == input.value){
+			return;
+		}
+	}
+
+	var sDisp = document.getElementById('saveDisp');
+	var sNone = document.getElementById('saveNone');
+	var tDisp = document.getElementById('tempSaveDisp');
+	var tNone = document.getElementById('tempSaveNone');
+	var rDisp = document.getElementById('saveRequestDisp');
+	var rNone = document.getElementById('saveRequestNone');
+	var mess  = document.getElementById('aboveDecidButtonMessage');
+	if(sDisp)	{sDisp.style.display	= 'none';	}
+	if(sNone)	{sNone.style.display	= '';		}
+	if(tDisp)	{tDisp.style.display	= 'none';	}
+	if(tNone)	{tNone.style.display	= '';		}
+	if(rDisp)	{rDisp.style.display	= 'none';	}
+	if(rNone)	{rNone.style.display	= '';		}
+	if(mess)	{mess.style.display		= '';		}
+	if(input != null) {
+		document.getElementById('meisaiEditingFlag').value	= 1;
+	}
+}
+
+
+var FIELD_SELECTION_MAP = new Array();
+
+function deleteField_CATEGORY_FILE(fieldId) {
+		document.getElementById('field_' + fieldId).value = '';
+		document.getElementById('html_' + fieldId).value = '';
+		document.getElementById('text_' + fieldId).value = '';
+		document.getElementById('span_' + fieldId).innerHTML = '';
+
+        showUploadButton(fieldId);
+}
+
+function showDeleteButton(fieldId) {
+        $('#uploadButton_' + fieldId).css('display', 'none');
+        $('#deleteButton_' + fieldId).css('display', '');
+}
+
+function showUploadButton(fieldId) {
+        $('#uploadButton_' + fieldId).css('display', '');
+        $('#deleteButton_' + fieldId).css('display', 'none');
+}
+
+function changeButtonDisplay(fieldId, valueTagId) {
+        var currentValue = $('#' + valueTagId + fieldId).val();
+        if (currentValue && currentValue != '') {
+            showDeleteButton(fieldId);
+        } else {
+            showUploadButton(fieldId);
+        }
+}
+
+function setFilePath(obj, fieldId){
+		document.getElementById("field_" + fieldId).value = '';
+		document.getElementById("html_" + fieldId).value = obj.value;
+}
+
+function openFileUploadWindow(fieldId, type) {
+    $contents = $('#fileupdFrame').contents();
+    $contents.find('#result').children().remove();
+    $contents.find('#inputIdentifier').val(fieldId);
+    $contents.find('#fileType').val(type);
+
+    var $uploadFile = $contents.find('#uploadFile');
+    if ($uploadFile.prop('disabled')) {
+                alert("このブラウザではアップロードできません。");
+    } else {
+        $uploadFile.click();
+    }
+}
+
+function afterFileUpload($resultArea) {
+    var fileSize = $resultArea.find('#fileSize').text();
+    var fileName = $resultArea.find('#fileName').text();
+    var fileId   = $resultArea.find('#fileId').text();
+    var fieldId  = $resultArea.find('#fieldId').text();
+
+    var fileType = parseInt($resultArea.find('#fileType').text(), 10);
+
+    var fileLink = $resultArea.find('#fileLink').get(0).innerHTML;
+
+    $('#text_' + fieldId).val(fileSize);
+    $('#span_' + fieldId).append(fileLink);
+    if (fileType == 1) {
+        $('#html_' + fieldId).val(fileName);
+        $('#field_' + fieldId).val(fileId);
+    } else {
+        $('#html_' + fieldId).val(fileId);
+        $('#field_' + fieldId).val(fileName);
+    }
+
+    showDeleteButton(fieldId);
+
+    var currentDbSchemaId = $('#currentDbSchemaId_' + fieldId).val();
+    if (dbSchemaId != currentDbSchemaId) {
+        dispSeeThroughButton(null);
+    }
+}
+
+function changeMulti(fieldId, isAdd) {
+
+	var unselId = isAdd ? 'unselect_' : 'selected_';
+	var   selId = isAdd ? 'selected_' : 'unselect_';
+
+	var unsel = document.getElementById(unselId + fieldId).options;
+	var toRight = new Array();
+	var toRightVal = new Array();
+	for(var i = 0; i < unsel.length; i++) {
+		if(unsel[i].selected) {
+			toRight[unsel[i].value] = unsel[i].text;
+			toRightVal.push(unsel[i].value);
+		}
+	}
+	for(var i = unsel.length - 1; i >= 0; i--) {
+		if(unsel[i].selected) {
+			unsel[i] = null;
+		}
+	}
+
+	var sel = document.getElementById(selId + fieldId).options;
+	for(var i = 0; i < sel.length; i++) {
+		toRight[sel[i].value] =  sel[i].text;
+		toRightVal.push(sel[i].value);
+	}
+
+	sel.length = 0;
+	var idc = 0;
+
+	var selections = FIELD_SELECTION_MAP[fieldId];
+	for(var j = 0; j < selections.length; j++){
+		for(var i = 0; i < toRightVal.length; i++) {
+			if(selections[j] == toRightVal[i]){
+				sel[idc] = new Option(toRight[toRightVal[i]], toRightVal[i]);
+				idc++;
+			}
+		}
+	}
+
+	var res = document.getElementById('selected_' + fieldId).options;
+	var insertString = '';
+	document.getElementById('span_' + fieldId).innerHTML  = "";
+	for(var i = 0; i < res.length; i++){
+		if(i > 0) {
+			insertString = insertString + "\n";
+		}
+		var field = 'field_' + fieldId;
+		var html  = 'html_'  + fieldId;
+		insertString = insertString + '<input type="hidden" id="' + field + '" name="' + field + '[]" value="' + res[i].value + '">';
+		insertString = insertString + '<input type="hidden" id="' + html + '" name="' + html + '[]" value="' + htmlspecialchars(res[i].text) + '">';
+	}
+	document.getElementById('span_' + fieldId).innerHTML = insertString;
+}
+
+function addMenu(fieldId) {
+		changeMulti(fieldId, true);
+		handleEnterRestriction($("#selected_" + fieldId), null);
+}
+
+function delMenu(fieldId) {
+		changeMulti(fieldId, false);
+		handleEnterRestriction($("#selected_" + fieldId), null);
+}
+
+function checkAllBox(fieldId, checkFlag){
+
+	var checkList = document.getElementsByName('field_' + fieldId + '[]');
+	if(checkList.length > 1){		
+		for(var i = 0; i < checkList.length; i++){
+			checkList[i].checked = checkFlag;
+							checkList[i].onclick();
+					}		
+	}else{
+		checkList.checked = checkFlag;
+	}
+}
+
+function setNowDate(fieldId, dataType, calcFlag, inputType, inputMethod){
+		var now = new Date();
+		var year = now.getFullYear();
+		var month = now.getMonth() + 1;
+		var day = now.getDate();
+		var hour = now.getHours();
+		var min = now.getMinutes();
+		var sec = now.getSeconds();
+
+		var isYear   = false;
+		var isMonth  = false;
+		var isDay    = false;
+		var isHour   = false;
+		var isMinute = false;
+		var isSecond = false;
+		var isField  = false;
+
+		var isTextSeparate = inputMethod == 2;
+
+		if(document.getElementById('year_' + fieldId)){
+			document.getElementById('year_' + fieldId).value = year;
+			isYear = setDefaultValue(document.getElementById('year_' + fieldId));
+		}
+		if(document.getElementById('month_' + fieldId)){
+			document.getElementById('month_' + fieldId).value = isTextSeparate ? ("0" + month).slice(-2) : month;
+			isMonth = setDefaultValue(document.getElementById('month_' + fieldId));
+		}
+		if(document.getElementById('day_' + fieldId)){
+		
+			if(isTextSeparate == false){
+				 
+								lastDayVal         = $('#day_' + fieldId).children(":last").val();
+				characterDate      = $('#day_' + fieldId).children(":last")[0].text;
+				isContentCharacter = characterDate.indexOf("日") > -1;
+				totalDayOfMonth    = (new Date(year, month, 0)).getDate();
+				if (lastDayVal < totalDayOfMonth) {
+					while (lastDayVal < totalDayOfMonth) {
+						lastDayPlus = parseInt(lastDayVal) + 1;
+						if(isContentCharacter) {
+							$('#day_' + fieldId).append('<option value="' + lastDayPlus + '">' + lastDayPlus + '日</option>');
+						} else {
+							$('#day_' + fieldId).append('<option value="' + lastDayPlus + '">' + lastDayPlus + '</option>');
+						}
+						lastDayVal ++;
+					}
+				}
+												if (lastDayVal > totalDayOfMonth) {
+					while (lastDayVal > totalDayOfMonth) {
+						$('#day_' + fieldId).children(":last").remove();
+						lastDayVal --;
+					}
+				}
+							}
+			document.getElementById('day_' + fieldId).value = isTextSeparate ? ("0" + day).slice(-2) : day;
+			isDay = setDefaultValue(document.getElementById('day_' + fieldId));
+		}
+		if(document.getElementById('hour_' + fieldId)){
+			document.getElementById('hour_' + fieldId).value = isTextSeparate ? ("0" + hour).slice(-2) : hour;
+			isHour = setDefaultValue(document.getElementById('hour_' + fieldId));
+		}
+		if(document.getElementById('minute_' + fieldId)){
+			document.getElementById('minute_' + fieldId).value = isTextSeparate ? ("0" + min).slice(-2) : min;
+			isMinute = setDefaultValue(document.getElementById('minute_' + fieldId));
+		}
+		if(document.getElementById('second_' + fieldId)){
+			document.getElementById('second_' + fieldId).value = isTextSeparate ? ("0" + sec).slice(-2) : sec;
+			isSecond = setDefaultValue(document.getElementById('second_' + fieldId));
+		}
+		if(document.getElementById('field_' + fieldId)){
+			var dateFlag = dataType == 6;
+			var dateString = "";
+			if (dateFlag) {
+                dateString = year;
+
+                if (inputType < 5) {
+                    month = ("0" + month).slice(-2);
+                    dateString += "-" + month;
+                }
+                if (inputType < 4) {
+                    day = ("0" + day).slice(-2);
+                    dateString += "-" + day;
+                }
+                if (inputType < 3) {
+                    hour = ("0" + hour).slice(-2);
+                    dateString += " " + hour;
+                }
+                if (inputType < 2) {
+                    min = ("0" + min).slice(-2);
+                    dateString += ":" + min;
+                }
+                if (inputType == 0) {
+                    sec = ("0" + sec).slice(-2);
+                    dateString += ":" + sec;
+                }
+			} else {
+			    hour = ("0" + hour).slice(-2);
+			    dateString = hour;
+
+                if (inputType < 102) {
+                    min = ("0" + min).slice(-2);
+                    dateString += ":" + min;
+                }
+                if (inputType == 100) {
+                    sec = ("0" + sec).slice(-2);
+                    dateString += ":" + sec;
+                }
+			}
+			document.getElementById('field_' + fieldId).value = dateString;
+			isField = setDefaultValue(document.getElementById('field_' + fieldId));
+		}
+		if(calcFlag && (isYear || isMonth || isDay || isHour || isMinute || isSecond || isField)){
+			executeCalc(null);
+		}
+}
+
+function handleEnter (field, event) {
+  try {
+    var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+    if (keyCode == 13) {
+      return false;
+    }else{
+      return true;
+    }
+  } catch(e) {}
+}
+
+function handleEnterRestriction (field, event) {
+  try {
+    var keyCode = "";
+    if (event != null) {
+      var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+    }
+    if (keyCode == 13) {
+      return false;
+    }else{
+      // Run second time for disabled fields when  their input restriction is disabled
+      for (var i = 0; i < 2; i++) {
+        check();
+      }
+    }
+  } catch (e) {
+
+  }
+}
+
+function zeroFormat_TYPE_KEY(id, maxLength){
+	var textVal = document.getElementById(id).value;
+
+	if(textVal.length == 0){
+		return false;
+	}
+
+	while(textVal.length < maxLength && textVal.length != maxLength){
+		textVal = '0' + textVal;
+	}
+	document.getElementById(id).value = textVal;
+}
+
+function inputRegistSubmit(){
+
+	document.recordRegistForm.action = "/ggutk9a/recordEdit/inputRegist/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/";
+	document.recordRegistForm.target = "_self";
+	document.recordRegistForm.submit();
+}
+
+function focusInput(){
+
+	var fieldId = '100661';
+
+	if(document.getElementById('field_' + fieldId)){
+		if(document.getElementById('field_' + fieldId).type != 'hidden' && !document.getElementById('field_' + fieldId).disabled){
+			document.getElementById('field_' + fieldId).focus();
+		}
+	}
+	if(document.getElementById('year_' + fieldId)){
+		document.getElementById('year_' + fieldId).focus();
+	} else if(document.getElementById('hour_' + fieldId)){
+		document.getElementById('hour_' + fieldId).focus();
+	}
+
+	if(document.getElementById('select_' + fieldId)){
+		if(document.getElementById('select_' + fieldId).type != 'hidden'){
+			document.getElementById('select_' + fieldId).focus();
+		}
+	}
+	if(document.getElementById('url_' + fieldId)){
+		document.getElementById('url_' + fieldId).focus();
+	}
+
+	if(document.getElementById('selected_' + fieldId)){
+		document.getElementById('selected_' + fieldId).focus();
+	}
+}
+
+function search_TYPE_LINK(fieldId){
+	var searchString = document.getElementById('field_' + fieldId).value;
+	document.getElementById('searchString').value = searchString;
+
+	var url = "/ggutk9a/linkField/search/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG//openerFieldId/" + fieldId;
+	w = window.open("", "search", "width=1000,height=600,top=200,left=250,scrollbars=yes,resizable=yes");
+
+	document.recordRegistForm.action = url;
+	document.recordRegistForm.target = "search";
+	document.recordRegistForm.submit();
+}
+
+
+var REFLECT_URL		= "/ggutk9a/recordeditajax/reflect";
+var V_REFLECT_URL	= "/ggutk9a/recordeditajax/viewreflect";
+var REFLECT_PARAM	= "/dbgId/" + dbgId + "/dbSchemaId/" + dbSchemaId + "/menuId/" + menuId;
+
+function reflectForBlur_TYPE_LINK(fieldId, m_reflectflag) {
+	if($('#preview_title').css('display') != 'none'){ 
+		return;
+	}
+	var input = document.getElementById('field_' + fieldId);
+	if(setDefaultValue(input)){
+		dispGrayer();
+		var m_isAutoRef = isAutoRef;
+		if(m_reflectflag == 1) {
+			m_isAutoRef = true;
+		} else if (m_reflectflag == 0) {
+			m_isAutoRef = false;
+		}
+		__executeReflection (fieldId, m_isAutoRef);
+	}
+}
+
+function reflectForOne_TYPE_LINK(fieldId) {
+	if($('#preview_title').css('display') != 'none'){ 
+		return;
+	}
+	dispGrayer();
+	__executeReflection(fieldId, true);
+	hide_error_messages();
+}
+
+function __executeReflection(fieldId, isReflection) {
+
+	var url	= isReflection ? REFLECT_URL : V_REFLECT_URL;
+    $.ajax({
+       type:    "POST",
+       url:     url + REFLECT_PARAM + "/fieldId/" + fieldId,
+       data:    $('#recordRegistForm').serialize(),
+       success: insetTexForReflect,
+       error:   insertNul,
+       complete:insertNul
+    });
+}
+
+function executeCalc(input) {
+
+	if(!setDefaultValue(input)){
+		return;
+	}
+	if($('#preview_title').css('display') != 'none'){ 
+		return;
+	}
+	dispGrayer();
+    $.ajax({
+       type:    "POST",
+       url:     "/ggutk9a/recordeditajax/calc/dbgId/" + dbgId + "/dbSchemaId/" + dbSchemaId + "/recordId/" + recordId,
+       data:    $('#recordRegistForm').serialize(),
+       success: insetTexForCalc,
+       error:   insertNul,
+       complete:insertNul
+    });
+}
+
+function checkEditingAndUpdate() {
+    $.ajax({
+        type:    "POST",
+        url:     "/ggutk9a/recordeditajax/checkediting/dbgId/" + dbgId + "/dbSchemaId/" + dbSchemaId + "/recordId/" + recordId,
+        async:   false,
+        data:    $('#recordRegistForm').serialize(),
+        success: function(isConfirm){
+            var isUpdate = true;
+            if (isConfirm == '1') {
+                isUpdate = confirm("他のユーザやシステムの処理によって内容が変更された可能性があります。\n現在の入力内容で更新しますか？");
+            }
+            if (isUpdate) {
+                record_submit_default( "/ggutk9a/recordEdit/regist/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/");
+            }
+        }
+    });
+}//URL確認パネルの表示制御
+function url_dispConfirmPanel(event){
+  offsetLeft = document.getElementById('popupCategory').offsetLeft;
+  displayActWidth = 320;
+  y_offset = getEventY(event, 0, false);
+  viewObjectByEvent(event, 'url_displayAct', offsetLeft - displayActWidth - 10, y_offset, true);
+}
+
+function maskDetailItem(){
+   $('.detailPartItem').find("input, textarea, select, button, a").each(function(){
+      $("<input>", {type: "hidden", name: $(this).attr('name')}).insertAfter($(this));
+      }).attr('disabled', 'disabled').unbind('click').on('click', function() { return false; });
+   $('.detailPartItem').find(".chosen-single").css('background-color', '#E3E3E3');
+   $('.detailPartItem').find(".chosen-drop").hide();
+}
+
+function pageFeed(url) {
+    serverWait();
+    movePage(url);
+}
+
+function init(){
+
+    if($('.chosen-select').length){
+    $(".chosen-select").chosen({
+      allow_single_deselect:true,
+      disable_search_threshold:10,
+
+      no_results_text:'一致しません。',
+      search_contains:true
+    });
+  }
+  lazyLoadRecordImage();
+  focusInput();
+      
+    var registMessage = "登録が完了しました。";
+    
+        
+      //---Check input restriction--
+      // Run second time for disabled fields when their input restriction is disabled
+      for (var i = 0; i < 2; i++) {
+        check();
+      }
+    }
+    
+    // Input restriction
+    function check() {
+      var inputRestrictionList = $.parseJSON(unescape('%5B%5D'));
+    // Input field
+    $(":text").each(function () {
+      initCheck($(this), inputRestrictionList);
+    });
+    // Textarea field
+    $("textarea").each(function() {
+      initCheck($(this), inputRestrictionList);
+    });
+    // Select field
+    $("select").each(function() {
+      initCheck($(this), inputRestrictionList);
+    });
+    // Button
+    $("span[id*=uploadButton_]").each(function() {
+      initCheck($(this), inputRestrictionList);
+    });
+    // Checkbox
+    $(":checkbox").each(function() {
+      initCheck($(this), inputRestrictionList);
+    });
+    // Radio
+    $(":radio").each(function() {
+      initCheck($(this), inputRestrictionList);
+    });
+  }
+
+function initCheck(aObj, aInputRestrictionList) {
+  var id = aObj.attr('id');
+  if (id !== undefined) {
+    var isMultipleSelection = false;
+    if (id.indexOf("selected_") > -1) { // multi select, multi user
+      if (aObj.is("[multiple]")) {
+        isMultipleSelection = true;
+      }
+      id = id.replace("selected_", "field_");
+    } else if (id.indexOf("year_") > -1) { // datetime
+      id = id.replace("year_", "field_");
+    } else if (id.indexOf("hour_") > -1) { // time
+      id = id.replace("hour_", "field_");
+    } else if (id.indexOf("uploadButton_") > -1) { // upload file, image
+      id = id.replace("uploadButton_", "field_");
+    } else if (id.indexOf("url_") > -1) { // url case
+      id = id.replace("url_", "field_");
+    } else if (id.indexOf("label_") > -1) {       id = id.replace("label_", "field_");
+    } else if (/^field_\d+_\d+/g.test(id)) { // checkbox and radio
+      id = id.match(/^field_\d+/g)[0];
+    }
+    //try {
+      if (aInputRestrictionList[id] != null && aInputRestrictionList[id] != "undefined") {
+        if (aInputRestrictionList[id].field_id) {
+          var restrictionFieldId = aInputRestrictionList[id].restriction_field_id;
+          var filterType = aInputRestrictionList[id].filter_type;
+          var linkField = aInputRestrictionList[id].link_field;
+          var value1 = "";
+          var value2 = "";
+          var valueList = new Array();
+          var opeland = aInputRestrictionList[id].opeland;
+          if (filterType == null) {
+            if (linkField == 0) {
+              // Text type
+              value1 = aInputRestrictionList[id].target_value;
+            } else {
+              // Text type
+              value1 = aInputRestrictionList[id].target_value;
+              if (value1 == null) {
+                value1 = "";
+              }
+            }
+            // Choice one, choice multi, user one, user multi
+            if (opeland == null) {
+              targetValueList = aInputRestrictionList[id].target_value_list;
+              targetValueList = targetValueList.toLowerCase().slice(1, -1);
+              valueList = targetValueList.split(",");
+              if (isMultipleSelection) {
+                var id = aObj.prop('id');
+              }
+              disableOrEnableWithTargetValueList(id, restrictionFieldId, valueList);
+              return;
+            }
+          } else if (filterType == "1") {
+            // Integer type, calc number, calc datetime
+            if (linkField == 0) {
+              value1 = aInputRestrictionList[id].target_value;
+            } else {
+              value1 = aInputRestrictionList[id].target_value;
+              if (value1 == null) {
+                value1 = "";
+              }
+            }
+          } else {
+            // Integer type
+            value1 = aInputRestrictionList[id].target_value != null ? aInputRestrictionList[id].target_value : "";
+            value2 = aInputRestrictionList[id].target_value2 != null ? aInputRestrictionList[id].target_value2 : "";
+          }
+          disableOrEnable(id, restrictionFieldId, value1, value2, opeland, filterType);
+        }
+      }
+    //} catch (e) {}
+  }
+}
+
+function disableOrEnable(aFieldId, aRestrictionFieldId, aValue1, aValue2, aOpeland, aFilterType) {
+  var pattNum = /(^|[\-])([\d.,]+)/;
+  if (String(aRestrictionFieldId).indexOf("field_") == -1) {
+    aRestrictionFieldId = "field_" + aRestrictionFieldId;
+  }
+  // Not input text
+  var hiddenFieldId = "";
+  // Is type calc number or calc datetime
+  var restrictionValue = "";
+  var isEmptyRestrictionValue = false;
+  if ($("#" + aRestrictionFieldId + ":hidden").length > 0) {
+    hiddenFieldId = aRestrictionFieldId;
+  } else if ($("#restrict_" + aRestrictionFieldId + ":hidden").length > 0) {
+    hiddenFieldId = "restrict_" + aRestrictionFieldId;
+  }
+  if (hiddenFieldId != "") {
+        var prevOfHiddenField = $("#" + hiddenFieldId).prev();
+    if (prevOfHiddenField.is("span")) {
+      restrictionValue = $("#" + hiddenFieldId).val();
+    }
+    aRestrictionFieldId = hiddenFieldId;
+  }
+  if (restrictionValue == "") {
+    restrictionValue = $("#" + aRestrictionFieldId).val();
+  }
+  if (restrictionValue == undefined || restrictionValue == null || restrictionValue.length == 0) {
+    isEmptyRestrictionValue = true;
+    restrictionValue = "";
+  } else {
+    // Trim restrictionValue before comparing
+    restrictionValue = restrictionValue.trim();
+  }
+      if ($("#" + aRestrictionFieldId).attr("restricttype") == "number"
+      || $("#" + hiddenFieldId).attr("restricttype") == "number") {
+    if (!isEmptyRestrictionValue) {
+                  var prefix = $("#" + hiddenFieldId).attr("prefix");
+      if (prefix !== "" && prefix !== null && prefix !== undefined) {
+        restrictionValue = restrictionValue.substring(prefix.length);
+      }
+            var suffix = $("#" + hiddenFieldId).attr("suffix");
+      if (suffix !== "" && suffix !== null && suffix !== undefined) {
+        restrictionValue = restrictionValue.substring(0, restrictionValue.length - suffix.length);
+      }
+            var minusSign = $("#" + hiddenFieldId).attr("minussign");
+      if (minusSign == "1") {
+        restrictionValue = restrictionValue.replace(/^\△(.*)/g, "-$1");
+      } else if (minusSign == "2") {
+        restrictionValue = restrictionValue.replace(/^\((.*)\)$/g, "-$1");
+      }
+            restrictionValue = restrictionValue.replace(/,/g, '');
+            restrictionValue = restrictionValue.trim();
+            if (pattNum.test(restrictionValue) == true) {
+        if (restrictionValue.length > 0 && aValue1.length > 0) {
+          if (!isNaN(restrictionValue)) {
+            restrictionValue = Number(restrictionValue);
+            aValue1 = Number(aValue1);
+          }
+        }
+      }
+    }
+  }
+  if ($("#" + aFieldId).length <= 0) {
+    selectedId = aFieldId.replace("field_", "selected_");
+    if ($("#" + selectedId).length > 0) {
+      unSelectId = aFieldId.replace("field_", "unselect_");
+    }
+  } else {
+    // Chosen (Single user)
+    var chosen = aFieldId + "_chosen";
+  }
+  var tdId = aFieldId.replace("field_", "td_");
+  var thId = aFieldId.replace("field_", "tr_");
+  if ($("#" + aRestrictionFieldId).is(":disabled") || $("#" + aRestrictionFieldId).length <= 0) {
+    // Disabled
+    if ($("#" + aFieldId).length <= 0) {
+      if ($("#" + selectedId).length > 0) {
+        // Multi select and multi user
+        $("#" + selectedId).prop("disabled", true);
+        $("#" + unSelectId).prop("disabled", true);
+        $("#" + selectedId).css("background-color", "#ebebe4");
+        $("#" + unSelectId).css("background-color", "#ebebe4");
+        $("#" + tdId).find(":text").prop("disabled", true);
+      }
+    } else if ($("#" + chosen).length > 0) {
+        // Single user
+        $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+        $("#" + chosen).find(".chosen-drop").hide();
+    } else {
+      if ($("#" + aFieldId).length > 0) {
+        $("#" + aFieldId).prop("disabled", true);
+      }
+    }
+    disableAll(tdId, thId);
+  } else {
+    if (aFilterType == "1" || aFilterType == null) {
+      switch (aOpeland) {
+        // "="
+        case 1:
+          if (restrictionValue == aValue1) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // "!="
+        case 2:
+          if (restrictionValue != aValue1) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // ">="
+        case 3:
+          if (!isEmptyRestrictionValue && Number(restrictionValue) >= Number(aValue1)) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // ">"
+        case 4:
+          if (!isEmptyRestrictionValue && Number(restrictionValue) > Number(aValue1)) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // <=
+        case 5:
+          if (!isEmptyRestrictionValue && Number(restrictionValue) <= Number(aValue1)) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // "<"
+        case 6:
+          if (!isEmptyRestrictionValue && Number(restrictionValue) < Number(aValue1)) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // "含む"
+        case 7:
+          if (restrictionValue.toLowerCase().indexOf(aValue1.toLowerCase()) > -1) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        // "含まない"
+        case 8:
+          if (restrictionValue.toLowerCase().indexOf(aValue1.toLowerCase()) == -1) {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", false);
+                $("#" + unSelectId).prop("disabled", false);
+                $("#" + selectedId).css("background-color", "");
+                $("#" + unSelectId).css("background-color", "");
+                $("#" + tdId).find(":text").prop("disabled", false);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '');
+                $("#" + chosen).find(".chosen-drop").show();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", false);
+              }
+            }
+            enableAll(tdId, thId);
+          } else {
+            if ($("#" + aFieldId).length <= 0) {
+              if ($("#" + selectedId).length > 0) {
+                // Multi select and multi user
+                $("#" + selectedId).prop("disabled", true);
+                $("#" + unSelectId).prop("disabled", true);
+                $("#" + selectedId).css("background-color", "#ebebe4");
+                $("#" + unSelectId).css("background-color", "#ebebe4");
+                $("#" + tdId).find(":text").prop("disabled", true);
+              }
+            } else if ($("#" + chosen).length > 0) {
+                // Single user
+                $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+                $("#" + chosen).find(".chosen-drop").hide();
+            } else {
+              if ($("#" + aFieldId).length > 0) {
+                $("#" + aFieldId).prop("disabled", true);
+              }
+            }
+            disableAll(tdId, thId);
+          }
+          break;
+        default:
+          break;
+      }
+    } else if (aFilterType == "0") {
+      var isRestricted = false;
+            if (!isEmptyRestrictionValue && !isNaN(restrictionValue) && pattNum.test(restrictionValue) == true) {
+        var nbRestrictVal = Number(restrictionValue),
+            nbVal1        = Number(aValue1),
+            nbVal2        = Number(aValue2);
+        if (aValue1 !== "" && (aValue2 === "" || isNaN(aValue2))) {
+          if (nbRestrictVal >= nbVal1) {
+            isRestricted = true;
+          }
+        } else if ((aValue1 === "" || isNaN(aValue1)) && aValue2 !== "") {
+          if (nbRestrictVal <= nbVal2) {
+            isRestricted = true;
+          }
+        } else if (aValue1 !== "" && aValue2 !== "") {
+          if (nbRestrictVal >= nbVal1 && nbRestrictVal <= nbVal2) {
+            isRestricted = true;
+          }
+        }
+      }
+      if (isRestricted) {
+        if ($("#" + aFieldId).length <= 0) {
+          if ($("#" + selectedId).length > 0) {
+            // Multi select and multi user
+            $("#" + selectedId).prop("disabled", false);
+            $("#" + unSelectId).prop("disabled", false);
+            $("#" + selectedId).css("background-color", "");
+            $("#" + unSelectId).css("background-color", "");
+            $("#" + tdId).find(":text").prop("disabled", false);
+          }
+        } else if ($("#" + chosen).length > 0) {
+            // Single user
+            $("#" + chosen).find(".chosen-single").css('background-color', '');
+            $("#" + chosen).find(".chosen-drop").show();
+        } else {
+          if ($("#" + aFieldId).length > 0) {
+            $("#" + aFieldId).prop("disabled", false);
+          }
+        }
+        enableAll(tdId, thId);
+      } else {
+        if ($("#" + aFieldId).length <= 0) {
+          if ($("#" + selectedId).length > 0) {
+            // Multi select and multi user
+            $("#" + selectedId).prop("disabled", true);
+            $("#" + unSelectId).prop("disabled", true);
+            $("#" + selectedId).css("background-color", "#ebebe4");
+            $("#" + unSelectId).css("background-color", "#ebebe4");
+            $("#" + tdId).find(":text").prop("disabled", true);
+          }
+        } else if ($("#" + chosen).length > 0) {
+            // Single user
+            $("#" + chosen).find(".chosen-single").css('background-color', '#E3E3E3');
+            $("#" + chosen).find(".chosen-drop").hide();
+        } else {
+          if ($("#" + aFieldId).length > 0) {
+            $("#" + aFieldId).prop("disabled", true);
+          }
+        }
+        disableAll(tdId, thId);
+      }
+    }
+  }
+}
+
+function disableOrEnableWithTargetValueList(aFieldId, aRestrictionFieldId, aTargetValueList) {
+  var tdId = "";
+  var thId = "";
+  var isRadioOrCheckbox = false;
+  var disabledRadioOrCheckBox = false;
+  var isSpan = false;
+  var restrictionValue = "";
+  var selectedId = "";
+  var chosen = "";
+  if ($("#restrict_field_" + aRestrictionFieldId + ":hidden").length > 0) {
+    hiddenFieldId = "restrict_field_" + aRestrictionFieldId;
+        var prevOfHiddenField = $("#" + hiddenFieldId).prev();
+    if (prevOfHiddenField.is("span")) {
+      restrictionValue = $("#" + hiddenFieldId).val();
+      isSpan = true;
+    }
+  }
+  if (restrictionValue != undefined && restrictionValue != null && restrictionValue.length > 0) {
+    // Trim restrictionValue before comparing
+    restrictionValue = restrictionValue.trim();
+  }
+  if (isSpan) { // Case this field can't edit
+    selectedId = aFieldId.replace("field_", "selected_");
+    chosen = "";
+    // Single case
+    // Disabled starting
+    if ($("#" + selectedId).length > 0) { // Select case
+      tdId = aFieldId.replace("selected_", "td_");
+      thId = aFieldId.replace("selected_", "tr_");
+    } else { // Field case
+      tdId = aFieldId.replace("field_", "td_");
+      thId = aFieldId.replace("field_", "tr_");
+    }
+    // Field
+    $("#" + aFieldId).prop("disabled", true);
+    // Chosen
+    chosen = aFieldId.replace("selected_", "field_");
+    if ($("#" + chosen + "_chosen").length > 0) {
+      // Single user
+      $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '#E3E3E3');
+      $("#" + chosen + "_chosen").find(".chosen-drop").hide();
+    }
+    // Other elements
+    disableAll(tdId, thId);
+    // Enabled starting
+    // Check restrictionValue is multi?
+    var patt = /\d+,/g;
+    var isMulti = patt.test(restrictionValue);
+    var restrictionValueList = "";
+    if (isMulti) {
+      if (restrictionValue.length > 0) {
+        restrictionValueList = restrictionValue.split(",");
+      }
+    }
+    if (isMulti && restrictionValueList != "") {      var isEnabled = false;
+      for (var i = 0; i < aTargetValueList.length; i++) {
+        for (var j = 0; j < restrictionValueList.length; j++) {
+          if (restrictionValueList[j] == aTargetValueList[i]) {
+            isEnabled = true;
+          }
+        }
+        if (isEnabled) {
+          // Field
+          $("#" + aFieldId).prop("disabled", false);
+          // Chosen
+          if ($("#" + chosen + "_chosen").length > 0) {
+            // Single user
+            $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '');
+            $("#" + chosen + "_chosen").find(".chosen-drop").show();
+          }
+          // Other elements
+          enableAll(tdId, thId);
+          break;
+        }
+      }
+    } else {      for (var i = 0; i < aTargetValueList.length; i++) {
+        if (aTargetValueList[i] == restrictionValue) {
+          // Field
+          $("#" + aFieldId).prop("disabled", false);
+          // Chosen
+          if ($("#" + chosen + "_chosen").length > 0) {
+            // Single user
+            $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '');
+            $("#" + chosen + "_chosen").find(".chosen-drop").show();
+          }
+          // Other elements
+          enableAll(tdId, thId);
+          break;
+        }
+      }
+    }
+  } else {
+  // Is selected?
+  if (String(aRestrictionFieldId).indexOf("selected_") == -1 && String(aRestrictionFieldId).indexOf("field_") == -1) {
+    aRestrictionFieldId = "selected_" + aRestrictionFieldId;
+  }
+  // Is single selection?
+  if ($("#" + aRestrictionFieldId).length <= 0) {
+    aRestrictionFieldId = aRestrictionFieldId.replace("selected_", "field_");
+  }
+  // Is radio?
+  if ($("#" + aRestrictionFieldId).length <= 0) {
+    isRadioOrCheckbox = true;
+  }
+  if ((isRadioOrCheckbox == false && $("#" + aRestrictionFieldId).length > 0) || isRadioOrCheckbox == true) {
+    selectedId = aFieldId.replace("field_", "selected_");
+    chosen = aFieldId.replace("selected_", "field_");
+    // Check restrictionField element is disabled?
+    if ($("#" + aRestrictionFieldId).is(":disabled") || $("input[id*=" + aRestrictionFieldId + "]").is(":disabled")) {
+      // Disabled starting
+      if ($("#" + selectedId).length > 0) { // Select case
+        tdId = aFieldId.replace("selected_", "td_");
+        thId = aFieldId.replace("selected_", "tr_");
+      } else { // Field case
+        tdId = aFieldId.replace("field_", "td_");
+        thId = aFieldId.replace("field_", "tr_");
+      }
+      // Chosen
+      if ($("#" + chosen + "_chosen").length > 0) {
+        // Single user
+        $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '#E3E3E3');
+        $("#" + chosen + "_chosen").find(".chosen-drop").hide();
+      }
+      // Other elements
+      disableAll(tdId, thId);
+    } else {
+      if ($("#" + aRestrictionFieldId).is("[multiple]") || $("input[name*=" + aRestrictionFieldId + "]").is(":checkbox")) {// Multiple case
+        // Disabled starting
+        if ($("#" + selectedId).length > 0) { // Select case
+          tdId = aFieldId.replace("selected_", "td_");
+          thId = aFieldId.replace("selected_", "tr_");
+        } else { // Field case
+          tdId = aFieldId.replace("field_", "td_");
+          thId = aFieldId.replace("field_", "tr_");
+        }
+        restrictionValue = new Array();
+        // Checkbox case
+        if ($("input[name*=" + aRestrictionFieldId + "]").is(":checkbox")) {
+          $("input[name*=" + aRestrictionFieldId + "]:checked").each(function() {
+            restrictionValue.push($(this).val());
+          });
+        } else { // Select case
+          $("#" + aRestrictionFieldId + " option").each(function() {
+            restrictionValue.push($(this).val());
+          });
+        }
+        selectedId = aFieldId.replace("field_", "selected_");
+        // Field
+        $("#" + aFieldId).prop("disabled", true);
+        // Chosen
+        chosen = aFieldId.replace("selected_", "field_");
+        if ($("#" + chosen + "_chosen").length > 0) {
+          // Single user
+          $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '#E3E3E3');
+          $("#" + chosen + "_chosen").find(".chosen-drop").hide();
+        }
+        // Other elements
+        disableAll(tdId, thId);
+                if (aTargetValueList.indexOf("") > -1 && restrictionValue.length == 0) {
+          restrictionValue.push("");
+        }
+        var resultMap = restrictionValue.map(function(val){
+          if (aTargetValueList.indexOf(val) > -1) {
+            // Field
+            $("#" + aFieldId).prop("disabled", false);
+            // Chosen
+            if ($("#" + chosen + "_chosen").length > 0) {
+              // Single user
+              $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '');
+              $("#" + chosen + "_chosen").find(".chosen-drop").show();
+            }
+            // Other elements
+            enableAll(tdId, thId);
+            return aTargetValueList.indexOf(val);
+          }
+        });
+      } else { // Single case
+        // Disabled starting
+        if ($("#" + selectedId).length > 0) { // Select case
+          tdId = aFieldId.replace("selected_", "td_");
+          thId = aFieldId.replace("selected_", "tr_");
+        } else { // Field case
+          tdId = aFieldId.replace("field_", "td_");
+          thId = aFieldId.replace("field_", "tr_");
+        }
+        // Single
+        restrictionValue = "";
+        if (isRadioOrCheckbox) {
+          // Get the value from a set of radio buttons
+          restrictionValue = $( "input[name=" + aRestrictionFieldId + "]:checked" ).val();
+        } else {
+          restrictionValue = $("#" + aRestrictionFieldId).val();
+        }
+        // Field
+        $("#" + aFieldId).prop("disabled", true);
+        // Chosen
+        chosen = aFieldId.replace("selected_", "field_");
+        if ($("#" + chosen + "_chosen").length > 0) {
+          // Single user
+          $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '#E3E3E3');
+          $("#" + chosen + "_chosen").find(".chosen-drop").hide();
+        }
+        // Other elements
+        disableAll(tdId, thId);
+        // Enabled starting
+        for (var i = 0; i < aTargetValueList.length; i++) {
+          if (aTargetValueList[i] == restrictionValue) {
+            // Field
+            $("#" + aFieldId).prop("disabled", false);
+            // Chosen
+            if ($("#" + chosen + "_chosen").length > 0) {
+              // Single user
+              $("#" + chosen + "_chosen").find(".chosen-single").css('background-color', '');
+              $("#" + chosen + "_chosen").find(".chosen-drop").show();
+            }
+            // Other elements
+            enableAll(tdId, thId);
+            break;
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+function disableAll(aTdId, aThId) {
+  // Disabled button
+  $("#" + aTdId).find("a").addClass("fw-disabled");
+  // Disabled all select
+  $("#" + aTdId).find("select").prop("disabled", true).css("background-color", "#E3E3E3");
+  // Disabled all checkbox
+  $("#" + aTdId).find(":checkbox").prop("disabled", true);
+  // Disabled all radio
+  $("#" + aTdId).find(":radio").prop("disabled", true);
+  // Disabled all textbox for url case
+  $("#" + aTdId).find(":text").prop("disabled", true);
+  // Disabled all label
+  $("#" + aTdId).find("label").addClass("fw-disabled");
+  // Change background of td and th
+  $("#" + aTdId).css("background-color", "#ccc");
+  $("#" + aThId).css("background-color", "#ccc");
+}
+
+function enableAll(aTdId, aThId) {
+  // Enabled button
+  $("#" + aTdId).find("a").removeClass("fw-disabled");
+  // Enabled all select
+  $("#" + aTdId).find("select").prop("disabled", false).css("background-color", "");
+  // Enabled all checkbox
+  $("#" + aTdId).find(":checkbox").prop("disabled", false);
+  // Enabled all radio
+  $("#" + aTdId).find(":radio").prop("disabled", false);
+  // Enabled all textbox for url case
+  $("#" + aTdId).find(":text").prop("disabled", false);
+  // Enabled all label
+  $("#" + aTdId).find("label").removeClass("fw-disabled");
+  // Change background of td and th
+  $("#" + aTdId).css("background-color", "");
+  $("#" + aThId).css("background-color", "#f0f0f0");
+}
+</script>
+<style type="text/css">
+<!--
+select      { margin: 0px 0px; padding:0px 0px;}
+-->
+</style>
+</head>
+<body class="body-record-input" style="min-width: 0px" onload="init();maskDetailItem();" marginwidth="0" marginheight="0">
+  <main class="contents" role="main">
+    <div class="lo-body">
+      <div class="lo-inner">
+
+                <section class="fw-pankuzu fw-mgb7">
+          <div class="lo-body">
+            <div class="lo-inner fw-float">
+              <div class="lo-outer fw-pankuzu-box fw-left">
+                <ul class="fw-float">
+                  <li>日報・月報</li>
+                  <li>&gt;</li>
+                                    <li>日報管理DB</li>
+                  <li>&gt;</li>
+                  <li class="fw-pankuzu-title">日報入力</li>
+                                                      <li class="fw-bookmark jq-bookmark-on ">
+                    <a onclick="javascript:showPopup(event);" style="cursor: pointer;">
+                      <i class="fa fa-star"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+                            <div class="lo-outer">
+                <ul class="fw-float">
+                  <li class="page-function fw-right">
+                    <a id="link_menu_box" class="fw-btn jq-popup-open" href="javascript:void(0);">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+                          </div>
+          </div>
+        </section>
+        <hr class="fw-hr-theme">
+               <section id="preview_title" class="fw-page-title fw-mgb10" style="display:none">
+          <div class="lo-inner">
+            <h4>入力画面プレビュー</h4>
+          </div>
+        </section>
+      <section id="waitServerMessage" style="display:none;" class="fw-loader jq-loader">
+        <div class="lo-body">
+          <div class="lo-inner">
+            <img src="/img/common/loader.gif">
+          </div>
+        </div>
+      </section>
+      <form enctype="multipart/form-data" id="recordRegistForm" name="recordRegistForm" method="POST">
+      <input type="hidden" name="sessionTime" id="sessionTime" value="1481435628.28">
+      <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313">                <section class="fw-toolbar-clear fw-mgb20">
+          <div class="lo-inner">
+            <div class="fw-float">
+                              <div class="lo-outer fw-main-box fw-left">
+  <ul class="fw-float15">
+    <li>
+      入力画面
+      <select name="inputFormatId" class="fw-w200" onchange="selectInputFormat()"><option value="100051" selected="">日報入力</option>
+<option value="0">（すべて）</option></select>
+    </li>
+  </ul>
+</div>                          </div>
+          </div>
+        </section>
+
+                                                                                      <section class="fw-paging-text">
+                  </section>
+        <section class="fw-panel fw-mgb20 fw-bg-orange ">
+          <div class="lo-body">
+            <div class="lo-inner">
+            
+<section class="table-box ">
+  <div class="lo-body">
+    <div class="lo-inner">
+      <table class="fw-table">
+        <tbody>
+          <tr>
+                        <th id="tr_100658" style="white-space : nowrap;" class="fw-txt-left">
+            日報番号<span class="fw-cl-red">*</span>            
+            </th>
+            <td id="td_100658" colspan="1" style="white-space : nowrap;">
+              <table cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tbody><tr>
+                                                <td style="padding:2px; white-space : nowrap; vertical-align : middle; border:0px;">
+                                            （自動採番）
+    <input type="hidden" name="field_100658" id="field_100658" value="">
+                                                    </td>
+
+                                                </tr>
+              </tbody></table>          
+            </td>
+                                                </tr><tr>
+                                    <th id="tr_100661" style="white-space : nowrap;" class="fw-txt-left">
+            対象日付<span class="fw-cl-red">*</span>            
+            </th>
+            <td id="td_100661" colspan="1" style="white-space : nowrap;">
+              <table cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tbody><tr>
+                                                <td style="padding:2px; white-space : nowrap; vertical-align : middle; border:0px;">
+                                <div class="dateArea">
+  
+<select class="fw-mgr3" name="year_100661" id="year_100661" onfocus="_setDefaultValue(this)"><option value="">--</option><option value="1900">1900年</option><option value="1901">1901年</option><option value="1902">1902年</option><option value="1903">1903年</option><option value="1904">1904年</option><option value="1905">1905年</option><option value="1906">1906年</option><option value="1907">1907年</option><option value="1908">1908年</option><option value="1909">1909年</option><option value="1910">1910年</option><option value="1911">1911年</option><option value="1912">1912年</option><option value="1913">1913年</option><option value="1914">1914年</option><option value="1915">1915年</option><option value="1916">1916年</option><option value="1917">1917年</option><option value="1918">1918年</option><option value="1919">1919年</option><option value="1920">1920年</option><option value="1921">1921年</option><option value="1922">1922年</option><option value="1923">1923年</option><option value="1924">1924年</option><option value="1925">1925年</option><option value="1926">1926年</option><option value="1927">1927年</option><option value="1928">1928年</option><option value="1929">1929年</option><option value="1930">1930年</option><option value="1931">1931年</option><option value="1932">1932年</option><option value="1933">1933年</option><option value="1934">1934年</option><option value="1935">1935年</option><option value="1936">1936年</option><option value="1937">1937年</option><option value="1938">1938年</option><option value="1939">1939年</option><option value="1940">1940年</option><option value="1941">1941年</option><option value="1942">1942年</option><option value="1943">1943年</option><option value="1944">1944年</option><option value="1945">1945年</option><option value="1946">1946年</option><option value="1947">1947年</option><option value="1948">1948年</option><option value="1949">1949年</option><option value="1950">1950年</option><option value="1951">1951年</option><option value="1952">1952年</option><option value="1953">1953年</option><option value="1954">1954年</option><option value="1955">1955年</option><option value="1956">1956年</option><option value="1957">1957年</option><option value="1958">1958年</option><option value="1959">1959年</option><option value="1960">1960年</option><option value="1961">1961年</option><option value="1962">1962年</option><option value="1963">1963年</option><option value="1964">1964年</option><option value="1965">1965年</option><option value="1966">1966年</option><option value="1967">1967年</option><option value="1968">1968年</option><option value="1969">1969年</option><option value="1970">1970年</option><option value="1971">1971年</option><option value="1972">1972年</option><option value="1973">1973年</option><option value="1974">1974年</option><option value="1975">1975年</option><option value="1976">1976年</option><option value="1977">1977年</option><option value="1978">1978年</option><option value="1979">1979年</option><option value="1980">1980年</option><option value="1981">1981年</option><option value="1982">1982年</option><option value="1983">1983年</option><option value="1984">1984年</option><option value="1985">1985年</option><option value="1986">1986年</option><option value="1987">1987年</option><option value="1988">1988年</option><option value="1989">1989年</option><option value="1990">1990年</option><option value="1991">1991年</option><option value="1992">1992年</option><option value="1993">1993年</option><option value="1994">1994年</option><option value="1995">1995年</option><option value="1996">1996年</option><option value="1997">1997年</option><option value="1998">1998年</option><option value="1999">1999年</option><option value="2000">2000年</option><option value="2001">2001年</option><option value="2002">2002年</option><option value="2003">2003年</option><option value="2004">2004年</option><option value="2005">2005年</option><option value="2006">2006年</option><option value="2007">2007年</option><option value="2008">2008年</option><option value="2009">2009年</option><option value="2010">2010年</option><option value="2011">2011年</option><option value="2012">2012年</option><option value="2013">2013年</option><option value="2014">2014年</option><option value="2015">2015年</option><option value="">--</option><option value="2016" selected="">2016年</option><option value="2017">2017年</option><option value="2018">2018年</option><option value="2019">2019年</option><option value="2020">2020年</option><option value="2021">2021年</option><option value="2022">2022年</option><option value="2023">2023年</option><option value="2024">2024年</option><option value="2025">2025年</option><option value="2026">2026年</option><option value="2027">2027年</option><option value="2028">2028年</option><option value="2029">2029年</option><option value="2030">2030年</option><option value="2031">2031年</option><option value="2032">2032年</option><option value="2033">2033年</option><option value="2034">2034年</option><option value="2035">2035年</option><option value="2036">2036年</option><option value="2037">2037年</option><option value="2038">2038年</option><option value="2039">2039年</option></select>  
+    
+     <select class="fw-mgr3" name="month_100661" id="month_100661" onfocus="_setDefaultValue(this)"><option value="">--</option><option value="1">1月</option><option value="2">2月</option><option value="3">3月</option><option value="4">4月</option><option value="5">5月</option><option value="6">6月</option><option value="7">7月</option><option value="8">8月</option><option value="9">9月</option><option value="10">10月</option><option value="11">11月</option><option value="12" selected="">12月</option></select>         <select class="fw-mgr3 dp-applied" name="day_100661" id="day_100661" onfocus="_setDefaultValue(this)"><option value="">--</option><option value="1">1日</option><option value="2">2日</option><option value="3">3日</option><option value="4">4日</option><option value="5">5日</option><option value="6">6日</option><option value="7">7日</option><option value="8">8日</option><option value="9">9日</option><option value="10">10日</option><option value="11" selected="">11日</option><option value="12">12日</option><option value="13">13日</option><option value="14">14日</option><option value="15">15日</option><option value="16">16日</option><option value="17">17日</option><option value="18">18日</option><option value="19">19日</option><option value="20">20日</option><option value="21">21日</option><option value="22">22日</option><option value="23">23日</option><option value="24">24日</option><option value="25">25日</option><option value="26">26日</option><option value="27">27日</option><option value="28">28日</option><option value="29">29日</option><option value="30">30日</option><option value="31">31日</option></select><a href="#" class="dp-choose-date fw-cursor-pointer"><i class="fa fa-calendar fw-fs18"></i></a>          <a class="fw-btn" href="javascript:setNowDate('100661', '6', false, 3, 0);">現在</a>
+</div>
+                                                </td>
+
+                                                </tr>
+              </tbody></table>          
+            </td>
+                                                </tr><tr>
+                                    <th id="tr_100663" style="white-space : nowrap;" class="fw-txt-left">
+            業務報告            
+            </th>
+            <td id="td_100663" colspan="1" style="white-space : nowrap;">
+              <table cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tbody><tr>
+                                                <td style="padding:2px; white-space : nowrap; vertical-align : middle; border:0px;">
+                                <textarea cols="50" rows="5" style="ime-mode:auto; white-space: pre-wrap;" class="fw-ff-mono" id="field_100663" name="field_100663"></textarea>
+
+                                                </td>
+
+                                                </tr>
+              </tbody></table>          
+            </td>
+                                                </tr><tr>
+                                    <th id="tr_102279" style="white-space : nowrap;" class="fw-txt-left">
+            所感            
+            </th>
+            <td id="td_102279" colspan="1" style="white-space : nowrap;">
+              <table cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tbody><tr>
+                                                <td style="padding:2px; white-space : nowrap; vertical-align : middle; border:0px;">
+                                <textarea cols="50" rows="5" style="ime-mode:auto; white-space: pre-wrap;" class="fw-ff-mono" id="field_102279" name="field_102279"></textarea>
+
+                                                </td>
+
+                                                </tr>
+              </tbody></table>          
+            </td>
+                                                          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+            
+            
+            </div>
+          </div>
+        </section>
+        <input type="hidden" name="recordId" id="recordId" value="">
+        <input type="hidden" name="updateDate" id="updateDate" value="">
+        <input type="hidden" name="lastUpdateDate" id="lastUpdateDate" value="">
+        <input type="hidden" name="fieldId" id="fieldId" value="">
+        <input type="hidden" name="searchString" id="searchString" value="">
+        <input type="hidden" name="subTableId" value="">
+        <input type="hidden" name="subTableKey" value="">
+        <input type="hidden" name="sessSubTableId" value="">
+        <input type="hidden" name="sessKeyTime" value="1481435628.28">
+        <input type="hidden" name="hasSubRecord" value="">
+        <input type="hidden" id="meisaiEditingFlag" name="meisaiEditingFlag" value="">
+        <input type="hidden" name="link_dbgId" value="">
+        <input type="hidden" name="link_dbSchemaId" value="">
+        <input type="hidden" name="link_recordId" value="">
+        <!-- 強制登録する項目 -->
+                <!-- 強制取得する項目 -->
+                <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+                  <div id="aboveDecidButtonMessage" style="display : none;font-weight : normal;">
+            <section class="fw-messages jq-messages fw-mgb10">
+              <div class="lo-body">
+                <div class="lo-inner fw-messages-warning jq-messages-warning jq-messages-inner current">
+                  <div class="fw-iconbox">
+                    <div class="fw-icon">
+                      <i class="fa fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="fw-keyword">
+                      明細の入力が完了していません。<br>
+                      明細入力欄の下にある「追加」ボタン、もしくは「更新」ボタンを押すか、「リセット」で入力内容をクリアしてください。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+                <section class="decision-box fw-mgb20">
+          <div class="lo-body">
+            <div class="lo-inner">
+              <ul>
+                <li>
+                  <div class="fw-formset">
+                    <label class="fw-vertical">
+                                          </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+                <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+                  <section class="decision-box fw-mgt20 fw-mgb20 ">
+          <div class="lo-inner">
+                        <ul class="fw-float">
+                                                        <div id="saveDisp">
+                <li>
+                  <a class="fw-btn-ok fw-btn-icon fw-mw100" href="javascript:registSubmit();">
+                    <div class="fw-float fw-box-center">
+                      <div class="fw-left"><i class="fa fa-check-circle"></i></div>
+                      <div class="fw-left fw-mgl3">確定</div>
+                    </div>
+                  </a>
+                </li>
+                                <li>
+                  <a class="fw-btn fw-mw100" href="/ggutk9a/main/top">キャンセル</a>
+                </li>
+                                              </div>
+                            <div id="saveNone" style="display : none;">
+                <li>
+                  <a class="fw-btn-ok fw-btn-icon fw-disabled fw-mw100">
+                    <div class="fw-float fw-box-center">
+                      <div class="fw-left"><i class="fa fa-check-circle"></i></div>
+                      <div class="fw-left fw-mgl3">確定</div>
+                    </div>
+                  </a>
+                </li>
+                                <li>
+                  <a class="fw-btn fw-disabled fw-mw100">キャンセル</a>
+                </li>
+                              </div>
+                               <div id="tempSaveDisp">
+                  <li class="fw-mgl100">
+                    <a class="fw-btn fw-btn-icon fw-mw100" href="javascript:offhandRegistSubmit();">
+                      <div class="fw-float fw-box-center">
+                        <div class="fw-left"><i class="fa fa-floppy-o"></i></div>
+                        <div class="fw-left fw-mgl3">一時保存する</div>
+                      </div>
+                    </a>
+                  </li>
+                </div>
+                <div id="tempSaveNone" style="display : none;">
+                   <li class="fw-mgl100">
+                    <a class="fw-btn fw-btn-icon fw-disabled fw-mw100">
+                      <div class="fw-float fw-box-center">
+                        <div class="fw-left"><i class="fa fa-floppy-o"></i></div>
+                        <div class="fw-left fw-mgl3">一時保存する</div>
+                      </div>
+                    </a>
+                  </li>
+                </div>
+                                            </ul>
+          </div>
+        </section>
+                <section class="fw-paging-text fw-mgb20">
+                  </section>
+        <section class="decision-box fw-mgt20 fw-mgb20 ">
+          <div class="lo-body">
+            <div class="lo-inner">
+              <div class="fw-txt-left">
+                                          </div>
+            </div>
+          </div>
+        </section>
+              <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313"></form>
+      <br>
+      
+    </div>
+      <form id="calcelForm" name="calcelForm" action="/ggutk9a/recordedit/inputupdate/dbgId/100026/dbSchemaId/100093/displayTabId//menuId/100197/AFTER_REGIST_FLAG/" method="POST">
+        <input type="hidden" name="recordId" id="recordId" value="">
+      <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313"></form>
+            <script type="text/javascript">
+<!--
+
+    $(document).ready(function() {
+        $("#favoriteName").keypress(function(ev) {
+            if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+    });
+
+    isFavorite = false;
+    function showPopup(event) {
+
+        var target = $("#addFavorite");
+        if (isFavorite) {
+            target = $("#unregisterFavorite");
+            if ($(".fw-bookmark").hasClass("active") === true) {
+              $(".fw-bookmark").removeClass("active");
+            }
+        }else{
+            if ($(".fw-bookmark").hasClass("active") === false) {
+              $(".fw-bookmark").addClass("active");
+            }
+        }
+
+        if (!event) var event = window.event;
+        if (!event.pageX) px = event.clientX + document.body.scrollLeft; else px = event.pageX;
+        if (!event.pageY) py = event.clientY + document.body.scrollTop; else py = event.pageY;
+
+        $("#errorMessage").text("");
+        $("#favoriteName").val("日報管理DB 日報入力");
+        $("#favoriteFolder").val("0");
+        target.css("left", (px - 30) + "px");
+        target.css("top", (py - 10) + "px");
+        target.show();
+
+        $("#favoriteName").select();
+    }
+
+    function hidePopup(isRegister, id) {
+
+        if (isRegister) {
+            if (id === "addFavorite") {
+                if (!validate()) return;
+                registerFavorite();
+            } else {
+                unregisterFavorite();
+            }
+        }else{
+          if (id === "addFavorite") {
+              $("#star").attr("src", "/img/btn_star_disable.png");
+              if ($(".fw-bookmark").hasClass("active") === true) {
+              $(".fw-bookmark").removeClass("active");
+            }
+          } else {
+              $("#star").attr("src", "/img/btn_star_enable.png");
+              if ($(".fw-bookmark").hasClass("active") === false) {
+                $(".fw-bookmark").addClass("active");
+              }
+          }
+        }
+        $("#" + id).hide();
+
+        $(".fw-cartain").css("display", "none");
+    }
+
+    function validate() {
+
+        var favoriteName = $("#favoriteName");
+        var errorMessage = $("#addFavoriteForm [id=errorMessage]");
+        if(favoriteName.val() === "") {
+            errorMessage.text("名前を入力してください。");
+            return false;
+        }
+        errorMessage.text("");
+        return true;
+    }
+
+    function registerFavorite() {
+
+        $.ajax({
+            type: "POST",
+            url: "/ggutk9a/favorite/registerfavorite/",
+            data: $('#addFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                if (json[0].count > 0) {
+                    isFavorite = true;
+                    javascript:leftReloadForAjax();
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function unregisterFavorite() {
+
+        $.ajax({
+            type: "POST",
+            url: "/ggutk9a/favorite/unregisterfavoritemain/",
+            data: $('#unregisterFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                if (json[0].count > 0) {
+                    isFavorite = false;
+                    javascript:leftReloadForAjax();
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function reloadFavorite(favoriteId) {
+
+        favoriteIdForMain = getFavoriteId();
+        if (favoriteIdForMain == -1) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/ggutk9a/favorite/getfavoriteid/",
+            data: {"favoriteId" : favoriteId},
+            dataType: "json",
+            success: function(json) {
+                for (var i = 0; i < json.length; i++) {
+                    if (json[i].favorite_id == favoriteIdForMain) {
+                        $("#star").attr("src", "/img/btn_star_disable.png");
+                        isFavorite = false;
+                        break;
+                    }
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+
+    function getFavoriteId() {
+
+        result = -1;
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/ggutk9a/favorite/getfavoriteid/",
+            data: $('#addFavoriteForm').serialize(),
+            dataType: "json",
+            success: function(json) {
+                for (var i = 0; i < json.length; i++) {
+                    result = json[i].favorite_id;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+        return result;
+    }
+//-->
+</script>
+
+
+<div id="addFavorite" style="display: none; position: absolute; z-index: 2; background-color:#fff; margin:20px; 
+                              padding:20px; border-radius:7px/5px; -webkit-border-radius:7px/5px; -moz-border-radius:7px/5px; 
+                              box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -moz-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -webkit-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; 
+                              border: #ccc solid 1px;">
+  <form name="addFavoriteForm" id="addFavoriteForm">
+    <section class="fw-popup-box jq-popup-changer fw-mw220 jq-popup-content1">
+      <div class="lo-outer fw-mgb20"><h6>お気に入り</h6></div>
+      <div class="lo-outer fw-mgb10">
+        <div class="fw-formset">
+          <label class="fw-horizontal">
+            <span class="fw-txt-right fw-summary fw-w60">名前</span>
+                        <div class="fw-input"><input class="fw-w180" name="favoriteName" id="favoriteName" placeholder="" type="text" value="日報管理DB 日報入力"></div>
+          </label>
+        </div>
+      </div>
+      <div class="lo-outer fw-mgb30">
+        <div class="fw-formset">
+          <label class="fw-horizontal">
+            <span class="fw-txt-right fw-summary fw-w60">グループ</span>
+            <div class="fw-select">
+              <select class="fw-w180" name="favoriteFolder" id="favoriteFolder">
+                <option value="0">お気に入り</option>
+                              </select>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="decision-box">
+        <div class="lo-inner">
+          <div class="fw-txt-left">
+            <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+            <section class="decision-box">
+              <div class="lo-inner">
+                <ul class="fw-float">
+                  <li>
+                    <a class="fw-btn-ok fw-btn-icon fw-mw100" href="javascript:hidePopup(true, 'addFavorite');">
+                      <div class="fw-float fw-box-center">
+                        <div class="fw-left">
+                          <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="fw-left fw-mgl3">登録
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="fw-btn fw-mw100" href="javascript:hidePopup(false, 'addFavorite');">キャンセル
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" name="favoriteDbGroupId" id="favoriteDbGroupId" value="100026">
+      <input type="hidden" name="favoriteDbSchemaId" id="favoriteDbSchemaId" value="100093">
+      <input type="hidden" name="favoritePageType" id="favoritePageType" value="4">
+      <input type="hidden" name="favoriteMenuId" id="favoriteMenuId" value="100197">
+      <input type="hidden" name="favoriteFolderId" id="favoriteFolderId" value="">
+      <input type="hidden" name="favoriteMailBoxId" id="favoriteMailBoxId" value="">
+    </section>
+  <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313"></form>
+</div>
+
+<div id="unregisterFavorite" style="display: none; position: absolute; z-index: 3; background-color:#fff; margin:20px; 
+      padding:20px; border-radius:7px/5px; -webkit-border-radius:7px/5px; -moz-border-radius:7px/5px; 
+      box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -moz-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; -webkit-box-shadow:rgba(204, 204, 204, 0.5) 0 0 5px; 
+      border: #ccc solid 1px;">
+  <form name="unregisterFavoriteForm" id="unregisterFavoriteForm">
+    <div class="lo-outer fw-mgb20">
+      <h6>お気に入り</h6>
+    </div>
+    <div class="lo-outer fw-lh20 fw-mgb30">お気に入りを削除します。
+      <br>よろしいですか？
+    </div>
+    <div class="decision-box">
+      <div class="lo-inner">
+        <div class="fw-txt-left">
+          <!-- ページ下部のボタン///////////////////////////////////////////////////////// -->
+          <section class="decision-box">
+            <div class="lo-inner">
+              <ul class="fw-float">
+                <li>
+                  <a class="fw-btn-delete fw-btn-icon fw-mw100" href="javascript:hidePopup(true, 'unregisterFavorite');">
+                    <div class="fw-float fw-box-center">
+                      <div class="fw-left">
+                        <i class="fa fa-trash-o"></i>
+                      </div>
+                      <div class="fw-left fw-mgl3">削除
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="fw-btn fw-mw100" href="javascript:hidePopup(false, 'unregisterFavorite');">キャンセル
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="favoriteDbGroupId" id="favoriteDbGroupId" value="100026">
+    <input type="hidden" name="favoriteDbSchemaId" id="favoriteDbSchemaId" value="100093">
+    <input type="hidden" name="favoritePageType" id="favoritePageType" value="4">
+    <input type="hidden" name="favoriteMenuId" id="favoriteMenuId" value="100197">
+    <input type="hidden" name="favoriteFolderId" id="favoriteFolderId" value="">
+    <input type="hidden" name="favoriteMailBoxId" id="favoriteMailBoxId" value="">
+  <input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313"></form>
+</div>
+            
+    </div>
+  </main>
+    <link rel="stylesheet" type="text/css" href="/css/modal.css?6.3.2.0">
+<script type="text/javascript">
+//<!--
+function openInformationModalWindow() {
+
+  if ($("#displayInformation").hasClass("fw-disabled")) {
+    return;
+  }
+
+  var modalId = "informationPanel";
+
+  $('.jq-user-popup').hide();
+
+    $("body").append('<div id="modal-overlay"></div>');
+  $("#modal-overlay").fadeIn("fast");
+  $("#modal-overlay").unbind().click(function() {
+    closeInformationModalWindow(modalId);
+  });
+
+  // 前回情報をクリア
+  $('#informationModalList').empty();
+
+  $.ajax({
+    type: "POST",
+    url: "/ggutk9a/information/getinformation",
+    async: false,
+    success: function(response){
+      insertInformationText(response);
+      parent.bar.location.reload();
+    }
+  });
+
+  var w = $(window).width();
+  var h = $(window).height();
+    var cw = $("#" + modalId).outerWidth();
+  var ch = $("#" + modalId).outerHeight();
+    $("#" + modalId).css({"left": ((w - cw)/2) + "px","top": ((h - ch)/2) + "px"});
+    $("#" + modalId).fadeIn("fast");
+}
+
+function insertInformationText(response) {
+
+  var informationTable = $('<table></table>');
+
+  for (var i = 0; i < response.length; i++){
+    var information = response[i];
+
+    var informationUrl = "#";
+    if (information.type == '0') {
+      informationUrl = information.url;
+    } else if (information.type == '1') {
+      informationUrl = "/ggutk9a/information/fileview/oid/" + information.file_id + "/fname/" + information.file_name;
+    }
+
+    informationTable.append(
+      '<tr>' +
+        '<td class="fw-w40 fw-cl-theme" style="vertical-align: top;">' + information.new + '</td>' +
+        '<td class="fw-w90" style="vertical-align: top;">' + information.date + '</td>' +
+        '<td class="fw-w320" style="word-break: break-all;"><a href="' + informationUrl + '" target="_blank">' + information.title + '</a></td>' +
+        '</tr>'
+    );
+  }
+
+  $("#informationModalList").append(informationTable);
+
+}
+
+function closeInformationModalWindow(){
+
+  var modalId = "informationPanel";
+  $("#" + modalId).fadeOut("fast",function(){
+    $('#modal-overlay').remove();
+  });
+}
+
+$("#modal-overlay,#information-close-button").unbind().click(function(){
+
+  closeInformationModalWindow();
+
+});
+
+// -->
+</script>
+<section style="display:none;" class="fw-popup jq-user-popup">
+  <input type="hidden" id="modal_user_id" value="100017" class="fw-disabled">
+  <div class="lo-body jq-user-popup-posi fw-posi-fixed">
+    <div class="lo-inner">
+            <section class="fw-popup-box jq-user-popup-content">
+        <div class="lo-inner">
+          <ul class="fw-menu-vertical">
+            <li id="displayInformation">
+              <a id="displayInformationUrl" href="javascript:openInformationModalWindow();">
+                お知らせ<span class="jq-user-popup-information-new fw-pdl10 fw-cl-theme" style="display: none; float: right;">NEW</span>
+              </a>
+            </li>
+            <li id="changePasswordMenu">
+              <a id="changePasswordMenuUrl" href="#');">
+                パスワードの変更
+              </a>
+            </li>
+            <li id="userUpdateMenu">
+              <a id="userUpdateMenuUrl" href="#">
+                ユーザ情報の変更
+              </a>
+            </li>
+            <li>
+              <a href="javascript:document.getElementById('logoutForm').submit();">
+                ログアウト
+              </a>
+            </li>
+          </ul>
+          <form id="logoutForm" method="post" action="/ggutk9a/top/logout" target="_parent"><input type="hidden" name="REQUESTABLE_TOKEN_KEY" value="506df9ffa472b06ee3407d75022e7313"></form>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<!-- tooltip///////////////////////////////////////////////////////// -->
+<section style="display:none;" class="fw-tooltip jq-tooltip">
+  <div class="lo-body">
+    <div class="lo-inner">
+      <section class="fw-tooltip-box jq-tooltip-posi">
+        <div class="lo-inner jq-tooltip-box"></div>
+      </section>
+      <section class="fw-balloon jq-balloon">
+        <div class="fw-triangle-bottom"></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section id="informationPanel" class="fw-modal" style="display:none;position:absolute;z-index:102;">
+  <div class="lo-body fw-w500">
+    <div class="lo-inner fw-modal-common">
+      <h6 class="fw-txt-center fw-mg10">お知らせ</h6>
+      <hr class="fw-hr-theme">
+      <section class="fw-modal-body">
+        <div class="lo-inner" style="padding:10px;" id="informationModalList">
+        </div>
+      </section>
+      <hr class="fw-hr-theme">
+      <div class="fw-box-center fw-txt-center" id="information-close-button">
+        <a class="fw-btn " href="javascript:closeInformationModalWindow();">
+          閉じる
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="display:none;" class="fw-cartain jq-cartain"></section>
+<section style="display:none;" class="fw-cartain jq-popup-cartain"></section>
+<section class="fw-collapse">
+  <div class="lo-inner fw-txt-center">
+    <a class="fw-collapse-switch-box jq-nav-collapse" href="javascript:void(0);">
+      <i class="fa fa-caret-left"></i>
+    </a>
+  </div>
+</section>
+<section class="fw-toast jq-toast" style="display:none;">
+  <div class="lo-body">
+    <div class="lo-inner fw-toast-alert jq-toast-alert jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-success jq-toast-success jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-check-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-info jq-toast-info jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-warning jq-toast-warning jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+    <div class="lo-inner fw-toast-confirm jq-toast-confirm jq-toast-inner">
+      <div class="fw-iconbox">
+        <div class="fw-icon">
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <div class="fw-keyword">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>      <section class="fw-popup jq-popup" style="display:none;">
+    <div id="popupCategory" class="lo-body jq-popup-posi fw-posi-abs">
+      <div class="lo-inner">
+        <!-- /page function -->
+        <section class="fw-popup-box jq-popup-changer jq-popup-content3">
+          <div class="lo-inner">
+            <ul class="fw-menu-vertical">
+              <li><a href="javascript:void(0);" onclick="javascript:url_dispConfirmPanel(event)">ページのURLの表示</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+        <section class="fw-popup fw-mgb7">
+    <div id="url_displayAct" class="lo-body fw-popup fw-posi-abs" style="display: none;">
+     <div class="lo-inner fw-pd10">
+       <div class="fw-mgb10">
+         <textarea name="loginUrlPath" id="loginUrlPath" readonly="readOnly" onclick="this.select()" class="fw-w300 fw-mh100 url_displayInput">https://ta.htdb.jp/ggutk9a/top/index/urlparams/JTJGZ2d1dGs5YSUyRjglMkZkYmdJZCUyRjEwMDAyNiUyRmRiU2NoZW1hSWQlMkYxMDAwOTMlMkZkaXNwbGF5VGFiSWQlMkYlMkZtZW51SWQlMkYxMDAxOTclMkZBRlRFUl9SRUdJU1RfRkxBRyUyRg==</textarea>
+       </div>
+        <div class="fw-mgb10">
+          <a href="javascript:Htdb_hideObject('url_displayAct');" id="url_confirm_close" onclick="Htdb_hideObject('url_display_section')" class="fw-btn fw-mw100" title="閉じる">閉じる</a>
+        </div>
+     </div>
+   </div>
+  </section>
+ <!-- viewerタイプ -->
+ <section class="fw-modal jq-modal" style="display:none;">
+   <div class="lo-body">
+     <div class="lo-inner fw-modal-viewer jq-modal-viewer">
+       <section class="fw-modal-body">
+         <div class="lo-inner jq-thumbnail-view fw-txt-center"></div>
+       </section>
+       <section class="fw-modal-footer">
+         <div class="lo-inner">
+           <div class="fw-box-center fw-txt-center">
+             <a class="fw-btn jq-modal-close" href="javascript:void(0);">閉じる</a>
+           </div>
+         </div>
+       </section>
+     </div>
+   </div>
+ </section>
+
+</body>

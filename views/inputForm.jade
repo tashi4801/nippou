@@ -1,0 +1,14 @@
+extends layout
+block content
+  .container
+                    .row
+                      .col.col-md-12
+                            legend 登録フォーム
+                            .form-group
+                              label(for='gyomu') 業務報告
+                              textarea#gyomu.form-control(type='text', name='gyomu', rows='5', value='業務報告', placeholder='業務報告を入力してください')
+                            .form-group
+                              label(for='shokan') 所感
+                              textarea#shokan.form-control(type='text', name='shokan',rows='5', value='所感', placeholder='所感を入力してください')
+                            .form-group
+                              button.btn.btn-primary(onclick='input('+ipi_info+');')送信ボタン
