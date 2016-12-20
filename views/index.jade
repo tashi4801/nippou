@@ -60,13 +60,14 @@ block content
                     .row
                       .col.col-md-8
                             legend システム登録
-                            .table-responsive                    
-                              table.table.table-striped.table-condensed.table-hover
-                                for item in systemList
-                                  tr.col.col-md-12 
-                                    td.col.col-md-12 
-                                      .radio
-                                        label
-                                          input(type='radio', name='radio', value=item.site_id)
-                                          | #{item.site_name}
-                            button.btn.btn-primary 選択
+                              .form-group
+                              label(for='id') ID
+                              input#id.form-control(type='text', name='id', placeholder='IDを入力してください')
+                            .form-group
+                              label(for='pass') PASS
+                              input#pass.form-control(type='password', name='pass', placeholder='パスワードを入力してください')
+                            .form-group
+                              label(for='resist_name') アカウント名
+                              input#resist_name.form-control(type='text', name='resist_name', placeholder='登録したいアカウント名を入力してください')
+                            .form-group
+                            button#input.btn.btn-primary(onclick='resist();') 登録

@@ -25,7 +25,7 @@ function del(ipi_info){
 				    	swal("削除","削除が完了しました。","success");
 				    	setTimeout(function(){
 				    		location.href = '/';
-				    	},10000);
+				    	},2000);
 				    }).fail(function(jqXHR, textStatus, errorThrown ) {
 				    	console.log("失敗");
 				    });
@@ -62,6 +62,7 @@ function resist(){
 		      showLoaderOnConfirm: true,
 		      preConfirm: function () {
 		    	  return new Promise(function (resolve) {
+
 				    $.ajax({
 					  type: 'POST',
 					  url: '/resist',
@@ -69,10 +70,10 @@ function resist(){
 				    }).done(function(response, textStatus, jqXHR) {
 				    	console.log("成功");
 				    	swal("登録！！","登録が完了しました。","success");
+				    	//alert('success');
 				    	 setTimeout(function() {
 				    		 location.href = '/';
-					        }, 500);
-					    resolve();
+					        }, 2000);
 				    }).fail(function(jqXHR, textStatus, errorThrown ) {
 				    	console.log("失敗");
 				    });

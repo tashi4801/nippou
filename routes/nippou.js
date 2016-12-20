@@ -17,7 +17,7 @@ var _logpath = './logs/nippou/';
 var pg = require('pg');
 var con = 'tcp://postgres:admin@localhost:5432/postgres';
 var co        = require("co");
-
+const url ='https://ta.htdb.jp/ggutk9a';
 exports.input = function(req, res){
 	
 	var extra;
@@ -113,9 +113,9 @@ exports.input = function(req, res){
 				        _logAndCap(horseman,"",'html001_7');
 				        console.log("====== 日報入力 ======");
 			      })
-//			      .evaluate(function(){
-//			          registSubmit();
-//			      })
+			      .evaluate(function(){
+			          registSubmit();
+			      })
 			      .waitForNextPage()
 			      .wait(1000)
 			      .html();
